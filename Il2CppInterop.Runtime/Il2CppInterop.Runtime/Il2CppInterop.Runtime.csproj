@@ -1,0 +1,529 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AE843D91-9EDD-4815-A03D-F64BECD88BAF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Il2CppInterop.Runtime</RootNamespace>
+    <AssemblyName>Il2CppInterop.Runtime</AssemblyName>
+    <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
+    <TargetFrameworkIdentifier>.NETCoreApp</TargetFrameworkIdentifier>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Il2Cppmscorlib" />
+    <Reference Include="System.Collections">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.10\System.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Concurrent">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.10\System.Collections.Concurrent.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Console">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.10\System.Console.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.FileVersionInfo">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.10\System.Diagnostics.FileVersionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Process">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.10\System.Diagnostics.Process.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.StackTrace">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.10\System.Diagnostics.StackTrace.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.10\System.IO.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.10\System.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Emit">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.10\System.Reflection.Emit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Emit.ILGeneration">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.10\System.Reflection.Emit.ILGeneration.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Emit.Lightweight">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.10\System.Reflection.Emit.Lightweight.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Primitives">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.10\System.Reflection.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.10\System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.10\System.Runtime.InteropServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.10\System.Runtime.Serialization.Formatters.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.10\System.Security.Cryptography.Algorithms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Csp">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.10\System.Security.Cryptography.Csp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.10\System.Security.Cryptography.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.RegularExpressions">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.10\System.Text.RegularExpressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.10\System.Threading.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="-Module-.cs" />
+    <Compile Include="-Module-{A434355C-A049-4FAF-81DE-FDD9D9B6C7EC}.cs" />
+    <Compile Include="-Module-{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.cs" />
+    <Compile Include="a1EB98GAYivvl8q1XpE.cs" />
+    <Compile Include="a4R1rnUiI6Z0H9xNlx5.cs" />
+    <Compile Include="A5IXfW9GsGA59SDnkr0.cs" />
+    <Compile Include="aaIVKB9PZFrTDNowlRw.cs" />
+    <Compile Include="abNfQOUBX9HpKxMrtL7.cs" />
+    <Compile Include="aDGbeTAzy0PmbSxqfnH.cs" />
+    <Compile Include="AH8Z8FGOcnLwf78Np71.cs" />
+    <Compile Include="aNXqaFUaF5FInd1YJEI.cs" />
+    <Compile Include="ApGmHfGuL5hZ8qulCy2.cs" />
+    <Compile Include="aS7cSUGsA1eSCLCwZt1.cs" />
+    <Compile Include="aVEVq9qLn3nSH3AstMB.cs" />
+    <Compile Include="axjPFwqt1vaYPQhZ6LC.cs" />
+    <Compile Include="B0bSGxaPhvMkZ0XyeyQ.cs" />
+    <Compile Include="B17Oqp9iWWgj6vslXHW.cs" />
+    <Compile Include="b27ekHAlO1XXce9pRo0.cs" />
+    <Compile Include="bFfvVxI2DKZLSU4QQXm.cs" />
+    <Compile Include="BGmUOfYc7IR65nqVo8c.cs" />
+    <Compile Include="bMqnSHAi2LqA0GNZGR3.cs" />
+    <Compile Include="Bmy2ooqpfX8d7hEtWrm.cs" />
+    <Compile Include="boRcaVItiYQt2QetmA6.cs" />
+    <Compile Include="BppC3Yi2DVM9pmTLX4F.cs" />
+    <Compile Include="bsXHr7GtCk6qkQSQpRs.cs" />
+    <Compile Include="BxCF5Pirv4081M3ZWUE.cs" />
+    <Compile Include="byRw0gA2NyqHkl03ii9.cs" />
+    <Compile Include="bZPmHMGaZNKjR0e4Wc1.cs" />
+    <Compile Include="C3coDViAdD8xeVgEqlF.cs" />
+    <Compile Include="cBBPqCYRr4MED1qf5VS.cs" />
+    <Compile Include="CDSCTtBikuRQ668dSe\NeFPnNYfto2SAAgSTa.cs" />
+    <Compile Include="cLhl8b9aY175EjB6MKQ.cs" />
+    <Compile Include="COHdv6YlhwLO6pchUFG.cs" />
+    <Compile Include="cpOdEc9Aejc6orqt8p7.cs" />
+    <Compile Include="cRfWfBih7ABuZjlWTdx.cs" />
+    <Compile Include="ctJagSYBQFGoauLWjZ1.cs" />
+    <Compile Include="cYbS7eahSqZmoIHRVAN.cs" />
+    <Compile Include="D0fEZ4aO6SqgVASZrDu.cs" />
+    <Compile Include="d5rqpnAma75otQhcJbn.cs" />
+    <Compile Include="D6OKejGKRZRH7hVhG3d.cs" />
+    <Compile Include="DDvamCGTJw99e9PtgnE.cs" />
+    <Compile Include="delipvity1M1GyKLYJc.cs" />
+    <Compile Include="dHdpk5i1J82vRy1x65v.cs" />
+    <Compile Include="DL7sCUiR6bSaPfs2nrg.cs" />
+    <Compile Include="DlUl7kilicUrc9TlEIS.cs" />
+    <Compile Include="DOGJJXiuWsS2u63HZGH.cs" />
+    <Compile Include="dPsigOUwJdO4bwskNJ5.cs" />
+    <Compile Include="du1ws7iq1lRxNm9OoMA.cs" />
+    <Compile Include="dZka5XArmBuiU3qaWBm.cs" />
+    <Compile Include="E0DvAOAb0lWL4EMkAd1.cs" />
+    <Compile Include="E3pFHVarUZMD0hWUwAv.cs" />
+    <Compile Include="e61WPb9RvMZQJWDgbH9.cs" />
+    <Compile Include="e8O6MnYLvmnGTfSj5sn.cs" />
+    <Compile Include="e9JbcIqsAv7s4t2ydLY.cs" />
+    <Compile Include="eHiCYiGZ0HINl6pYaQS.cs" />
+    <Compile Include="ekynNnaJxaxQqN7AmLs.cs" />
+    <Compile Include="el3Dwo9OYrba9URt3tt.cs" />
+    <Compile Include="eQQ7169r4bK83ANL64x.cs" />
+    <Compile Include="eU5HosYm5x1pj7KQsBK.cs" />
+    <Compile Include="ExKpTG9zgZI9MvmWbMm.cs" />
+    <Compile Include="F0cbBAGbwnopJckAOoW.cs" />
+    <Compile Include="f4MxL4AOJOmnsnGxg4f.cs" />
+    <Compile Include="F6byMAqhRvqDsDbRpFe.cs" />
+    <Compile Include="F9k0QHqwuAF4DuGYBHT.cs" />
+    <Compile Include="FfHHk1qP1Pa78U6K7p4.cs" />
+    <Compile Include="fFnvy2iB4BF7Uq6kYkL.cs" />
+    <Compile Include="Fi4VayauMYPmxJjWak4.cs" />
+    <Compile Include="fq9fjaYrf3F3phqUapQ.cs" />
+    <Compile Include="FqZp2N9hs66h9Og8y7V.cs" />
+    <Compile Include="Ftg1jVILvkPaH76x8ar.cs" />
+    <Compile Include="FTGEmvalrfYjTLjgsvl.cs" />
+    <Compile Include="FW2TugiOGNGItR9gxvB.cs" />
+    <Compile Include="GajqGFqGF52ibtnrXfs.cs" />
+    <Compile Include="gCZgqYUZrO6iDUQkwRK.cs" />
+    <Compile Include="GOeV2nicGjskpCnGtWX.cs" />
+    <Compile Include="GoyCIOIP2bFaHyGepWM.cs" />
+    <Compile Include="GYhvdXq2oldr1eq9pKe.cs" />
+    <Compile Include="GZZerOq0lk2GItma8VI.cs" />
+    <Compile Include="H2StJeUGVkry79EgdEo.cs" />
+    <Compile Include="H5jvDXa0eiyI8ASWmoE.cs" />
+    <Compile Include="HbkPPVIrlw6tA9Q2R8p.cs" />
+    <Compile Include="HEDtRkYJr0dPEJECrdP.cs" />
+    <Compile Include="hnXYKIIZqxlXRMPNURr.cs" />
+    <Compile Include="hPT4yVabITevn8SirqU.cs" />
+    <Compile Include="HTPdVNaRcR7bApEibh4.cs" />
+    <Compile Include="HUtclRqOvktk8jFJw0c.cs" />
+    <Compile Include="hV9HrZaiTB7oDG4mt8u.cs" />
+    <Compile Include="hVBWFRGBuNJAxxlEkrt.cs" />
+    <Compile Include="hwjb42YOiWH4XUNoFgD.cs" />
+    <Compile Include="hXSmNtYsScxPeGniY89.cs" />
+    <Compile Include="hyH0nPY2D5cQjKgLm77.cs" />
+    <Compile Include="hZ6abvUhJRbtUPKZCVQ.cs" />
+    <Compile Include="i2gLiDUpAgDrhYbEGTX.cs" />
+    <Compile Include="i4jDlqYiWIyOKCK2MYP.cs" />
+    <Compile Include="i8SdLhUP0eAhNFuWLMo.cs" />
+    <Compile Include="IAe53cqnY4BQihf1Jvw.cs" />
+    <Compile Include="iKN8ftYnu8BdpwJxsqf.cs" />
+    <Compile Include="Il2CppInterop\GetReady.cs" />
+    <Compile Include="Il2CppInterop\MarshalExtend.cs" />
+    <Compile Include="Il2CppInterop\Runtime\DelegateSupport.cs" />
+    <Compile Include="Il2CppInterop\Runtime\IL2CPP.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Il2CppClassPointerStore.2.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Il2CppClassPointerStore.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Il2CppException.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Il2CppType.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Injection\CustomAttributes.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Injection\TrampolineHelpers.cs" />
+    <Compile Include="Il2CppInterop\Runtime\InteropTypes\Arrays\Il2CppArrayBase.cs" />
+    <Compile Include="Il2CppInterop\Runtime\InteropTypes\Arrays\Il2CppReferenceArray.cs" />
+    <Compile Include="Il2CppInterop\Runtime\InteropTypes\Arrays\Il2CppStringArray.cs" />
+    <Compile Include="Il2CppInterop\Runtime\InteropTypes\Arrays\Il2CppStructArray.cs" />
+    <Compile Include="Il2CppInterop\Runtime\InteropTypes\Fields\Il2CppReferenceField.cs" />
+    <Compile Include="Il2CppInterop\Runtime\InteropTypes\Fields\Il2CppStringField.cs" />
+    <Compile Include="Il2CppInterop\Runtime\InteropTypes\Fields\Il2CppValueField.cs" />
+    <Compile Include="Il2CppInterop\Runtime\InteropTypes\Il2CppObjectBase.cs" />
+    <Compile Include="Il2CppInterop\Runtime\InteropUtils.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Logger.cs" />
+    <Compile Include="Il2CppInterop\Runtime\MiniIlParser.cs" />
+    <Compile Include="Il2CppInterop\Runtime\RuntimeReflectionHelper.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\ApplicableToUnityVersionsSinceAttribute.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\Il2CppAssembly.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\Il2CppAssemblyName.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\Il2CppClass.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\Il2CppClassAttributes.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\Il2CppEventInfo.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\Il2CppException.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\Il2CppFieldInfo.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\Il2CppImage.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\Il2CppImageGlobalMetadata.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\Il2CppInteropericContext.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\Il2CppInteropericInst.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\Il2CppInteropericMethod.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\Il2CppMetadataGenericContainerHandle.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\Il2CppMetadataImageHandle.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\Il2CppMetadataTypeHandle.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\Il2CppMethodFlags.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\Il2CppMethodImplFlags.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\Il2CppMethodInfo.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\Il2CppObject.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\Il2CppParameterInfo.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\Il2CppPropertyInfo.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\Il2CppReflectionMethod.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\Il2CppRuntimeInterfaceOffsetPair.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\Il2CppString.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\Il2CppTypeEnum.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\Il2CppTypeStruct.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\il2cpp_hresult_t.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\INativeStruct.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\INativeStructHandler.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\NativeStructUtils.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\UnityVersionHandler.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\AssemblyName\INativeAssemblyNameStruct.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\AssemblyName\INativeAssemblyNameStructHandler.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\AssemblyName\NativeAssemblyNameStructHandler_16_0.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\AssemblyName\NativeAssemblyNameStructHandler_24_0.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\AssemblyName\NativeAssemblyNameStructHandler_24_1.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\Assembly\INativeAssemblyStruct.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\Assembly\INativeAssemblyStructHandler.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\Assembly\NativeAssemblyStructHandler_16_0.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\Assembly\NativeAssemblyStructHandler_20_0.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\Assembly\NativeAssemblyStructHandler_24_0.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\Assembly\NativeAssemblyStructHandler_24_1.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\Assembly\NativeAssemblyStructHandler_24_2.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\Class\INativeClassStruct.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\Class\INativeClassStructHandler.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\Class\NativeClassStructHandler_16_0.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\Class\NativeClassStructHandler_19_0.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\Class\NativeClassStructHandler_20_0.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\Class\NativeClassStructHandler_21_0.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\Class\NativeClassStructHandler_21_1.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\Class\NativeClassStructHandler_22_0.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\Class\NativeClassStructHandler_22_1.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\Class\NativeClassStructHandler_23_0.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\Class\NativeClassStructHandler_24_0.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\Class\NativeClassStructHandler_24_1.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\Class\NativeClassStructHandler_24_2.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\Class\NativeClassStructHandler_24_3.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\Class\NativeClassStructHandler_24_4.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\Class\NativeClassStructHandler_27_0.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\Class\NativeClassStructHandler_27_1.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\Class\NativeClassStructHandler_27_2.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\Class\NativeClassStructHandler_27_3.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\Class\NativeClassStructHandler_29_0.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\Class\NativeClassStructHandler_29_1.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\EventInfo\INativeEventInfoStruct.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\EventInfo\INativeEventInfoStructHandler.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\EventInfo\NativeEventInfoStructHandler_16_0.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\EventInfo\NativeEventInfoStructHandler_19_0.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\EventInfo\NativeEventInfoStructHandler_24_0.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\Exception\INativeExceptionStruct.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\Exception\INativeExceptionStructHandler.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\Exception\NativeExceptionStructHandler_16_0.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\Exception\NativeExceptionStructHandler_20_0.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\Exception\NativeExceptionStructHandler_21_0.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\Exception\NativeExceptionStructHandler_24_0.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\Exception\NativeExceptionStructHandler_29_0.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\FieldInfo\INativeFieldInfoStruct.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\FieldInfo\INativeFieldInfoStructHandler.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\FieldInfo\NativeFieldInfoStructHandler_16_0.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\FieldInfo\NativeFieldInfoStructHandler_19_0.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\FieldInfo\NativeFieldInfoStructHandler_24_0.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\Image\INativeImageStruct.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\Image\INativeImageStructHandler.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\Image\NativeImageStructHandler_16_0.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\Image\NativeImageStructHandler_19_0.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\Image\NativeImageStructHandler_24_0.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\Image\NativeImageStructHandler_24_1.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\Image\NativeImageStructHandler_24_2.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\Image\NativeImageStructHandler_24_3.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\Image\NativeImageStructHandler_24_4.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\Image\NativeImageStructHandler_27_0.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\MethodInfo\INativeMethodInfoStruct.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\MethodInfo\INativeMethodInfoStructHandler.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\MethodInfo\NativeMethodInfoStructHandler_16_0.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\MethodInfo\NativeMethodInfoStructHandler_21_0.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\MethodInfo\NativeMethodInfoStructHandler_24_0.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\MethodInfo\NativeMethodInfoStructHandler_24_1.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\MethodInfo\NativeMethodInfoStructHandler_29_0.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\MethodInfo\NativeMethodInfoStructHandler_29_1.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\MethodInfo\NativeMethodInfoStructHandler_29_2.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\ParameterInfo\INativeParameterInfoStruct.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\ParameterInfo\INativeParameterInfoStructHandler.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\ParameterInfo\NativeParameterInfoStructHandler_16_0.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\ParameterInfo\NativeParameterInfoStructHandler_24_1.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\ParameterInfo\NativeParameterInfoStructHandler_27_3.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\PropertyInfo\INativePropertyInfoStruct.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\PropertyInfo\INativePropertyInfoStructHandler.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\PropertyInfo\NativePropertyInfoStructHandler_16_0.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\PropertyInfo\NativePropertyInfoStructHandler_19_0.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\PropertyInfo\NativePropertyInfoStructHandler_24_0.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\Type\INativeTypeStruct.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\Type\INativeTypeStructHandler.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\Type\NativeTypeStructHandler_16_0.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VersionSpecific\Type\NativeTypeStructHandler_27_0.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Runtime\VirtualInvokeData.cs" />
+    <Compile Include="Il2CppInterop\Runtime\Wrappers\NativeMethods.cs" />
+    <Compile Include="IpljJqYPLCeaSYgGqAA.cs" />
+    <Compile Include="iqwVkRqSd7c2e7KkG1c.cs" />
+    <Compile Include="IreLT7A0Ync4AwEXIgw.cs" />
+    <Compile Include="IvRaRdITOToIFO9INUq.cs" />
+    <Compile Include="ivu1mJIhRrX7oqj79Dg.cs" />
+    <Compile Include="Iwwlq19uEXHSO3XQG7C.cs" />
+    <Compile Include="iX0N8wG1IRnYP7N7pZV.cs" />
+    <Compile Include="IXGyYfGm5DNHTOFQ6dj.cs" />
+    <Compile Include="j3EaQ4GPXqUQXqmfGWM.cs" />
+    <Compile Include="j3GQKSY1F4Z5nbayXDo.cs" />
+    <Compile Include="JERLY8AwDDHFUcct031.cs" />
+    <Compile Include="jFQhjLIKKa8P97oX7HC.cs" />
+    <Compile Include="JFwKeLIuFdrVcU89o72.cs" />
+    <Compile Include="jHEJbHGi8NoFsfhw0rX.cs" />
+    <Compile Include="JmmWop9taD6h4B6BjCV.cs" />
+    <Compile Include="jPM26DAnQfHunyInIhU.cs" />
+    <Compile Include="jQdCBeqaKbkTrjy04fc.cs" />
+    <Compile Include="Jr5LvFiz2HGZXmX3HC8.cs" />
+    <Compile Include="jrmKQHq1WpZFX1iNVw8.cs" />
+    <Compile Include="JUCmVnGLumjHA0Awe7U.cs" />
+    <Compile Include="juWq3eUzrSmJee3Fw6H.cs" />
+    <Compile Include="jx3hpxGJlEOEsBH5Y7V.cs" />
+    <Compile Include="JZ0xFxIGmGC0Pw0hyA5.cs" />
+    <Compile Include="KcNIiKqZ7UaY10c1XIC.cs" />
+    <Compile Include="KGqWnuY0C1l5cjWDUy9.cs" />
+    <Compile Include="KQ408IUnj4MeYY1d6lA.cs" />
+    <Compile Include="KRdvyeqiNjTgc2IU7fe.cs" />
+    <Compile Include="ksqFb8Il85Vq0skiabV.cs" />
+    <Compile Include="kTOtuoGpuhIZ5VVvXfk.cs" />
+    <Compile Include="ktVDMZqKEKBsM13bZtl.cs" />
+    <Compile Include="KXBQ09Ac5lZ5IM0JSyR.cs" />
+    <Compile Include="KXbVLO90rvxCycuMdcc.cs" />
+    <Compile Include="KXmbngqAYb7452NDmoE.cs" />
+    <Compile Include="KyXIT2IJ8SYijQquLsK.cs" />
+    <Compile Include="l3AN43qrOBxKsw7pvOY.cs" />
+    <Compile Include="lFwkxeAaqLIHo45P9Xf.cs" />
+    <Compile Include="Lj2eUAipi0r5fQRFLXR.cs" />
+    <Compile Include="LN74hFUuuPeOAyrLO2m.cs" />
+    <Compile Include="lPHJlnqFM89GDaeVBH\f1stFPxcHMQ5yL3IBf.cs" />
+    <Compile Include="LpLICHaGGjgx0w53xqU.cs" />
+    <Compile Include="Ls4PAeYzVhf5ao03TVM.cs" />
+    <Compile Include="LSc0e0qqd5ti0ClnMPQ.cs" />
+    <Compile Include="lSJHkJ9sxpe25iXblNt.cs" />
+    <Compile Include="LwLX88qTcNo0ZKmYqja.cs" />
+    <Compile Include="lZ3Yj7ql9HuELBblH6P.cs" />
+    <Compile Include="MaoFcf2Vq4taIANM6n\hIDAYxH6DWLHIthQgC.cs" />
+    <Compile Include="MBv2HSqR329QOQ9YAqY.cs" />
+    <Compile Include="md5tlxIbGIf5AOviEuX.cs" />
+    <Compile Include="MD7v1VaABWJrXMaaHck.cs" />
+    <Compile Include="MHUs7j9JBFis0IY18CL.cs" />
+    <Compile Include="MlRLUg9pmkDVLenGADv.cs" />
+    <Compile Include="mrECElimCgQhBECnJNB.cs" />
+    <Compile Include="MxKuwSiKGgSjAmlPfBS.cs" />
+    <Compile Include="My0BUA9Ld5K5NOXfgTl.cs" />
+    <Compile Include="MyCfRnAp32SBLkfxPeR.cs" />
+    <Compile Include="N3j9MUUOGeO9qTBVBp1.cs" />
+    <Compile Include="N7wDN5IwZsNiI9Qj5B6.cs" />
+    <Compile Include="n85YNlARpvmucfGlOiq.cs" />
+    <Compile Include="nLik1vGnb6hApfT59iD.cs" />
+    <Compile Include="NSN3k1AJAxBmHtKkJgf.cs" />
+    <Compile Include="NxQxCpGw500E4p7UHW5.cs" />
+    <Compile Include="nyWYK4iGLqOdRnZBbPe.cs" />
+    <Compile Include="O4QpGbYa0TBWCYLBZdW.cs" />
+    <Compile Include="O8vLYPqbYWoU9KsgoZ5.cs" />
+    <Compile Include="ObfuscationAttribute.cs" />
+    <Compile Include="Od6dsxABmuKKQmVjDsf.cs" />
+    <Compile Include="ojfZdkI0l15JUs4wR9G.cs" />
+    <Compile Include="OmA7ZlIOQWjfTHiCBaf.cs" />
+    <Compile Include="oQUdLoYtFc8rAovkttE.cs" />
+    <Compile Include="OSC2DT9buTa3fdEsF0m.cs" />
+    <Compile Include="oUPpDZiLA4FIMOvUoml.cs" />
+    <Compile Include="oVqJ0CaZsUywEmiXkXV.cs" />
+    <Compile Include="p6ySoOAhhohpbGcygPY.cs" />
+    <Compile Include="PAALrciZ2xbL1TkKgXd.cs" />
+    <Compile Include="pcGtWx9cV0AmXQghfas.cs" />
+    <Compile Include="pFRqcJyyWJ2hUZv2rN\nHwRpygmi6xxZAssJn.cs" />
+    <Compile Include="PhcPCd9qZOZYbGJa4AI.cs" />
+    <Compile Include="POTyEYYqYUeDXFidiph.cs" />
+    <Compile Include="pOYRBYAtdgcy2Y90KCC.cs" />
+    <Compile Include="pqc9BYYZrm9tmsaTl3Z.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="pRRZ4oaSxj5y8CfFfrF.cs" />
+    <Compile Include="PTQAaWasO0mVM8ZqQWP.cs" />
+    <Compile Include="PW0V5GUmBLqSWP66Z4c.cs" />
+    <Compile Include="PybwZDULT8j9uRoXf8D.cs" />
+    <Compile Include="PYQH6FU12xZM6fMlDHN.cs" />
+    <Compile Include="pYR6pda2am6ekXwKxNn.cs" />
+    <Compile Include="q2oYNgYG3YHS8Fmb6NI.cs" />
+    <Compile Include="q3OdohAGvaJsEOiEnED.cs" />
+    <Compile Include="Q57NvyUKOvY5KovuDBT.cs" />
+    <Compile Include="qc2ECMAKgYlQ7Q4UDSY.cs" />
+    <Compile Include="QG4ZQ9APVeRA5A968ba.cs" />
+    <Compile Include="QTHFXTAZRcODfhg7snJ.cs" />
+    <Compile Include="QW5rQ4UtSMItWDAsJG4.cs" />
+    <Compile Include="qWK6n0ibv10dsJ4DBOh.cs" />
+    <Compile Include="R7ef7291ooaKjIgIYPN.cs" />
+    <Compile Include="RbWXAZqBtGrZtq14Otj.cs" />
+    <Compile Include="RgfAJbqmAFqwcVBtxjd.cs" />
+    <Compile Include="rK10McA1W7rRDddaGkF.cs" />
+    <Compile Include="rlk80TiTmVDhRW1pePl.cs" />
+    <Compile Include="roQekQ9BcyCRlkwvynt.cs" />
+    <Compile Include="rOZOoNGrLneGiHEO6cd.cs" />
+    <Compile Include="RukIj6YwHJknMJsEBnL.cs" />
+    <Compile Include="ryYXxRUq8BsbY0RUmr6.cs" />
+    <Compile Include="s7d4QbYuu4wFSn8x95q.cs" />
+    <Compile Include="sCTpyuYSAGbFDN5Gwp1.cs" />
+    <Compile Include="SeONvmYhLeUNAmo9BMX.cs" />
+    <Compile Include="sgg5uIacagKhXsDTiVo.cs" />
+    <Compile Include="shi1r7Gqp6LH79INyM8.cs" />
+    <Compile Include="shNswyquVFWBad0nqf7.cs" />
+    <Compile Include="SjRANlAsQ8j3KPpZL2p.cs" />
+    <Compile Include="sLG6EQATwSiLRpKGREk.cs" />
+    <Compile Include="sMonWyi0m0eKdsb3oFd.cs" />
+    <Compile Include="SR4pZKYTZg8ivG4e4ge.cs" />
+    <Compile Include="suhR91I1G2UWpwPvl7M.cs" />
+    <Compile Include="T9hscQU2PnRQmsgFCNw.cs" />
+    <Compile Include="t9JHgnImh61fOYQW7Ad.cs" />
+    <Compile Include="TC3tiuIReZp4xSFfQ4g.cs" />
+    <Compile Include="Tcopd0YpH5AUXIcX68C.cs" />
+    <Compile Include="TcwSo6iPWCyPEnGaRRK.cs" />
+    <Compile Include="TDIMMMIBZjUjinX0eAh.cs" />
+    <Compile Include="tL6CNpqzkHagEqbQ3tF.cs" />
+    <Compile Include="tQqBNkGzucwGtcwORcY.cs" />
+    <Compile Include="TVBfjI9lsjlW0VbGRtd.cs" />
+    <Compile Include="u17VAkqcirg8uZTulMb.cs" />
+    <Compile Include="u3ixq8qJD5eTPm4QJHt.cs" />
+    <Compile Include="U8h2YU9SxVTdCTH73DU.cs" />
+    <Compile Include="UBcn5baw7Er5vknyN6e.cs" />
+    <Compile Include="uCPlZHG0DO6N4dwLgLW.cs" />
+    <Compile Include="UDlAeP9mFIOY9IiyV84.cs" />
+    <Compile Include="uDLdZ5AqNUaSKY7KefP.cs" />
+    <Compile Include="UFa5wp9napnQy9snOJw.cs" />
+    <Compile Include="uGBFWSIiCC3BWMWAE0g.cs" />
+    <Compile Include="UI8SapiwIHe6ifgloKj.cs" />
+    <Compile Include="UjCL81UbRoyk5Lr84pU.cs" />
+    <Compile Include="uoEP0fInkFUiyKxjBjD.cs" />
+    <Compile Include="UpgDZUYA002lObDn0pO.cs" />
+    <Compile Include="uSHtktUsvv7Ll0hs4W6.cs" />
+    <Compile Include="UYciy8UrGRereOdGLqM.cs" />
+    <Compile Include="V5jKQ2USYTLU6Q7ybPM.cs" />
+    <Compile Include="vA5hciIAaLmwRJo7Vr0.cs" />
+    <Compile Include="Vee0EH9TsQeZv7AssmK.cs" />
+    <Compile Include="VJNQGMiSZYECLfDBDCg.cs" />
+    <Compile Include="VmRujOiiZNyGw0OupQa.cs" />
+    <Compile Include="vOElIf92k2MIupuZIdH.cs" />
+    <Compile Include="W1m3vuYbVhN8xtYU9EU.cs" />
+    <Compile Include="w8iISIatl0GImc9WbA6.cs" />
+    <Compile Include="WcGScJIsSl14ngpyQJw.cs" />
+    <Compile Include="wl8OA2aaI2ClrGZnB4m.cs" />
+    <Compile Include="wmB1Z3YKgQgBdsmBobO.cs" />
+    <Compile Include="wOaiHFIp5KQA5cNgbQe.cs" />
+    <Compile Include="Wp4sPL9ZtF5HfcQMd2v.cs" />
+    <Compile Include="wU5MYDALRCVO01Cje4I.cs" />
+    <Compile Include="WxA2qSIae2RrnwZTbE4.cs" />
+    <Compile Include="wZ3Oj4GcCgfl8cQSytT.cs" />
+    <Compile Include="X127Q0UR3CERXOhenKY.cs" />
+    <Compile Include="XbWY87UAp2s3iIUpBiV.cs" />
+    <Compile Include="xfRTSpaqDW8WWCEuk2k.cs" />
+    <Compile Include="xfUSUtGhyN6np19de3k.cs" />
+    <Compile Include="xHHh6jUT0eH9Q7OhVRy.cs" />
+    <Compile Include="XLEyvXISui46uUaIBn7.cs" />
+    <Compile Include="xmpFgFGGjbMuL18doaQ.cs" />
+    <Compile Include="xmtnXiIq216ltw1lIgY.cs" />
+    <Compile Include="xN2amKinbB5xSy6RPKW.cs" />
+    <Compile Include="XO3ipPiaDQLTyQ7gh1m.cs" />
+    <Compile Include="xrSf5WUcU7r8AC9ojJq.cs" />
+    <Compile Include="XsUonLGl40oKuW8YelU.cs" />
+    <Compile Include="XyROwpisEIvlmvUZ77r.cs" />
+    <Compile Include="xZC3h4GS7IqQc0Unqxi.cs" />
+    <Compile Include="YhrOShASOt3RVNYfWyr.cs" />
+    <Compile Include="yKeRDXiJjbcfcjRW83c.cs" />
+    <Compile Include="Yrmd8g9wkq9EHP2RruW.cs" />
+    <Compile Include="yrXqVQIz2W9iFqCr3i9.cs" />
+    <Compile Include="YuFR3QG27m5tVBF6FYG.cs" />
+    <Compile Include="ywglSSaL6eZ8YBToXPb.cs" />
+    <Compile Include="z4BRwT9Ki3wnMXvZB09.cs" />
+    <Compile Include="z4S0e1U05BsRVVK2fNl.cs" />
+    <Compile Include="zCejABIcUWYtVFUsplU.cs" />
+    <Compile Include="zD3ZnqUlrIU4LLl6GPl.cs" />
+    <Compile Include="zEgD5NGR2vTryLUwsvI.cs" />
+    <Compile Include="zgNeuMAuviZtWTl7r56.cs" />
+    <Compile Include="zlhoVEUJgYHXwr3BCPL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="6jmm4DAF0gQufAR5uv.9q5CrmUeiG39yAef7Y" />
+    <EmbeddedResource Include="AEnk3pau9mJuSCvm4G.xDJWeiCuUFrMLjS6N2" />
+    <EmbeddedResource Include="svMoARiOVRRdEgcAik.JIcsGfIFmYsx3qIPSI" />
+    <EmbeddedResource Include="YEL8kutH6rg1YKMrKs.PWRL1CxWkgVIRkRPeY" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

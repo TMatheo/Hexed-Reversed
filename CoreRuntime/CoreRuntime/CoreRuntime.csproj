@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8798ADA0-07AF-4C84-B954-900C7A4E19B7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CoreRuntime</RootNamespace>
+    <AssemblyName>CoreRuntime</AssemblyName>
+    <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
+    <TargetFrameworkIdentifier>.NETCoreApp</TargetFrameworkIdentifier>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Il2CppInterop.Runtime">
+      <HintPath>..\..\..\..\..\..\Downloads\HDP\Settings\UnityLoader\VRChat\Runtime\Il2CppInterop.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.10\System.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Console">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.10\System.Console.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Process">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.10\System.Diagnostics.Process.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.StackTrace">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.10\System.Diagnostics.StackTrace.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.10\System.IO.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.10\System.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Emit.ILGeneration">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.10\System.Reflection.Emit.ILGeneration.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Emit.Lightweight">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.10\System.Reflection.Emit.Lightweight.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Primitives">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.10\System.Reflection.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.10\System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.10\System.Runtime.InteropServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.10\System.Runtime.Serialization.Formatters.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.10\System.Security.Cryptography.Algorithms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Csp">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.10\System.Security.Cryptography.Csp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.10\System.Security.Cryptography.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.10\System.Threading.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="-Module-.cs" />
+    <Compile Include="-Module-{ac036323-8bbe-4bc3-98ee-09be8d56c592}.cs" />
+    <Compile Include="-Module-{E7E13C1D-BF30-4E89-8F50-524E30976B6D}.cs" />
+    <Compile Include="A2ntJAeMt4fxRTnjkv.cs" />
+    <Compile Include="aCEAvskeW0fHMPaBZqC.cs" />
+    <Compile Include="Aookx38cIsPwv5aTuyX.cs" />
+    <Compile Include="aRHPuoyLRg04VrxU9Wa.cs" />
+    <Compile Include="ARXvvSkh2rgmNCjwQVn.cs" />
+    <Compile Include="aZGL9J8MRIZ78xRt0QK.cs" />
+    <Compile Include="b8Hc5WyfShVlatdSvsq.cs" />
+    <Compile Include="Bj96ks8gxH4uCAJGxYq.cs" />
+    <Compile Include="Boot.cs" />
+    <Compile Include="BRHFPVk6xv2Y743WeYb.cs" />
+    <Compile Include="ByDgnLyPw2l1pASGSic.cs" />
+    <Compile Include="CDSCTtBikuRQ668dSe\NeFPnNYfto2SAAgSTa.cs" />
+    <Compile Include="ckoBUmGi4C7521Qwf7v.cs" />
+    <Compile Include="COk4vsknP9XpqlJ4b9m.cs" />
+    <Compile Include="cwNWIiyQRHrQFhtWlX2.cs" />
+    <Compile Include="cXAy618Zsh3iwLjbJxL.cs" />
+    <Compile Include="DDbnLNk8QFMuQJok0x9.cs" />
+    <Compile Include="dDuT7oyyOpLG1qLYlaf.cs" />
+    <Compile Include="djeQ6W8PLX9pOurql09.cs" />
+    <Compile Include="dSBIWlG1RsbunDta1nx.cs" />
+    <Compile Include="dXoiSh8iXHxpptp4gyO.cs" />
+    <Compile Include="E3TTrD8WuryU6LT26I4.cs" />
+    <Compile Include="E9nM8jGOeRcwEFXCJjA.cs" />
+    <Compile Include="EiMPpZyVX1LrEErkKfw.cs" />
+    <Compile Include="EJLXObGK9OQsNr5pAXS.cs" />
+    <Compile Include="Eky9YP8hAfPXBddVWDs.cs" />
+    <Compile Include="etEXClGMipk13mHgp3o.cs" />
+    <Compile Include="F19IQ2ycV095wnUyy7X.cs" />
+    <Compile Include="F1uJBw8KYAhm4xoZe7t.cs" />
+    <Compile Include="FAbqYDypqsTf1lqdSZp.cs" />
+    <Compile Include="FNFy1qyOWHr1XNm5lyD.cs" />
+    <Compile Include="foyETR8V5vq5LPxbsif.cs" />
+    <Compile Include="FROkZE8LTjOfmbmXsZ0.cs" />
+    <Compile Include="FSBgWZ8TmskEAUpeciL.cs" />
+    <Compile Include="G9PVExyRudkGDFch3Gm.cs" />
+    <Compile Include="GFqAQHOdVUCtrs7yZx.cs" />
+    <Compile Include="gG1mBJ8d5cAWimUw2Ip.cs" />
+    <Compile Include="GIZqFFGTNLkS6vhZwHB.cs" />
+    <Compile Include="GkE8McGJODxiYXxmJul.cs" />
+    <Compile Include="grpvur2pSom7OIwEAUP.cs" />
+    <Compile Include="Grqbwp8aCAGSLZF7E70.cs" />
+    <Compile Include="GT3G9MQmIwCwwyX5KR.cs" />
+    <Compile Include="GwcpT18Ra1FdCCeHWo1.cs" />
+    <Compile Include="HeMQ8Uy6WSVVCSIjgYQ.cs" />
+    <Compile Include="HiQqF2yKDkgKpMLjJd2.cs" />
+    <Compile Include="HJGVQh8paPqqqoYmIMO.cs" />
+    <Compile Include="hPD7iakj1IYHEKlrhfl.cs" />
+    <Compile Include="hTjuG7kL7FEnPsTZEIN.cs" />
+    <Compile Include="HUqyQtK9vUO9bfISNY.cs" />
+    <Compile Include="HXxIl1R4xa6InBmNLS.cs" />
+    <Compile Include="I14MH3n6ECHaPQAxZ1.cs" />
+    <Compile Include="I9rLhb8NDMiyMYZKtSY.cs" />
+    <Compile Include="i9Tlt3GP7m0UJuswCgp.cs" />
+    <Compile Include="IBS4ZI7iaKStfGopPy.cs" />
+    <Compile Include="IcESJCjNCBkmXZ9KmQ.cs" />
+    <Compile Include="iIYl1q8jZXIgudF7VCH.cs" />
+    <Compile Include="IMhIZlGdjXDkU6a0r98.cs" />
+    <Compile Include="Interfaces\HexedCheat.cs" />
+    <Compile Include="IsdBcx8EfpH6lGAE6pH.cs" />
+    <Compile Include="iXgqG8kWIjkgLMEpgmP.cs" />
+    <Compile Include="J0Bp6j869vyIV19bDh4.cs" />
+    <Compile Include="J1jaSTGRBUYWfpsmbMg.cs" />
+    <Compile Include="j2YHN1yWpeBGtOm0Yo0.cs" />
+    <Compile Include="j6DRtekpQbb7WaLEdSb.cs" />
+    <Compile Include="J6YpGqkBh8YXeM20t6p.cs" />
+    <Compile Include="jDgvQ9kKvt1qPVxuMGs.cs" />
+    <Compile Include="jeeFHryMVpWEaBFMxga.cs" />
+    <Compile Include="jFF7XLkgd8gIZkfLA0G.cs" />
+    <Compile Include="jQBDEGGQO8XlPtonD4t.cs" />
+    <Compile Include="JvLa0V817ncKPxJEDQv.cs" />
+    <Compile Include="kaHafuyddeddbv68rAd.cs" />
+    <Compile Include="KexBxFGaPyq5lupAY32.cs" />
+    <Compile Include="kg0hrZ8fls6OQvxO5n1.cs" />
+    <Compile Include="L6e78okMwGAViOVBDpP.cs" />
+    <Compile Include="L97nRCye1w29uGBJ1xU.cs" />
+    <Compile Include="lCYIIAGh5RREd4R6nL7.cs" />
+    <Compile Include="lDIXQ8yBp8dgTf1ynaR.cs" />
+    <Compile Include="leXdUdkQnIXIpKm4I85.cs" />
+    <Compile Include="lfR5N7kP1TXdLepojI1.cs" />
+    <Compile Include="lPSqKjyj43qjOuEXe4B.cs" />
+    <Compile Include="LQD5QmG8UxkJdYHF1mn.cs" />
+    <Compile Include="m04FIpWA3dGrE9QJ6e.cs" />
+    <Compile Include="Manager\CheatManager.cs" />
+    <Compile Include="Manager\CoroutineManager.cs" />
+    <Compile Include="Manager\CoroutineWrap.cs" />
+    <Compile Include="Manager\HookManager.cs" />
+    <Compile Include="Manager\MonoManager.cs" />
+    <Compile Include="MaoFcf2Vq4taIANM6n\hIDAYxH6DWLHIthQgC.cs" />
+    <Compile Include="mAsVIJkEEwpZSylDf0c.cs" />
+    <Compile Include="MCDlyIkNWsN2UoU5bhV.cs" />
+    <Compile Include="mqmu70GpXQqShCUTV4T.cs" />
+    <Compile Include="mRLZka88lDtEjNcvsi3.cs" />
+    <Compile Include="mT2oT0k19nDRWWMjKQp.cs" />
+    <Compile Include="mWsjcfynQ20apHwUhgk.cs" />
+    <Compile Include="NeGxDIahskrCPZ4o8F.cs" />
+    <Compile Include="nihaaeyimfBn3lvRUbU.cs" />
+    <Compile Include="NjxgZTGNUZuU5n0P56T.cs" />
+    <Compile Include="o6oW0vG71HU2tFcRks5.cs" />
+    <Compile Include="ObfuscationAttribute.cs" />
+    <Compile Include="ofF4ZVGBpINPjmCAkdp.cs" />
+    <Compile Include="Oj03CSy7OVyesVHagBq.cs" />
+    <Compile Include="OjiGRhyZuXlOBk8v45Q.cs" />
+    <Compile Include="OllYaFLKfaVbHwoY0T.cs" />
+    <Compile Include="ONuolU87CPccd4reNE5.cs" />
+    <Compile Include="ou0HCxGWUd3E1oAwtV5.cs" />
+    <Compile Include="pFRqcJyyWJ2hUZv2rN\nHwRpygmi6xxZAssJn.cs" />
+    <Compile Include="PHliwfftrtxnGUGv86.cs" />
+    <Compile Include="PPPNtrGfQRmVT0TBniu.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="pTIoSuGj2Q5QRTdThcm.cs" />
+    <Compile Include="QoFkDNPcNfLS0ciKO7.cs" />
+    <Compile Include="R3eRbTGEWngmNPtmDr4.cs" />
+    <Compile Include="RhYVhr8QGD8Lm3B3pHJ.cs" />
+    <Compile Include="RIQx5ZiROgKkHOkUM4.cs" />
+    <Compile Include="rlI60x8nmv4fB6moeXB.cs" />
+    <Compile Include="RNmljcyTPaJWM3UqBmL.cs" />
+    <Compile Include="RPquxQkcGL8Nqig1Pfq.cs" />
+    <Compile Include="Rvtcf0Gy3OtKUnP0KaQ.cs" />
+    <Compile Include="rZrH1314Uo11aaKqpD.cs" />
+    <Compile Include="S5orXJ8OmapM45lYWnd.cs" />
+    <Compile Include="sEIMuakdf4sv9FUlSAZ.cs" />
+    <Compile Include="SkeXNSE2pyNeYVds9O.cs" />
+    <Compile Include="SmEfxakRSirVGEfGwMV.cs" />
+    <Compile Include="sNsPygkOjiTyYeakpeD.cs" />
+    <Compile Include="sZ9DfIyNukoHa61HHPJ.cs" />
+    <Compile Include="TSvMsFkTmajRdlgK3rk.cs" />
+    <Compile Include="tVVasDy89PvaTtaPnoo.cs" />
+    <Compile Include="tZI3LRkyV9LOLwWdVmU.cs" />
+    <Compile Include="uambEmGLyU7CMVCJ8B7.cs" />
+    <Compile Include="UaX5WKGVPFrdYklbfEr.cs" />
+    <Compile Include="uetaLEGZNjvCXL0kZsU.cs" />
+    <Compile Include="ug2YIyyESnUvnyA7Ykd.cs" />
+    <Compile Include="Us5nyo8yJhKswuocpAX.cs" />
+    <Compile Include="UTUoEskVajcPfb5Ng9N.cs" />
+    <Compile Include="V0jmHby1aH0U30Horhe.cs" />
+    <Compile Include="v6JopW8BRg8hKs5m22t.cs" />
+    <Compile Include="vaJ6TiG60mK48rkJ1w4.cs" />
+    <Compile Include="VDI89Z8eYTstQcmcprs.cs" />
+    <Compile Include="VdSRM3yhCRnjki1pUGQ.cs" />
+    <Compile Include="veEg0WkfO4fCl5tmQQF.cs" />
+    <Compile Include="VIebeSMDp0kkRTHbCc.cs" />
+    <Compile Include="VitR1pcm0SIa2t7r5D.cs" />
+    <Compile Include="VtNVB38JpKC5lN8X24f.cs" />
+    <Compile Include="wDKI46GnSR0DCtTLuQd.cs" />
+    <Compile Include="WqqX9fNDrAFFAVZ5qi.cs" />
+    <Compile Include="WR6PR0k7Jf6c1gBs82j.cs" />
+    <Compile Include="Wrappers\Logger.cs" />
+    <Compile Include="wSunZhGcnZnhKhcgABS.cs" />
+    <Compile Include="wuheVOyavERRWrgHF2a.cs" />
+    <Compile Include="WZedFaJiQANw5LiGpN.cs" />
+    <Compile Include="XFcgEoGeUBkDwV9lYkZ.cs" />
+    <Compile Include="xiEcyyygVeoxM4Gq08g.cs" />
+    <Compile Include="XIwdfEyJRGPiO6MIR37.cs" />
+    <Compile Include="XTTS4ZGgEuKv41HEVgx.cs" />
+    <Compile Include="Y2A4uLkZyJ6vKYPFfYi.cs" />
+    <Compile Include="yIYJilkaVLyMQrPr4Lo.cs" />
+    <Compile Include="yjjkw6kJOIuDZZNU1ty.cs" />
+    <Compile Include="yP5fMZBjTmqZYcit9N.cs" />
+    <Compile Include="zelf6M69pMimavaTIu.cs" />
+    <Compile Include="zLjuTNkipJ5eKCbfCfR.cs" />
+    <Compile Include="zvhtvFTqnly6SIjNjO.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="B7gPWNwo8Dp6ky9rJi.Rl37CjVe8xycjTxdFV" />
+    <EmbeddedResource Include="sMSJsAHBaySJODr4W3.RF8vdSgfS3tILA2PH1" />
+    <EmbeddedResource Include="vq4ehGkYGmaK9uooFQ.rPFfsC8LGcSaZJsZhI" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
