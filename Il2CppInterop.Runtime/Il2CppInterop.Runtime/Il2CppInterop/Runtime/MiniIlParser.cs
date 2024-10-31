@@ -11,150 +11,143 @@ namespace Il2CppInterop.Runtime
 	// Token: 0x02000011 RID: 17
 	internal static class MiniIlParser
 	{
-		// Token: 0x06000202 RID: 514 RVA: 0x0000AD44 File Offset: 0x00008F44
+		// Token: 0x060001E6 RID: 486 RVA: 0x0000A2D4 File Offset: 0x000084D4
 		static MiniIlParser()
 		{
-			int num = 8;
-			int num2 = num;
+			int num = 10;
 			for (;;)
 			{
+				int num2 = num;
 				OpCode value;
 				FieldInfo fieldInfo;
-				FieldInfo[] array;
-				int num3;
-				switch (num2)
+				for (;;)
 				{
-				case 0:
-					goto IL_A9;
-				case 1:
-					goto IL_1DE;
-				case 2:
-					MiniIlParser.PrefixCodes = new HashSet<short>();
-					num2 = 9;
-					if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_d01f42186cf2421f90d71301ed147eb1 == 0)
+					int num3;
+					FieldInfo[] array;
+					switch (num2)
 					{
-						num2 = 16;
+					case 0:
+						goto IL_1A8;
+					case 1:
+						num3 = 0;
+						num2 = 7;
+						if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_92a7d78565474619a2c93ca9aa734139 == 0)
+						{
+							num2 = 2;
+							continue;
+						}
 						continue;
+					case 2:
+						goto IL_1F8;
+					case 3:
+						array = MiniIlParser.FRpsq8t7tQ7fG9ILGBw(MiniIlParser.JGtptatmGCnMbTy6AFG(typeof(OpCodes).TypeHandle, KrP4bwqDeBbRGf2nlBC.cd8qmkqhJV), BindingFlags.Static | BindingFlags.Public, RmVKjrXE2fevnAGrWCM.yNUXB0l0tX);
+						num2 = 1;
+						if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_6776fc69415b4d309be658e7e8ac3a28 != 0)
+						{
+							num2 = 1;
+							continue;
+						}
+						continue;
+					case 4:
+						MiniIlParser.OpCodesMap[RVW04IXG230OvycWW31.muOq5LWqgj(ref value, RVW04IXG230OvycWW31.B3QXr2GB9U)] = value;
+						num2 = 11;
+						if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_6776fc69415b4d309be658e7e8ac3a28 == 0)
+						{
+							num2 = 9;
+							continue;
+						}
+						continue;
+					case 5:
+						goto IL_F8;
+					case 6:
+						break;
+					case 7:
+						goto IL_1E3;
+					case 8:
+						MiniIlParser.PrefixCodes = new HashSet<short>();
+						num2 = 3;
+						continue;
+					case 9:
+						MiniIlParser.GynfCLtulDMmYmjDnjr();
+						num2 = 13;
+						continue;
+					case 10:
+						MiniIlParser.xQU5JVtN1IeAnIT3Nws();
+						num2 = 9;
+						continue;
+					case 11:
+						if ((ushort)RVW04IXG230OvycWW31.muOq5LWqgj(ref value, RVW04IXG230OvycWW31.B3QXr2GB9U) > 255)
+						{
+							num2 = 0;
+							if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_892d6b14d02a4b94bf68e8edfebcd1f5 == 0)
+							{
+								num2 = 0;
+								continue;
+							}
+							continue;
+						}
+						break;
+					case 12:
+						if (!MiniIlParser.p1vRvHtPDqe2R9JGLCG(h7CupmXInC1Jw4Mg12b.muOq5LWqgj(fieldInfo, h7CupmXInC1Jw4Mg12b.JHMXdddJHX), KrP4bwqDeBbRGf2nlBC.muOq5LWqgj(typeof(OpCode).TypeHandle, KrP4bwqDeBbRGf2nlBC.cd8qmkqhJV), CiJop65IqHJCv8k5I3G.Lvb5dhFO0X))
+						{
+							num2 = 2;
+							continue;
+						}
+						break;
+					case 13:
+						MiniIlParser.IKxAbrtD10eVMGJgTFD();
+						num2 = 14;
+						continue;
+					case 14:
+						MiniIlParser.OpCodesMap = new Dictionary<short, OpCode>();
+						num2 = 0;
+						if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_b5c96750853e4496814af588489331dc == 0)
+						{
+							num2 = 8;
+							continue;
+						}
+						continue;
+					case 15:
+						goto IL_1E3;
+					case 16:
+						return;
+					default:
+						goto IL_1A8;
 					}
-					continue;
-				case 3:
-					goto IL_15B;
-				case 4:
-					goto IL_136;
-				case 5:
-					MiniIlParser.tC4PsPxVjonhkHqUgwb();
+					num3++;
 					num2 = 15;
 					continue;
-				case 6:
-					goto IL_1DE;
-				case 7:
-					MiniIlParser.MFNFJXxldHlnmeFrVEZ();
-					num2 = 5;
-					if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_99cea5f9c4c245c2a5f184ab2e57fafc != 0)
-					{
-						num2 = 5;
-						continue;
-					}
-					continue;
-				case 8:
-					MiniIlParser.fsGRkqxgfYALyopulBW();
+					IL_F8:
+					fieldInfo = array[num3];
 					num2 = 7;
-					continue;
-				case 9:
-					if ((ushort)Lj2eUAipi0r5fQRFLXR.i2IAUFsOOC(ref value, Lj2eUAipi0r5fQRFLXR.dOwi47d8tR) <= 255)
-					{
-						num2 = 4;
-						continue;
-					}
-					goto IL_29D;
-				case 10:
-					goto IL_136;
-				case 11:
-					if (MiniIlParser.rpVIcvxv74i8MQln4sJ(MiniIlParser.Kc56bnxm98wLRU3Labq(fieldInfo, MxKuwSiKGgSjAmlPfBS.yd0i5PmBRG), byRw0gA2NyqHkl03ii9.i2IAUFsOOC(typeof(OpCode).TypeHandle, byRw0gA2NyqHkl03ii9.lfRAy1v3an), Q57NvyUKOvY5KovuDBT.G0AU5uNCnx))
+					if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_457365959f004478ad0e311bf72b3912 == 0)
 					{
 						num2 = 12;
 						continue;
 					}
-					break;
-				case 12:
-					goto IL_136;
-				case 13:
-					goto IL_29D;
-				case 14:
-					MiniIlParser.OpCodesMap[Lj2eUAipi0r5fQRFLXR.i2IAUFsOOC(ref value, Lj2eUAipi0r5fQRFLXR.dOwi47d8tR)] = value;
-					num2 = 9;
-					if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_282cf292112a4cf49ec1b8b2e2e7602a == 0)
+					continue;
+					IL_1E3:
+					if (num3 >= array.Length)
 					{
-						num2 = 5;
+						num2 = 16;
 						continue;
 					}
-					continue;
-				case 15:
-					MiniIlParser.OpCodesMap = new Dictionary<short, OpCode>();
-					num2 = 2;
-					continue;
-				case 16:
-					array = MiniIlParser.Qj00gfxXSffvF4Qe4QP(MiniIlParser.Y3YPRWxODSYBogbBnJg(typeof(OpCodes).TypeHandle, byRw0gA2NyqHkl03ii9.lfRAy1v3an), BindingFlags.Static | BindingFlags.Public, dHdpk5i1J82vRy1x65v.YGLiMMBDB9);
-					num2 = 16;
-					if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_bc244a0192c343599cd1cf83671e02ab != 0)
+					goto IL_F8;
+					IL_1A8:
+					MiniIlParser.PrefixCodes.Add((short)((byte)((ushort)RVW04IXG230OvycWW31.muOq5LWqgj(ref value, RVW04IXG230OvycWW31.B3QXr2GB9U) >> 8)));
+					num2 = 0;
+					if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_b1a14f54e3674a8baf7d5ab6ab85764a == 0)
 					{
-						num2 = 18;
-						continue;
+						num2 = 6;
 					}
-					continue;
-				case 17:
-					break;
-				case 18:
-					num3 = 0;
-					num2 = 0;
-					if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_ac98984015b94d6a931f8affda832ec9 == 0)
-					{
-						num2 = 0;
-						continue;
-					}
-					continue;
-				case 19:
-					return;
-				default:
-					goto IL_A9;
 				}
-				value = (OpCode)GYhvdXq2oldr1eq9pKe.i2IAUFsOOC(fieldInfo, null, GYhvdXq2oldr1eq9pKe.gf2qyBPuV5);
-				num2 = 14;
-				continue;
-				IL_136:
-				num3++;
-				num2 = 3;
-				if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_277c9fa6c1da46a98cc2f13643296b8f != 0)
-				{
-					num2 = 0;
-					continue;
-				}
-				continue;
-				IL_15B:
-				if (num3 >= array.Length)
-				{
-					break;
-				}
-				num2 = 1;
-				if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_9eb38fa6f3314175b044ae281856e1bc == 0)
-				{
-					num2 = 0;
-					continue;
-				}
-				continue;
-				IL_A9:
-				goto IL_15B;
-				IL_1DE:
-				fieldInfo = array[num3];
-				num2 = 11;
-				continue;
-				IL_29D:
-				MiniIlParser.PrefixCodes.Add((short)((byte)((ushort)Lj2eUAipi0r5fQRFLXR.i2IAUFsOOC(ref value, Lj2eUAipi0r5fQRFLXR.dOwi47d8tR) >> 8)));
-				num2 = 10;
+				IL_1F8:
+				value = (OpCode)MiniIlParser.IjfltTt4abm0bN5S7gn(fieldInfo, null, VMBgfWADmN0iq7FkmgY.stdAmTGDqJ);
+				num = 4;
 			}
 		}
 
-		// Token: 0x06000203 RID: 515 RVA: 0x0000B038 File Offset: 0x00009238
+		// Token: 0x060001E7 RID: 487 RVA: 0x0000A568 File Offset: 0x00008768
 		public static IEnumerable<ValueTuple<OpCode, long>> Decode(object ilBytes)
 		{
 			DefaultInterpolatedStringHandler defaultInterpolatedStringHandler;
@@ -164,325 +157,359 @@ namespace Il2CppInterop.Runtime
 				for (;;)
 				{
 					int num2 = num;
-					OpCode opCode;
-					int index;
 					for (;;)
 					{
 						int num3;
 						int argLength;
-						short num6;
+						short num4;
+						OpCode opCode;
+						int index;
 						switch (num2)
 						{
-						case 0:
-							goto IL_445;
 						case 1:
-							goto IL_35D;
+							goto IL_5DA;
 						case 2:
-							break;
+							num2 = 19;
+							continue;
 						case 3:
-							goto IL_1B0;
+							goto IL_18B;
 						case 4:
+							gNvtmAqVGiPoaikm7Qe.muOq5LWqgj(ref defaultInterpolatedStringHandler, MiniIlParser.<Decode>d__3.CMNK0hVgcoMs1jbTi35(-588770852 ^ 1913313288 ^ -279653846 ^ <Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_30f9f5d7d3f347ddac00a7ce0719d7cd), gNvtmAqVGiPoaikm7Qe.caZq0g9xkW);
+							num2 = 10;
+							if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_15379a47ca764a4e8e16ceaf4804e136 != 0)
+							{
+								num2 = 10;
+								continue;
+							}
+							continue;
+						case 5:
 							switch (num3)
 							{
 							case 0:
-								break;
+								goto IL_121;
 							case 1:
-								goto IL_5C1;
+								goto IL_470;
 							case 2:
-								goto IL_445;
+								goto IL_1EC;
 							case 3:
 							case 5:
 							case 6:
 							case 7:
-								goto IL_349;
+								goto IL_61D;
 							case 4:
-								goto IL_488;
+								goto IL_3AA;
 							case 8:
-								goto IL_60C;
+								goto IL_15E;
 							default:
-								num2 = 2;
-								if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_9f56599a6a304695b6cfc284bd7d7c9a != 0)
-								{
-									num2 = 9;
-									continue;
-								}
+								num2 = 6;
 								continue;
 							}
 							break;
-						case 5:
-							defaultInterpolatedStringHandler.AppendFormatted<int>(argLength);
-							num2 = 29;
-							continue;
 						case 6:
-							goto IL_405;
+							goto IL_61D;
 						case 7:
-							goto IL_5A4;
+							goto IL_658;
 						case 8:
-							num2 = 4;
-							if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_74d61b1611df4615bd4df289712ea178 != 0)
+							num3 = argLength;
+							num2 = 5;
+							continue;
+						case 9:
+							num2 = 9;
+							if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_da5aa2d475094b06a3df3cc53bc85956 == 0)
 							{
-								num2 = 21;
+								num2 = 31;
 								continue;
 							}
 							continue;
-						case 9:
-							goto IL_349;
 						case 10:
-							goto IL_60C;
+							defaultInterpolatedStringHandler.AppendFormatted<short>(num4);
+							num2 = 40;
+							continue;
 						case 11:
-							goto IL_1EE;
+							goto IL_25E;
 						case 12:
-							goto IL_32C;
+							goto IL_470;
 						case 13:
-							goto IL_5C1;
+							goto IL_658;
 						case 14:
-							QG4ZQ9APVeRA5A968ba.i2IAUFsOOC(ref defaultInterpolatedStringHandler, MiniIlParser.<Decode>d__3.Yo3aIhkcHFY2blXu5JA(-263637932 ^ -1485015930 ^ <Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_2210d7ca22c24335b32d80ca3ef84b8e), QG4ZQ9APVeRA5A968ba.WfgAdlCqZw);
-							num2 = 3;
-							continue;
+							goto IL_339;
 						case 15:
-							goto IL_488;
+							goto IL_15E;
 						case 16:
-							num2 = 37;
-							continue;
+							goto IL_286;
 						case 17:
 						{
-							int num4;
-							switch (num4)
+							int num5;
+							switch (num5)
 							{
 							case 0:
-								goto IL_35F;
+								num2 = 21;
+								if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_faca03c2e5084297b7a5d894ac66fa57 == 0)
+								{
+									num2 = 36;
+									continue;
+								}
+								continue;
 							case 1:
-								num2 = 28;
+								num2 = 13;
+								if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_7ac65c3fd4cb4629a8b893be89aed17d == 0)
+								{
+									num2 = 6;
+									continue;
+								}
 								continue;
 							case 2:
-								num2 = 6;
-								if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_b4e45528af4644e9b080e05d5ff6ef54 == 0)
+								num2 = 22;
+								if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_791a252a9221476faad2c6d41e84a167 == 0)
 								{
-									num2 = 20;
+									num2 = 19;
 									continue;
 								}
 								continue;
 							case 3:
-								num2 = 36;
+								num2 = 7;
+								if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_be7c67937fc746d2ad6f8cd47b555de7 == 0)
+								{
+									num2 = 6;
+									continue;
+								}
 								continue;
 							case 4:
-								num2 = 7;
-								continue;
-							case 5:
-								num2 = 5;
-								if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_b3f1fcfa11104bd49a7f00386d38b4f4 != 0)
+								num2 = 30;
+								if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_5395ed2b7ead4e349835ba3f56e39138 == 0)
 								{
 									num2 = 39;
 									continue;
 								}
 								continue;
+							case 5:
+								goto IL_2BA;
 							default:
-								num2 = 1;
-								if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_6926da1cf80047d3a6f0516668d22380 == 0)
-								{
-									num2 = 0;
-									continue;
-								}
+								num2 = 33;
 								continue;
 							}
 							break;
 						}
 						case 18:
 						{
-							int num5;
-							int num4 = num5;
+							int num6;
+							int num5 = num6;
 							num2 = 17;
 							continue;
 						}
 						case 19:
-							QG4ZQ9APVeRA5A968ba.i2IAUFsOOC(ref defaultInterpolatedStringHandler, hIDAYxH6DWLHIthQgC.gSCeTtiku(-1887629927 ^ -1987633624 ^ <Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_64afbb57bf68458f80a150c34cb4e04c), QG4ZQ9APVeRA5A968ba.WfgAdlCqZw);
-							num2 = 24;
-							continue;
+							goto IL_4B9;
 						case 20:
-							goto IL_5A4;
+							num2 = 3;
+							if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_3b7b1d35d0b845dea3db033f6ba5ccb5 == 0)
+							{
+								num2 = 1;
+								continue;
+							}
+							continue;
 						case 21:
-							goto IL_18B;
-						case 22:
 							argLength = MiniIlParser.GetOperandSize(opCode);
-							num2 = 19;
-							if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_22d16b8eb84d4725aef9f7a9d2f68925 == 0)
+							num2 = 6;
+							if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_2a3cb7fb82fa47c39f707a2393c1a340 != 0)
 							{
-								num2 = 41;
+								num2 = 8;
 								continue;
 							}
 							continue;
+						case 22:
+							goto IL_658;
 						case 23:
-							num2 = 30;
-							continue;
-						case 24:
-							defaultInterpolatedStringHandler.AppendFormatted<short>(num6);
-							num2 = 14;
-							continue;
-						case 25:
-							goto IL_4FE;
-						case 26:
-							QG4ZQ9APVeRA5A968ba.i2IAUFsOOC(ref defaultInterpolatedStringHandler, hIDAYxH6DWLHIthQgC.gSCeTtiku(-54719256 ^ -1431461980 ^ <Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_806dbdb7f5194c2fa0c07a915df13fc8), QG4ZQ9APVeRA5A968ba.WfgAdlCqZw);
-							num2 = 5;
-							continue;
-						case 27:
-							goto IL_39C;
-						case 28:
-							goto IL_5A4;
-						case 29:
-							goto IL_592;
-						case 30:
-							goto IL_374;
-						case 31:
-							goto IL_4B6;
-						case 32:
-							goto IL_661;
-						case 33:
-							if (!MiniIlParser.PrefixCodes.Contains(num6))
-							{
-								num2 = 35;
-								continue;
-							}
-							goto IL_4FE;
-						case 34:
-							index = 0;
-							num2 = 0;
-							if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_61a3825996b24609815f6b482bf680d9 == 0)
-							{
-								num2 = 12;
-								continue;
-							}
-							continue;
-						case 35:
-							goto IL_661;
-						case 36:
-							goto IL_5A4;
-						case 37:
-							goto IL_57F;
-						case 38:
-							num2 = 42;
-							continue;
-						case 39:
-							goto IL_5A4;
-						case 40:
-							goto IL_349;
-						case 41:
-							num3 = argLength;
-							num2 = 4;
-							continue;
-						case 42:
-							goto IL_41D;
-						case 43:
-							goto IL_32C;
-						case 44:
-							num2 = 22;
-							if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_9f56599a6a304695b6cfc284bd7d7c9a != 0)
-							{
-								num2 = 31;
-								continue;
-							}
-							continue;
-						default:
-							goto IL_445;
-						}
-						yield return new ValueTuple<OpCode, long>(opCode, 0L);
-						num2 = 44;
-						continue;
-						IL_32C:
-						if (index >= ilBytes.Length)
 						{
-							num2 = 11;
+							short num7 = (short)((ushort)(num4 << 8));
+							num3 = index;
+							index = num3 + 1;
+							num4 = (num7 | ilBytes[num3]);
+							num2 = 29;
 							continue;
 						}
-						goto IL_39C;
-						IL_349:
-						defaultInterpolatedStringHandler = new DefaultInterpolatedStringHandler(35, 1);
+						case 24:
+							goto IL_3AA;
+						case 25:
+							goto IL_1B3;
+						case 26:
+							if (MiniIlParser.PrefixCodes.Contains(num4))
+							{
+								num2 = 23;
+								continue;
+							}
+							goto IL_21A;
+						case 27:
+							defaultInterpolatedStringHandler.AppendFormatted<int>(argLength);
+							num2 = 32;
+							if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_575f8bd7bfb04e37800ff009689b44f6 == 0)
+							{
+								num2 = 8;
+								continue;
+							}
+							continue;
+						case 28:
+							num2 = 42;
+							if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_7ac65c3fd4cb4629a8b893be89aed17d == 0)
+							{
+								num2 = 29;
+								continue;
+							}
+							continue;
+						case 29:
+							goto IL_21A;
+						case 30:
+							goto IL_658;
+						case 31:
+							goto IL_6DB;
+						case 32:
+							goto IL_646;
+						case 33:
+							goto IL_F9;
+						case 34:
+							goto IL_1EC;
+						case 35:
+							goto IL_61D;
+						case 36:
+							index = 0;
+							num2 = 16;
+							continue;
+						case 37:
+							gNvtmAqVGiPoaikm7Qe.muOq5LWqgj(ref defaultInterpolatedStringHandler, MiniIlParser.<Decode>d__3.CMNK0hVgcoMs1jbTi35(-357604844 ^ -738949505 ^ <Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_7fef7bb77728417ab4965dd0775b5899), gNvtmAqVGiPoaikm7Qe.caZq0g9xkW);
+							num2 = 21;
+							if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_15379a47ca764a4e8e16ceaf4804e136 != 0)
+							{
+								num2 = 27;
+								continue;
+							}
+							continue;
+						case 38:
+							goto IL_69D;
+						case 39:
+							goto IL_658;
+						case 40:
+							gNvtmAqVGiPoaikm7Qe.muOq5LWqgj(ref defaultInterpolatedStringHandler, MiniIlParser.<Decode>d__3.CMNK0hVgcoMs1jbTi35(--1616386354 ^ 520840674 ^ <Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_6d9238cad9434518b97d223669b8fe50), gNvtmAqVGiPoaikm7Qe.caZq0g9xkW);
+							num2 = 1;
+							if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_b329e831708e4d29ae561982d3d8c1c1 != 0)
+							{
+								num2 = 38;
+								continue;
+							}
+							continue;
+						case 41:
+							goto IL_286;
+						case 42:
+							goto IL_2B8;
+						case 43:
+							goto IL_121;
+						}
+						goto Block_0;
+						IL_121:
+						yield return new ValueTuple<OpCode, long>(opCode, 0L);
+						num2 = 1;
+						if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_43cc35cb254148318955c7f83ade60f1 == 0)
+						{
+							num2 = 1;
+							continue;
+						}
+						continue;
+						IL_15E:
+						yield return new ValueTuple<OpCode, long>(opCode, MiniIlParser.<Decode>d__3.PpldPlVUVeXZHxuIip7(ilBytes, index, nyfbemkXiQhASMacFGk.OM2kcNm93I));
+						num2 = 28;
+						continue;
+						IL_1B3:
+						num3 = index;
+						index = num3 + 1;
+						num4 = ilBytes[num3];
 						num2 = 26;
 						continue;
-						IL_39C:
-						num3 = index;
-						index = num3 + 1;
-						num6 = ilBytes[num3];
+						IL_286:
+						if (index < ilBytes.Length)
+						{
+							goto IL_1B3;
+						}
+						num2 = 0;
+						if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_8160363759e64728b1ce193157380515 == 0)
+						{
+							num2 = 0;
+							continue;
+						}
+						continue;
+						IL_1EC:
+						yield return new ValueTuple<OpCode, long>(opCode, (long)MiniIlParser.<Decode>d__3.ba6GBPVoeD3MNiNJvru(ilBytes, index, vg7o2GkqOmZyuZ8g8TW.lnKk5P6tx0));
+						num2 = 2;
+						continue;
+						IL_21A:
+						if (!MiniIlParser.OpCodesMap.TryGetValue(num4, out opCode))
+						{
+							goto IL_339;
+						}
 						num2 = 21;
-						if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_570d4e075bf443fcbaca8db32e007291 == 0)
+						if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_734db430e12345289ec4ae0afacc44df != 0)
 						{
-							num2 = 33;
+							num2 = 19;
 							continue;
 						}
 						continue;
-						IL_445:
-						yield return new ValueTuple<OpCode, long>(opCode, (long)bZPmHMGaZNKjR0e4Wc1.i2IAUFsOOC(ilBytes, index, bZPmHMGaZNKjR0e4Wc1.r4JGCYfj0x));
-						num2 = 16;
-						if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_feee416e61094c739ba253659ac2e257 != 0)
-						{
-							num2 = 12;
-							continue;
-						}
+						IL_3AA:
+						yield return new ValueTuple<OpCode, long>(opCode, (long)RQ7TILkA3Fr1HTH9pO1.muOq5LWqgj(ilBytes, index, RQ7TILkA3Fr1HTH9pO1.AX0kL4vJCA));
+						num2 = 20;
 						continue;
-						IL_488:
-						yield return new ValueTuple<OpCode, long>(opCode, (long)MiniIlParser.<Decode>d__3.Orkngkk6nc1fy7SFkc3(ilBytes, index, bsXHr7GtCk6qkQSQpRs.E5ZGxUrJDE));
-						num2 = 8;
-						continue;
-						IL_4FE:
-						short num7 = (short)((ushort)(num6 << 8));
-						num3 = index;
-						index = num3 + 1;
-						num6 = (num7 | ilBytes[num3]);
-						num2 = 32;
-						if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_c2ad52141772446383547acade021f9a == 0)
-						{
-							num2 = 18;
-							continue;
-						}
-						continue;
-						IL_5A4:
-						index += argLength;
-						num2 = 43;
-						continue;
-						IL_5C1:
+						IL_470:
 						yield return new ValueTuple<OpCode, long>(opCode, (long)ilBytes[index]);
-						num2 = 10;
-						if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_40875ab50e1c43f7bf4d96946e4523cb != 0)
+						num2 = 9;
+						if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_ff3063f9530e4a429cd27a548ab9d19d != 0)
 						{
-							num2 = 23;
+							num2 = 5;
 							continue;
 						}
 						continue;
-						IL_661:
-						if (!MiniIlParser.OpCodesMap.TryGetValue(num6, out opCode))
+						IL_61D:
+						defaultInterpolatedStringHandler = new DefaultInterpolatedStringHandler(35, 1);
+						num2 = 37;
+						if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_bac7568f2bc04130b6b980225b2cc409 == 0)
 						{
-							goto IL_405;
+							num2 = 8;
+							continue;
 						}
-						num2 = 22;
+						continue;
+						IL_658:
+						index += argLength;
+						num2 = 41;
+						if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_5b9b6cd6cbc040a7be58cff054f9e843 == 0)
+						{
+							num2 = 37;
+						}
 					}
-					IL_35F:
-					num = 34;
+					IL_2BA:
+					num = 30;
 					continue;
-					IL_405:
+					IL_339:
 					defaultInterpolatedStringHandler = new DefaultInterpolatedStringHandler(27, 1);
-					num = 19;
+					num = 4;
 					continue;
-					IL_60C:
-					yield return new ValueTuple<OpCode, long>(opCode, xfUSUtGhyN6np19de3k.i2IAUFsOOC(ilBytes, index, xfUSUtGhyN6np19de3k.fqkG8Uh28h));
-					num = 38;
+					IL_5DA:
+					num = 11;
 				}
 				IL_18B:
-				IL_374:
-				IL_41D:
-				IL_4B6:
-				IL_57F:;
+				IL_25E:
+				IL_2B8:
+				IL_4B9:
+				IL_6DB:;
 			}
-			IL_1B0:
-			throw new NotSupportedException(JERLY8AwDDHFUcct031.i2IAUFsOOC(ref defaultInterpolatedStringHandler, JERLY8AwDDHFUcct031.BtbAeLEPuL));
-			IL_1EE:
+			Block_0:
+			goto IL_404;
+			IL_F9:
 			yield break;
-			IL_35D:
+			IL_404:
 			yield break;
-			IL_592:
-			throw new NotSupportedException(JERLY8AwDDHFUcct031.i2IAUFsOOC(ref defaultInterpolatedStringHandler, JERLY8AwDDHFUcct031.BtbAeLEPuL));
+			IL_646:
+			throw new NotSupportedException(AB0cwrqss60xewxtTc1.muOq5LWqgj(ref defaultInterpolatedStringHandler, AB0cwrqss60xewxtTc1.IlIqSuRBy7));
+			IL_69D:
+			throw new NotSupportedException(AB0cwrqss60xewxtTc1.muOq5LWqgj(ref defaultInterpolatedStringHandler, AB0cwrqss60xewxtTc1.IlIqSuRBy7));
 			yield break;
 		}
 
-		// Token: 0x06000204 RID: 516 RVA: 0x0000B050 File Offset: 0x00009250
+		// Token: 0x060001E8 RID: 488 RVA: 0x0000A580 File Offset: 0x00008780
 		private static int GetOperandSize(OpCode opCode)
 		{
 			int num = 2;
@@ -506,7 +533,7 @@ namespace Il2CppInterop.Runtime
 					case OperandType.InlineTok:
 					case OperandType.InlineType:
 					case OperandType.ShortInlineR:
-						break;
+						return 4;
 					case OperandType.InlineI8:
 					case OperandType.InlineR:
 						return 8;
@@ -514,7 +541,7 @@ namespace Il2CppInterop.Runtime
 						return 0;
 					case OperandType.InlinePhi:
 					case (OperandType)8:
-						goto IL_EB;
+						break;
 					case OperandType.InlineVar:
 						return 2;
 					case OperandType.ShortInlineBrTarget:
@@ -522,16 +549,21 @@ namespace Il2CppInterop.Runtime
 					case OperandType.ShortInlineVar:
 						return 1;
 					default:
-						num2 = 3;
+						num2 = 0;
+						if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_68cafcd7c4d444e39c183fde29795ee9 == 0)
+						{
+							num2 = 0;
+							continue;
+						}
 						continue;
 					}
 					break;
 				}
 				case 2:
 				{
-					OperandType operandType = Jr5LvFiz2HGZXmX3HC8.i2IAUFsOOC(ref opCode, Jr5LvFiz2HGZXmX3HC8.wnBIHNTpU4);
-					num2 = 1;
-					if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_ce81190098cb44f1b9a77ca4822d7770 == 0)
+					OperandType operandType = Qmu3YUXTbq1Hc7qDPxS.muOq5LWqgj(ref opCode, Qmu3YUXTbq1Hc7qDPxS.EpIXg7lXMJ);
+					num2 = 0;
+					if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_3bc41e98a8e849aea1e93dfe0f04c43b == 0)
 					{
 						num2 = 1;
 						continue;
@@ -539,68 +571,67 @@ namespace Il2CppInterop.Runtime
 					continue;
 				}
 				case 3:
-					goto IL_BD;
+					return 4;
 				}
 				break;
 			}
-			return 4;
-			IL_BD:
-			IL_EB:
+			IL_6A:
 			throw new ArgumentOutOfRangeException();
+			goto IL_6A;
 		}
 
-		// Token: 0x06000205 RID: 517 RVA: 0x0000B150 File Offset: 0x00009350
-		internal static void fsGRkqxgfYALyopulBW()
+		// Token: 0x060001E9 RID: 489 RVA: 0x0000A680 File Offset: 0x00008880
+		internal static void xQU5JVtN1IeAnIT3Nws()
 		{
 			hIDAYxH6DWLHIthQgC.zSLipEDdx();
 		}
 
-		// Token: 0x06000206 RID: 518 RVA: 0x0000B160 File Offset: 0x00009360
-		internal static void MFNFJXxldHlnmeFrVEZ()
+		// Token: 0x060001EA RID: 490 RVA: 0x0000A690 File Offset: 0x00008890
+		internal static void GynfCLtulDMmYmjDnjr()
 		{
 			hIDAYxH6DWLHIthQgC.oDuBOTgYK();
 		}
 
-		// Token: 0x06000207 RID: 519 RVA: 0x0000B170 File Offset: 0x00009370
-		internal static void tC4PsPxVjonhkHqUgwb()
+		// Token: 0x060001EB RID: 491 RVA: 0x0000A6A0 File Offset: 0x000088A0
+		internal static void IKxAbrtD10eVMGJgTFD()
 		{
-			nHwRpygmi6xxZAssJn.MZ6my7dBdJ();
+			nHwRpygmi6xxZAssJn.EmlEpH4Phw();
 		}
 
-		// Token: 0x06000208 RID: 520 RVA: 0x0000B180 File Offset: 0x00009380
-		internal static Type Y3YPRWxODSYBogbBnJg(RuntimeTypeHandle A_0, object A_1)
+		// Token: 0x060001EC RID: 492 RVA: 0x0000A6B0 File Offset: 0x000088B0
+		internal static Type JGtptatmGCnMbTy6AFG(RuntimeTypeHandle A_0, object A_1)
 		{
-			return byRw0gA2NyqHkl03ii9.i2IAUFsOOC(A_0, A_1);
+			return KrP4bwqDeBbRGf2nlBC.muOq5LWqgj(A_0, A_1);
 		}
 
-		// Token: 0x06000209 RID: 521 RVA: 0x0000B198 File Offset: 0x00009398
-		internal static object Qj00gfxXSffvF4Qe4QP(object A_0, BindingFlags A_1, object A_2)
+		// Token: 0x060001ED RID: 493 RVA: 0x0000A6C8 File Offset: 0x000088C8
+		internal static object FRpsq8t7tQ7fG9ILGBw(object A_0, BindingFlags A_1, object A_2)
 		{
-			return dHdpk5i1J82vRy1x65v.i2IAUFsOOC(A_0, A_1, A_2);
+			return RmVKjrXE2fevnAGrWCM.muOq5LWqgj(A_0, A_1, A_2);
 		}
 
-		// Token: 0x0600020A RID: 522 RVA: 0x0000B1B4 File Offset: 0x000093B4
-		internal static Type Kc56bnxm98wLRU3Labq(object A_0, object A_1)
+		// Token: 0x060001EE RID: 494 RVA: 0x0000A6E4 File Offset: 0x000088E4
+		internal static bool p1vRvHtPDqe2R9JGLCG(Type A_0, Type A_1, object A_2)
 		{
-			return MxKuwSiKGgSjAmlPfBS.i2IAUFsOOC(A_0, A_1);
+			return CiJop65IqHJCv8k5I3G.muOq5LWqgj(A_0, A_1, A_2);
 		}
 
-		// Token: 0x0600020B RID: 523 RVA: 0x0000B1CC File Offset: 0x000093CC
-		internal static bool rpVIcvxv74i8MQln4sJ(Type A_0, Type A_1, object A_2)
+		// Token: 0x060001EF RID: 495 RVA: 0x0000A700 File Offset: 0x00008900
+		internal static object IjfltTt4abm0bN5S7gn(object A_0, object A_1, object A_2)
 		{
-			return Q57NvyUKOvY5KovuDBT.i2IAUFsOOC(A_0, A_1, A_2);
+			return VMBgfWADmN0iq7FkmgY.muOq5LWqgj(A_0, A_1, A_2);
 		}
 
-		// Token: 0x0600020C RID: 524 RVA: 0x0000B1E8 File Offset: 0x000093E8
-		internal static bool UtS0Ipxy4oo8NWc1TwN()
+		// Token: 0x060001F0 RID: 496 RVA: 0x0000A71C File Offset: 0x0000891C
+		internal static bool TkOjyXtsDiEQmDHhgk2()
 		{
-			return MiniIlParser.P0bEAXx2moc44yRNWbK == null;
+			return MiniIlParser.tCmCF8t068Vb1bDEVP4 == null;
 		}
 
-		// Token: 0x0600020D RID: 525 RVA: 0x0000B1FC File Offset: 0x000093FC
-		internal static MiniIlParser S4NmQOxSrUcjDKy02yw()
+		// Token: 0x060001F1 RID: 497 RVA: 0x0000A730 File Offset: 0x00008930
+		internal static MiniIlParser yvO4tEtSyMxJLhq0Ov1()
 		{
-			return MiniIlParser.P0bEAXx2moc44yRNWbK;
+			return MiniIlParser.tCmCF8t068Vb1bDEVP4;
 		}
 
 		// Token: 0x0400002C RID: 44
@@ -610,6 +641,6 @@ namespace Il2CppInterop.Runtime
 		private static readonly HashSet<short> PrefixCodes;
 
 		// Token: 0x0400002E RID: 46
-		internal static object P0bEAXx2moc44yRNWbK;
+		private static object tCmCF8t068Vb1bDEVP4;
 	}
 }

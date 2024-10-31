@@ -10,254 +10,249 @@ namespace CoreRuntime.Manager
 	// Token: 0x02000008 RID: 8
 	internal class CoroutineWrap
 	{
-		// Token: 0x06000026 RID: 38 RVA: 0x000036F4 File Offset: 0x000018F4
+		// Token: 0x06000026 RID: 38 RVA: 0x00003690 File Offset: 0x00001890
 		public CoroutineWrap(IEnumerator enu)
 		{
 			hIDAYxH6DWLHIthQgC.oDuBOTgYK();
-			nHwRpygmi6xxZAssJn.UoDdI5CpWg();
-			this._startTime = UTUoEskVajcPfb5Ng9N.Vkgsu7Vsh(UTUoEskVajcPfb5Ng9N.xx2kHy2Ewn);
+			nHwRpygmi6xxZAssJn.dxI7NE9hn1();
+			this._startTime = nEkMOy37e7TSknHXuko.k0sBmDS26(nEkMOy37e7TSknHXuko.C2Y36QOxIX);
 			base..ctor();
-			int num = 0;
-			if (<Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_ed6240c80c8c44b49bedc1856b4b4eae != 0)
+			int num = 1;
+			if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_dcf84e8319244749981a1c1598c3e1ed != 0)
 			{
-				num = 0;
+				num = 1;
 			}
 			for (;;)
 			{
 				switch (num)
 				{
-				case 1:
+				default:
 					return;
-				}
-				this._coroutine = enu;
-				num = 0;
-				if (<Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_4ef4e6bb6996425889844972b794e594 != 0)
-				{
-					num = 1;
+				case 1:
+					this._coroutine = enu;
+					num = 0;
+					if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_e30fcbaf4c4a4253bdef4e5f67f857db != 0)
+					{
+						num = 0;
+					}
+					break;
 				}
 			}
 		}
 
-		// Token: 0x06000027 RID: 39 RVA: 0x00003790 File Offset: 0x00001990
+		// Token: 0x06000027 RID: 39 RVA: 0x0000372C File Offset: 0x0000192C
 		public bool MoveNext()
 		{
-			int num = 3;
+			int num = 19;
+			int num2 = num;
 			for (;;)
 			{
-				int num2 = num;
-				for (;;)
+				object obj;
+				WaitUntil waitUntil;
+				WaitWhile waitWhile;
+				switch (num2)
 				{
-					object obj;
-					WaitUntil waitUntil;
-					switch (num2)
+				case 1:
+					if (obj is WaitForFixedUpdate)
 					{
-					case 1:
+						return true;
+					}
+					num2 = 21;
+					if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_fc674978ce33427da1fe04b9f2a2bf37 == 0)
 					{
-						WaitWhile waitWhile;
-						this._waiting = yjjkw6kJOIuDZZNU1ty.Vkgsu7Vsh(waitWhile, yjjkw6kJOIuDZZNU1ty.cIXkCUiM97);
-						num2 = 17;
-						if (<Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_33a8f57c176f4d198f1febe007b7e26a == 0)
-						{
-							num2 = 15;
-							continue;
-						}
+						num2 = 25;
 						continue;
 					}
-					case 2:
-						if (this._waiting)
-						{
-							num2 = 0;
-							if (<Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_ee3ed32d72034860b0af9b26a15650c0 != 0)
-							{
-								num2 = 0;
-								continue;
-							}
-							continue;
-						}
-						else
-						{
-							if (!jFF7XLkgd8gIZkfLA0G.Vkgsu7Vsh(this._coroutine, jFF7XLkgd8gIZkfLA0G.rhmk9h6Nw0))
-							{
-								num2 = 21;
-								continue;
-							}
-							goto IL_2FD;
-						}
-						break;
-					case 3:
-						if (UTUoEskVajcPfb5Ng9N.Vkgsu7Vsh(UTUoEskVajcPfb5Ng9N.xx2kHy2Ewn) - this._startTime >= this._waitTime)
-						{
-							num2 = 2;
-							if (<Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_1b4f5aa4a1234ebea96b31189690ee77 != 0)
-							{
-								num2 = 2;
-								continue;
-							}
-							continue;
-						}
-						break;
-					case 4:
-					{
-						WaitForSecondsRealtime waitForSecondsRealtime = obj as WaitForSecondsRealtime;
-						num2 = 6;
-						continue;
-					}
-					case 5:
-						if (!(obj is WaitForFixedUpdate))
-						{
-							num2 = 25;
-							continue;
-						}
-						return true;
-					case 6:
-					{
-						WaitForSecondsRealtime waitForSecondsRealtime;
-						if (waitForSecondsRealtime == null)
-						{
-							num2 = 12;
-							continue;
-						}
-						this._waiting = yjjkw6kJOIuDZZNU1ty.Vkgsu7Vsh(waitForSecondsRealtime, yjjkw6kJOIuDZZNU1ty.cIXkCUiM97);
-						num2 = 24;
-						continue;
-					}
-					case 7:
-						goto IL_2FD;
-					case 8:
-						return true;
-					case 9:
-					{
-						WaitForSeconds waitForSeconds;
-						if (waitForSeconds == null)
-						{
-							num2 = 4;
-							continue;
-						}
-						goto IL_239;
-					}
-					case 10:
-						if (waitUntil == null)
-						{
-							goto Block_11;
-						}
-						this._waiting = yjjkw6kJOIuDZZNU1ty.Vkgsu7Vsh(waitUntil, yjjkw6kJOIuDZZNU1ty.cIXkCUiM97);
-						num2 = 18;
-						if (<Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_14220072943b47f99fd6e94ff4c63aa5 != 0)
-						{
-							num2 = 9;
-							continue;
-						}
-						continue;
-					case 11:
-					{
-						WaitForSeconds waitForSeconds = obj as WaitForSeconds;
-						num2 = 9;
-						if (<Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_ac5a396fb1314f03b00a1c1c1fb25832 != 0)
-						{
-							num2 = 6;
-							continue;
-						}
-						continue;
-					}
-					case 12:
-						if (!(obj is WaitForEndOfFrame))
-						{
-							num2 = 5;
-							continue;
-						}
-						return true;
-					case 13:
-						goto IL_239;
-					case 14:
-						goto IL_2B1;
-					case 15:
-					{
-						WaitWhile waitWhile = obj as WaitWhile;
-						num2 = 19;
-						continue;
-					}
-					case 16:
-						return true;
-					case 17:
-						return true;
-					case 18:
-						return true;
-					case 19:
-					{
-						WaitWhile waitWhile;
-						if (waitWhile == null)
-						{
-							goto IL_2A2;
-						}
-						num2 = 1;
-						if (<Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_a9e6643767b24faeb22874c272d31c0c == 0)
-						{
-							num2 = 0;
-							continue;
-						}
-						continue;
-					}
-					case 20:
-					{
-						WaitForSeconds waitForSeconds;
-						this._waitTime = RPquxQkcGL8Nqig1Pfq.Vkgsu7Vsh(waitForSeconds, RPquxQkcGL8Nqig1Pfq.wiekA7ZjcL);
-						num2 = 8;
-						continue;
-					}
-					case 21:
-						return false;
-					case 22:
-						goto IL_2A2;
-					case 23:
-						return true;
-					case 24:
-						return true;
-					case 25:
-						if (obj == null)
-						{
-							num2 = 23;
-							continue;
-						}
-						goto IL_2B1;
-					}
-					goto Block_1;
-					IL_239:
-					this._startTime = UTUoEskVajcPfb5Ng9N.Vkgsu7Vsh(UTUoEskVajcPfb5Ng9N.xx2kHy2Ewn);
-					num2 = 20;
 					continue;
-					IL_2A2:
-					Logger.LogWarning(hIDAYxH6DWLHIthQgC.gSCeTtiku(-2085063068 ^ -675752628 ^ <Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_434d3901588e427a807b42f125cc2ce3));
+				case 2:
+					return false;
+				case 3:
+					this._waiting = Wut4Wc30Hs6Vu210dwC.k0sBmDS26(waitUntil, Wut4Wc30Hs6Vu210dwC.d5B3ynk7gd);
 					num2 = 16;
 					continue;
-					IL_2B1:
-					waitUntil = (obj as WaitUntil);
+				case 4:
+					return true;
+				case 5:
+					goto IL_213;
+				case 6:
+					goto IL_88;
+				case 7:
+					if (obj is WaitForEndOfFrame)
+					{
+						return true;
+					}
+					num2 = 1;
+					if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_0119f60806a248b6919db0af670ae27a == 0)
+					{
+						num2 = 0;
+						continue;
+					}
+					continue;
+				case 8:
+				{
+					WaitForSeconds waitForSeconds;
+					this._waitTime = ikh8c53u9BttL2UbSXA.k0sBmDS26(waitForSeconds, ikh8c53u9BttL2UbSXA.P1T3BhnM77);
 					num2 = 10;
 					continue;
-					IL_2FD:
-					obj = ARXvvSkh2rgmNCjwQVn.Vkgsu7Vsh(this._coroutine, ARXvvSkh2rgmNCjwQVn.Iteks3MMEv);
-					num2 = 11;
-					if (<Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_c562bff83da649f1af22aec8f521fe1d == 0)
-					{
-						num2 = 11;
-					}
 				}
-				Block_11:
-				num = 15;
+				case 9:
+					goto IL_D4;
+				case 10:
+					return true;
+				case 11:
+					goto IL_1D5;
+				case 12:
+				{
+					WaitForSecondsRealtime waitForSecondsRealtime = obj as WaitForSecondsRealtime;
+					num2 = 17;
+					continue;
+				}
+				case 13:
+					goto IL_15C;
+				case 14:
+					return true;
+				case 15:
+					if (waitUntil != null)
+					{
+						num2 = 3;
+						continue;
+					}
+					goto IL_213;
+				case 16:
+					return true;
+				case 17:
+				{
+					WaitForSecondsRealtime waitForSecondsRealtime;
+					if (waitForSecondsRealtime == null)
+					{
+						num2 = 7;
+						continue;
+					}
+					this._waiting = Wut4Wc30Hs6Vu210dwC.k0sBmDS26(waitForSecondsRealtime, Wut4Wc30Hs6Vu210dwC.d5B3ynk7gd);
+					num2 = 26;
+					if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_489417e8e717471992bde0e896149577 == 0)
+					{
+						num2 = 13;
+						continue;
+					}
+					continue;
+				}
+				case 18:
+					if (this._waiting)
+					{
+						num2 = 22;
+						continue;
+					}
+					if (TvAHxl3W9CLFHJJijmf.k0sBmDS26(this._coroutine, TvAHxl3W9CLFHJJijmf.w3t3eyYsaj))
+					{
+						goto IL_1D5;
+					}
+					num2 = 2;
+					if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_9ae8a86cc9594ac288e5d2da6f82339f == 0)
+					{
+						num2 = 1;
+						continue;
+					}
+					continue;
+				case 19:
+					if (nEkMOy37e7TSknHXuko.k0sBmDS26(nEkMOy37e7TSknHXuko.C2Y36QOxIX) - this._startTime >= this._waitTime)
+					{
+						num2 = 18;
+						continue;
+					}
+					return true;
+				case 20:
+				{
+					WaitForSeconds waitForSeconds = obj as WaitForSeconds;
+					num2 = 24;
+					continue;
+				}
+				case 21:
+					if (waitWhile != null)
+					{
+						num2 = 23;
+						continue;
+					}
+					goto IL_88;
+				case 22:
+					return true;
+				case 23:
+					this._waiting = Wut4Wc30Hs6Vu210dwC.k0sBmDS26(waitWhile, Wut4Wc30Hs6Vu210dwC.d5B3ynk7gd);
+					num2 = 4;
+					continue;
+				case 24:
+				{
+					WaitForSeconds waitForSeconds;
+					if (waitForSeconds == null)
+					{
+						num2 = 12;
+						continue;
+					}
+					goto IL_15C;
+				}
+				case 25:
+					if (obj != null)
+					{
+						goto IL_D4;
+					}
+					num2 = 0;
+					if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_a95e338918c04556aaf47418274cca2d == 0)
+					{
+						num2 = 0;
+						continue;
+					}
+					continue;
+				case 26:
+					return true;
+				}
+				break;
+				IL_88:
+				Logger.LogWarning(hIDAYxH6DWLHIthQgC.gSCeTtiku(-295046568 ^ -1841237901 ^ <Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_a3ef764822b249b0bdf61221ef3b4538));
+				num2 = 14;
+				if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_43b596a520f548c6950ee674fb9d84d8 == 0)
+				{
+					num2 = 0;
+					continue;
+				}
+				continue;
+				IL_D4:
+				waitUntil = (obj as WaitUntil);
+				num2 = 10;
+				if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_d77a69ee63374251a67c9d6fd02df546 == 0)
+				{
+					num2 = 15;
+					continue;
+				}
+				continue;
+				IL_15C:
+				this._startTime = nEkMOy37e7TSknHXuko.k0sBmDS26(nEkMOy37e7TSknHXuko.C2Y36QOxIX);
+				num2 = 8;
+				continue;
+				IL_1D5:
+				obj = P2OVYx3GkM6Tx8T3aWD.k0sBmDS26(this._coroutine, P2OVYx3GkM6Tx8T3aWD.j5e3iNepc8);
+				num2 = 20;
+				continue;
+				IL_213:
+				waitWhile = (obj as WaitWhile);
+				num2 = 9;
+				if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_19219e20007142d38523f07c38cd8ec6 != 0)
+				{
+					num2 = 21;
+				}
 			}
-			Block_1:
 			return true;
 		}
 
-		// Token: 0x06000028 RID: 40 RVA: 0x00003B14 File Offset: 0x00001D14
-		internal static bool BquP1d2JMUFisAuRqX4()
+		// Token: 0x06000028 RID: 40 RVA: 0x00003AD8 File Offset: 0x00001CD8
+		internal static bool SLlGVfk0WHeXGdgt7D0()
 		{
-			return CoroutineWrap.zxgXE32A1bwS1hQmFH7 == null;
+			return CoroutineWrap.V8TwvFkB7JhMGwgcQBN == null;
 		}
 
-		// Token: 0x06000029 RID: 41 RVA: 0x00003B20 File Offset: 0x00001D20
-		internal static CoroutineWrap nhTd2j2CGSTseKOjoSF()
+		// Token: 0x06000029 RID: 41 RVA: 0x00003AE4 File Offset: 0x00001CE4
+		internal static CoroutineWrap Q3gxaIkym3vVF7b9QVt()
 		{
-			return CoroutineWrap.zxgXE32A1bwS1hQmFH7;
+			return CoroutineWrap.V8TwvFkB7JhMGwgcQBN;
 		}
 
 		// Token: 0x0400000D RID: 13
@@ -273,6 +268,6 @@ namespace CoreRuntime.Manager
 		private bool _waiting;
 
 		// Token: 0x04000011 RID: 17
-		private static CoroutineWrap zxgXE32A1bwS1hQmFH7;
+		internal static CoroutineWrap V8TwvFkB7JhMGwgcQBN;
 	}
 }

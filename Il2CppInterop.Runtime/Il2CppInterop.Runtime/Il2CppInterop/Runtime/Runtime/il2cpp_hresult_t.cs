@@ -2,10 +2,10 @@
 
 namespace Il2CppInterop.Runtime.Runtime
 {
-	// Token: 0x02000029 RID: 41
+	// Token: 0x02000027 RID: 39
 	public struct il2cpp_hresult_t
 	{
-		// Token: 0x0400005E RID: 94
+		// Token: 0x04000053 RID: 83
 		private readonly int dummy;
 	}
 }

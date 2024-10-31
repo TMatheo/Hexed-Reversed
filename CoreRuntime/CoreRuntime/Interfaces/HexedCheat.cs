@@ -9,14 +9,14 @@ namespace CoreRuntime.Interfaces
 	// Token: 0x02000013 RID: 19
 	public class HexedCheat
 	{
-		// Token: 0x0600005D RID: 93 RVA: 0x00004DEC File Offset: 0x00002FEC
+		// Token: 0x0600005D RID: 93 RVA: 0x00004FB0 File Offset: 0x000031B0
 		public HexedCheat()
 		{
 			hIDAYxH6DWLHIthQgC.oDuBOTgYK();
-			nHwRpygmi6xxZAssJn.UoDdI5CpWg();
+			nHwRpygmi6xxZAssJn.dxI7NE9hn1();
 			base..ctor();
 			int num = 0;
-			if (<Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_ab54e6dff83042e185dfcab6f3cc1c05 != 0)
+			if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_5ae564a9ecfe4f169a22d95bbec1499a != 0)
 			{
 				num = 0;
 			}
@@ -28,8 +28,8 @@ namespace CoreRuntime.Interfaces
 		}
 
 		// Token: 0x17000001 RID: 1
-		// (get) Token: 0x0600005E RID: 94 RVA: 0x00004E4C File Offset: 0x0000304C
-		// (set) Token: 0x0600005F RID: 95 RVA: 0x00004E54 File Offset: 0x00003054
+		// (get) Token: 0x0600005E RID: 94 RVA: 0x00005010 File Offset: 0x00003210
+		// (set) Token: 0x0600005F RID: 95 RVA: 0x00005018 File Offset: 0x00003218
 		public string Identifier
 		{
 			[CompilerGenerated]
@@ -46,24 +46,24 @@ namespace CoreRuntime.Interfaces
 				{
 					switch (num2)
 					{
+					default:
+						return;
 					case 1:
 						this.<Identifier>k__BackingField = value;
 						num2 = 0;
-						if (<Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_3ed9ef715f6845f1a81c32835cb199f2 == 0)
+						if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_d1cb4aaf4fc045f5839300511ab1de3f != 0)
 						{
 							num2 = 0;
-							continue;
 						}
-						continue;
+						break;
 					}
-					break;
 				}
 			}
 		}
 
 		// Token: 0x17000002 RID: 2
-		// (get) Token: 0x06000060 RID: 96 RVA: 0x00004EAC File Offset: 0x000030AC
-		// (set) Token: 0x06000061 RID: 97 RVA: 0x00004EB4 File Offset: 0x000030B4
+		// (get) Token: 0x06000060 RID: 96 RVA: 0x00005070 File Offset: 0x00003270
+		// (set) Token: 0x06000061 RID: 97 RVA: 0x00005078 File Offset: 0x00003278
 		public string Path
 		{
 			[CompilerGenerated]
@@ -80,24 +80,24 @@ namespace CoreRuntime.Interfaces
 				{
 					switch (num2)
 					{
+					default:
+						return;
 					case 1:
 						this.<Path>k__BackingField = value;
 						num2 = 0;
-						if (<Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_446460a1dff54d64bbdb362324d22159 != 0)
+						if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_b1083c87447b4a5f88a05d024fae2975 == 0)
 						{
 							num2 = 0;
-							continue;
 						}
-						continue;
+						break;
 					}
-					break;
 				}
 			}
 		}
 
 		// Token: 0x17000003 RID: 3
-		// (get) Token: 0x06000062 RID: 98 RVA: 0x00004F0C File Offset: 0x0000310C
-		// (set) Token: 0x06000063 RID: 99 RVA: 0x00004F14 File Offset: 0x00003114
+		// (get) Token: 0x06000062 RID: 98 RVA: 0x000050D0 File Offset: 0x000032D0
+		// (set) Token: 0x06000063 RID: 99 RVA: 0x000050D8 File Offset: 0x000032D8
 		public Assembly Assembly
 		{
 			[CompilerGenerated]
@@ -114,103 +114,99 @@ namespace CoreRuntime.Interfaces
 				{
 					switch (num2)
 					{
+					default:
+						return;
 					case 1:
 						this.<Assembly>k__BackingField = value;
 						num2 = 0;
-						if (<Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_214adb6fa07348f1907277a6a99ecb99 != 0)
+						if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_afc1c0a1256744ca83837550f557c751 == 0)
 						{
 							num2 = 0;
-							continue;
 						}
-						continue;
+						break;
 					}
-					break;
 				}
 			}
 		}
 
-		// Token: 0x06000064 RID: 100 RVA: 0x00004F6C File Offset: 0x0000316C
+		// Token: 0x06000064 RID: 100 RVA: 0x00005130 File Offset: 0x00003330
 		internal void Initialize(string identifier, Assembly assembly, string path)
 		{
-			int num = 2;
+			int num = 3;
 			int num2 = num;
 			for (;;)
 			{
 				switch (num2)
 				{
-				case 1:
-					this.Assembly = assembly;
+				default:
+					this.Path = path;
 					num2 = 0;
-					if (<Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_a1159e767799409fa9c6ba86ba1418c8 != 0)
-					{
-						num2 = 0;
-						continue;
-					}
-					continue;
-				case 2:
-					this.Identifier = identifier;
-					num2 = 0;
-					if (<Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_65f8a3d6a5de4588a892575d6bdfaa57 != 0)
+					if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_9b9e897d8842480382c741acc7c5e177 == 0)
 					{
 						num2 = 1;
-						continue;
 					}
-					continue;
-				case 3:
+					break;
+				case 1:
 					return;
-				}
-				this.Path = path;
-				num2 = 0;
-				if (<Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_214adb6fa07348f1907277a6a99ecb99 == 0)
-				{
-					num2 = 3;
+				case 2:
+					this.Assembly = assembly;
+					num2 = 0;
+					if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_540582763ba947fe9423f9dab666d323 == 0)
+					{
+						num2 = 0;
+					}
+					break;
+				case 3:
+					this.Identifier = identifier;
+					num2 = 2;
+					break;
 				}
 			}
 		}
 
-		// Token: 0x06000065 RID: 101 RVA: 0x00005018 File Offset: 0x00003218
-		public virtual void OnLoad()
+		// Token: 0x06000065 RID: 101 RVA: 0x000051C8 File Offset: 0x000033C8
+		public virtual void OnLoad(string[] args = null)
 		{
 		}
 
-		// Token: 0x06000066 RID: 102 RVA: 0x0000501C File Offset: 0x0000321C
+		// Token: 0x06000066 RID: 102 RVA: 0x000051CC File Offset: 0x000033CC
 		public virtual void OnUpdate()
 		{
 		}
 
-		// Token: 0x06000067 RID: 103 RVA: 0x00005020 File Offset: 0x00003220
+		// Token: 0x06000067 RID: 103 RVA: 0x000051D0 File Offset: 0x000033D0
 		public virtual void OnLateUpdate()
 		{
 		}
 
-		// Token: 0x06000068 RID: 104 RVA: 0x00005024 File Offset: 0x00003224
+		// Token: 0x06000068 RID: 104 RVA: 0x000051D4 File Offset: 0x000033D4
 		public virtual void OnFixedUpdate()
 		{
 		}
 
-		// Token: 0x06000069 RID: 105 RVA: 0x00005028 File Offset: 0x00003228
+		// Token: 0x06000069 RID: 105 RVA: 0x000051D8 File Offset: 0x000033D8
 		public virtual void OnGUI()
 		{
 		}
 
-		// Token: 0x0600006A RID: 106 RVA: 0x0000502C File Offset: 0x0000322C
+		// Token: 0x0600006A RID: 106 RVA: 0x000051DC File Offset: 0x000033DC
 		public virtual void OnApplicationQuit()
 		{
 		}
 
-		// Token: 0x0600006B RID: 107 RVA: 0x00005030 File Offset: 0x00003230
-		internal static bool ueDRGD2UDUSf61hhrCQ()
+		// Token: 0x0600006B RID: 107 RVA: 0x000051E0 File Offset: 0x000033E0
+		internal static bool KTf1cLkmH3no9TD2P2r()
 		{
-			return HexedCheat.Gx6ibJ2jpsBplGbMe9W == null;
+			return HexedCheat.GHEP9bkhGkwB4Wf6Jf8 == null;
 		}
 
-		// Token: 0x0600006C RID: 108 RVA: 0x0000503C File Offset: 0x0000323C
-		internal static HexedCheat F7DfFt2WYBp6lHjs6S4()
+		// Token: 0x0600006C RID: 108 RVA: 0x000051EC File Offset: 0x000033EC
+		internal static HexedCheat dWcetKkphL1WxcM4HOC()
 		{
-			return HexedCheat.Gx6ibJ2jpsBplGbMe9W;
+			return HexedCheat.GHEP9bkhGkwB4Wf6Jf8;
 		}
 
 		// Token: 0x04000024 RID: 36
-		internal static HexedCheat Gx6ibJ2jpsBplGbMe9W;
+		private static HexedCheat GHEP9bkhGkwB4Wf6Jf8;
 	}
 }

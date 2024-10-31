@@ -2,13 +2,13 @@
 
 namespace Il2CppInterop.Runtime.Runtime
 {
-	// Token: 0x02000032 RID: 50
+	// Token: 0x02000030 RID: 48
 	public struct Il2CppInteropericInst
 	{
-		// Token: 0x040000D6 RID: 214
+		// Token: 0x040000CB RID: 203
 		public uint type_argc;
 
-		// Token: 0x040000D7 RID: 215
+		// Token: 0x040000CC RID: 204
 		public unsafe Il2CppTypeStruct** type_argv;
 	}
 }

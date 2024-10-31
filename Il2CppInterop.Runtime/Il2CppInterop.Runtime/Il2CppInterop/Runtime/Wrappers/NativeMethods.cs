@@ -8,38 +8,22 @@ namespace Il2CppInterop.Runtime.Wrappers
 	// Token: 0x02000015 RID: 21
 	public class NativeMethods
 	{
-		// Token: 0x06000237 RID: 567
-		[DllImport("ntdll.dll")]
-		public static extern int NtProtectVirtualMemory(IntPtr ProcessHandle, ref IntPtr BaseAddress, ref UIntPtr RegionSize, NativeMethods.MemoryProtection NewProtect, out NativeMethods.MemoryProtection OldProtect);
-
-		// Token: 0x06000238 RID: 568
-		[DllImport("ntdll.dll", SetLastError = true)]
-		public static extern int NtQueryVirtualMemory(IntPtr ProcessHandle, IntPtr BaseAddress, int MemoryInformationClass, ref NativeMethods.MEMORY_BASIC_INFORMATION MemoryInformation, uint MemoryInformationLength, out uint ReturnLength);
-
-		// Token: 0x06000239 RID: 569
-		[DllImport("ntdll.dll")]
-		public static extern int NtAllocateVirtualMemory(IntPtr ProcessHandle, ref IntPtr BaseAddress, IntPtr ZeroBits, ref IntPtr RegionSize, NativeMethods.AllocationType AllocationType, NativeMethods.MemoryProtection Protect);
-
-		// Token: 0x0600023A RID: 570
+		// Token: 0x0600021E RID: 542
 		[DllImport("kernel32.dll", ExactSpelling = true, SetLastError = true)]
 		public static extern IntPtr VirtualAlloc(IntPtr lpAddress, IntPtr dwSize, NativeMethods.AllocationType flAllocationType, NativeMethods.MemoryProtection flProtect);
 
-		// Token: 0x0600023B RID: 571
-		[DllImport("ntdll.dll", CallingConvention = 2)]
-		public static extern void RtlMoveMemory(IntPtr dest, IntPtr src, uint length);
-
-		// Token: 0x0600023C RID: 572
+		// Token: 0x0600021F RID: 543
 		[DllImport("ntdll.dll")]
 		public static extern int NtFreeVirtualMemory(IntPtr ProcessHandle, ref IntPtr BaseAddress, ref UIntPtr RegionSize, NativeMethods.AllocationType FreeType);
 
-		// Token: 0x0600023D RID: 573 RVA: 0x0000BDC8 File Offset: 0x00009FC8
+		// Token: 0x06000220 RID: 544 RVA: 0x0000B318 File Offset: 0x00009518
 		public NativeMethods()
 		{
-			NativeMethods.CoAkgbhiY2AADvYDgU5();
-			nHwRpygmi6xxZAssJn.MZ6my7dBdJ();
+			hIDAYxH6DWLHIthQgC.oDuBOTgYK();
+			NativeMethods.Yy31WJtjGrD5GG7mTy8();
 			base..ctor();
 			int num = 0;
-			if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_9eb38fa6f3314175b044ae281856e1bc == 0)
+			if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_faca03c2e5084297b7a5d894ac66fa57 == 0)
 			{
 				num = 0;
 			}
@@ -50,33 +34,39 @@ namespace Il2CppInterop.Runtime.Wrappers
 			}
 		}
 
-		// Token: 0x0600023E RID: 574 RVA: 0x0000BE28 File Offset: 0x0000A028
+		// Token: 0x06000221 RID: 545 RVA: 0x0000B378 File Offset: 0x00009578
 		// Note: this type is marked as 'beforefieldinit'.
 		static NativeMethods()
+		{
+			NativeMethods.Wx6tbWtQLoQvUgEDGuT();
+		}
+
+		// Token: 0x06000222 RID: 546 RVA: 0x0000B380 File Offset: 0x00009580
+		internal static void Yy31WJtjGrD5GG7mTy8()
+		{
+			nHwRpygmi6xxZAssJn.EmlEpH4Phw();
+		}
+
+		// Token: 0x06000223 RID: 547 RVA: 0x0000B388 File Offset: 0x00009588
+		internal static bool nEmLfDtoh2ENvBdqXx8()
+		{
+			return NativeMethods.ILFAtetgOf6Fdpw27rB == null;
+		}
+
+		// Token: 0x06000224 RID: 548 RVA: 0x0000B394 File Offset: 0x00009594
+		internal static NativeMethods pegMRxtUcTmB3vk4daq()
+		{
+			return NativeMethods.ILFAtetgOf6Fdpw27rB;
+		}
+
+		// Token: 0x06000225 RID: 549 RVA: 0x0000B39C File Offset: 0x0000959C
+		internal static void Wx6tbWtQLoQvUgEDGuT()
 		{
 			hIDAYxH6DWLHIthQgC.zSLipEDdx();
 		}
 
-		// Token: 0x0600023F RID: 575 RVA: 0x0000BE30 File Offset: 0x0000A030
-		internal static void CoAkgbhiY2AADvYDgU5()
-		{
-			hIDAYxH6DWLHIthQgC.oDuBOTgYK();
-		}
-
-		// Token: 0x06000240 RID: 576 RVA: 0x0000BE38 File Offset: 0x0000A038
-		internal static bool nDOw0Rhqdm8ItXXKWL9()
-		{
-			return NativeMethods.JFTLEwhUI704gVqpN5P == null;
-		}
-
-		// Token: 0x06000241 RID: 577 RVA: 0x0000BE44 File Offset: 0x0000A044
-		internal static NativeMethods HN8PMLh9wy0XuJeGB9a()
-		{
-			return NativeMethods.JFTLEwhUI704gVqpN5P;
-		}
-
 		// Token: 0x04000039 RID: 57
-		internal static NativeMethods JFTLEwhUI704gVqpN5P;
+		internal static NativeMethods ILFAtetgOf6Fdpw27rB;
 
 		// Token: 0x02000016 RID: 22
 		[Flags]
@@ -128,42 +118,6 @@ namespace Il2CppInterop.Runtime.Wrappers
 			NoCacheModifierflag = 512U,
 			// Token: 0x0400004F RID: 79
 			WriteCombineModifierflag = 1024U
-		}
-
-		// Token: 0x02000018 RID: 24
-		public enum MemoryState : uint
-		{
-			// Token: 0x04000051 RID: 81
-			Commited = 4096U,
-			// Token: 0x04000052 RID: 82
-			Free = 65536U,
-			// Token: 0x04000053 RID: 83
-			Reserved = 8192U
-		}
-
-		// Token: 0x02000019 RID: 25
-		public struct MEMORY_BASIC_INFORMATION
-		{
-			// Token: 0x04000054 RID: 84
-			public IntPtr BaseAddress;
-
-			// Token: 0x04000055 RID: 85
-			public IntPtr AllocationBase;
-
-			// Token: 0x04000056 RID: 86
-			public uint AllocationProtect;
-
-			// Token: 0x04000057 RID: 87
-			public IntPtr RegionSize;
-
-			// Token: 0x04000058 RID: 88
-			public NativeMethods.MemoryState State;
-
-			// Token: 0x04000059 RID: 89
-			public NativeMethods.MemoryProtection Protect;
-
-			// Token: 0x0400005A RID: 90
-			public uint Type;
 		}
 	}
 }

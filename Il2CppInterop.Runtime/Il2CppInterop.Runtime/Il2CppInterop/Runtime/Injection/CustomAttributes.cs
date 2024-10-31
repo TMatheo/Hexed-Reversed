@@ -4,17 +4,17 @@ using pFRqcJyyWJ2hUZv2rN;
 
 namespace Il2CppInterop.Runtime.Injection
 {
-	// Token: 0x02000131 RID: 305
+	// Token: 0x0200012F RID: 303
 	public class CustomAttributes
 	{
-		// Token: 0x06000D5F RID: 3423 RVA: 0x000164B8 File Offset: 0x000146B8
+		// Token: 0x06000D3D RID: 3389 RVA: 0x00015810 File Offset: 0x00013A10
 		public CustomAttributes()
 		{
-			CustomAttributes.LCKDq2R7xi72EaioiNu();
-			CustomAttributes.Ox9IWQRRgsYw6UHauYk();
+			CustomAttributes.JcpwNBpZq4Ue5p98AfK();
+			CustomAttributes.WaJGx4pzladp0M2saph();
 			base..ctor();
 			int num = 0;
-			if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_9cbee6d56f49422699718938ff979567 == 0)
+			if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_ff3063f9530e4a429cd27a548ab9d19d != 0)
 			{
 				num = 0;
 			}
@@ -25,129 +25,52 @@ namespace Il2CppInterop.Runtime.Injection
 			}
 		}
 
-		// Token: 0x06000D60 RID: 3424 RVA: 0x0001651C File Offset: 0x0001471C
+		// Token: 0x06000D3E RID: 3390 RVA: 0x00015874 File Offset: 0x00013A74
 		// Note: this type is marked as 'beforefieldinit'.
 		static CustomAttributes()
-		{
-			CustomAttributes.thD2kyRkDQiuFiruNwE();
-		}
-
-		// Token: 0x06000D61 RID: 3425 RVA: 0x0001652C File Offset: 0x0001472C
-		internal static void LCKDq2R7xi72EaioiNu()
-		{
-			hIDAYxH6DWLHIthQgC.oDuBOTgYK();
-		}
-
-		// Token: 0x06000D62 RID: 3426 RVA: 0x0001653C File Offset: 0x0001473C
-		internal static void Ox9IWQRRgsYw6UHauYk()
-		{
-			nHwRpygmi6xxZAssJn.MZ6my7dBdJ();
-		}
-
-		// Token: 0x06000D63 RID: 3427 RVA: 0x0001654C File Offset: 0x0001474C
-		internal static bool ayUrpBR6OJYsMUn5CTv()
-		{
-			return CustomAttributes.kfbov3RctSA46GACU8A == null;
-		}
-
-		// Token: 0x06000D64 RID: 3428 RVA: 0x00016560 File Offset: 0x00014760
-		internal static CustomAttributes jNsDwtRLepJj7fqHRXE()
-		{
-			return CustomAttributes.kfbov3RctSA46GACU8A;
-		}
-
-		// Token: 0x06000D65 RID: 3429 RVA: 0x00016570 File Offset: 0x00014770
-		internal static void thD2kyRkDQiuFiruNwE()
 		{
 			hIDAYxH6DWLHIthQgC.zSLipEDdx();
 		}
 
-		// Token: 0x04000990 RID: 2448
-		internal static CustomAttributes kfbov3RctSA46GACU8A;
+		// Token: 0x06000D3F RID: 3391 RVA: 0x00015884 File Offset: 0x00013A84
+		internal static void JcpwNBpZq4Ue5p98AfK()
+		{
+			hIDAYxH6DWLHIthQgC.oDuBOTgYK();
+		}
 
-		// Token: 0x02000132 RID: 306
+		// Token: 0x06000D40 RID: 3392 RVA: 0x00015894 File Offset: 0x00013A94
+		internal static void WaJGx4pzladp0M2saph()
+		{
+			nHwRpygmi6xxZAssJn.EmlEpH4Phw();
+		}
+
+		// Token: 0x06000D41 RID: 3393 RVA: 0x000158A4 File Offset: 0x00013AA4
+		internal static bool M38qBupKtjUmq9IRrx2()
+		{
+			return CustomAttributes.gapCB8peZqKun64wU7S == null;
+		}
+
+		// Token: 0x06000D42 RID: 3394 RVA: 0x000158B8 File Offset: 0x00013AB8
+		internal static CustomAttributes diLGubpa7CA9f9mERAV()
+		{
+			return CustomAttributes.gapCB8peZqKun64wU7S;
+		}
+
+		// Token: 0x04000985 RID: 2437
+		internal static CustomAttributes gapCB8peZqKun64wU7S;
+
+		// Token: 0x02000130 RID: 304
 		[AttributeUsage(AttributeTargets.All, Inherited = false)]
 		public class ObfuscatedNameAttribute : Attribute
 		{
-			// Token: 0x06000D66 RID: 3430 RVA: 0x00028E4C File Offset: 0x0002704C
+			// Token: 0x06000D43 RID: 3395 RVA: 0x000281F4 File Offset: 0x000263F4
 			public ObfuscatedNameAttribute(string obfuscatedName)
 			{
-				hIDAYxH6DWLHIthQgC.oDuBOTgYK();
-				CustomAttributes.ObfuscatedNameAttribute.lraCNkdFeG564K75mwM();
+				CustomAttributes.ObfuscatedNameAttribute.vaeIph30v6bXxjltnn7();
+				CustomAttributes.ObfuscatedNameAttribute.n4dUUZ3sIfL77MljbRi();
 				base..ctor();
 				int num = 0;
-				if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_d01f42186cf2421f90d71301ed147eb1 == 0)
-				{
-					num = 1;
-				}
-				for (;;)
-				{
-					switch (num)
-					{
-					default:
-						return;
-					case 1:
-						this.ObfuscatedName = obfuscatedName;
-						num = 0;
-						if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_b4ab786fa8604298818cd412db8f702f != 0)
-						{
-							num = 0;
-						}
-						break;
-					}
-				}
-			}
-
-			// Token: 0x06000D67 RID: 3431 RVA: 0x00028EDC File Offset: 0x000270DC
-			// Note: this type is marked as 'beforefieldinit'.
-			static ObfuscatedNameAttribute()
-			{
-				CustomAttributes.ObfuscatedNameAttribute.WsNVCQdKiLh2APdFHqp();
-			}
-
-			// Token: 0x06000D68 RID: 3432 RVA: 0x00028EEC File Offset: 0x000270EC
-			internal static void lraCNkdFeG564K75mwM()
-			{
-				nHwRpygmi6xxZAssJn.MZ6my7dBdJ();
-			}
-
-			// Token: 0x06000D69 RID: 3433 RVA: 0x00028EFC File Offset: 0x000270FC
-			internal static bool Ul6Y5VdjlvFKNrk7eLX()
-			{
-				return CustomAttributes.ObfuscatedNameAttribute.c9Kx9GdBP63VDPTGPk4 == null;
-			}
-
-			// Token: 0x06000D6A RID: 3434 RVA: 0x00028F10 File Offset: 0x00027110
-			internal static CustomAttributes.ObfuscatedNameAttribute RQxawgdThfvjP4UcHSP()
-			{
-				return CustomAttributes.ObfuscatedNameAttribute.c9Kx9GdBP63VDPTGPk4;
-			}
-
-			// Token: 0x06000D6B RID: 3435 RVA: 0x00028F20 File Offset: 0x00027120
-			internal static void WsNVCQdKiLh2APdFHqp()
-			{
-				hIDAYxH6DWLHIthQgC.zSLipEDdx();
-			}
-
-			// Token: 0x04000991 RID: 2449
-			public readonly string ObfuscatedName;
-
-			// Token: 0x04000992 RID: 2450
-			internal static CustomAttributes.ObfuscatedNameAttribute c9Kx9GdBP63VDPTGPk4;
-		}
-
-		// Token: 0x02000133 RID: 307
-		[AttributeUsage(AttributeTargets.Method, Inherited = false)]
-		public class CallerCountAttribute : Attribute
-		{
-			// Token: 0x06000D6C RID: 3436 RVA: 0x00028F30 File Offset: 0x00027130
-			public CallerCountAttribute(int count)
-			{
-				CustomAttributes.CallerCountAttribute.Foi3Had1bArSuM9oWHe();
-				nHwRpygmi6xxZAssJn.MZ6my7dBdJ();
-				base..ctor();
-				int num = 0;
-				if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_7b2fff018dbf4cfe8ef41e2d123dc629 == 0)
+				if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_92b82ae23c6544f3a11e54f2fed3ad25 == 0)
 				{
 					num = 0;
 				}
@@ -156,9 +79,9 @@ namespace Il2CppInterop.Runtime.Injection
 					switch (num)
 					{
 					default:
-						this.Count = count;
-						num = 1;
-						if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_64afbb57bf68458f80a150c34cb4e04c != 0)
+						this.ObfuscatedName = obfuscatedName;
+						num = 0;
+						if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_3e2009ed69c04f5799431b4e58cafb2a == 0)
 						{
 							num = 1;
 						}
@@ -169,56 +92,62 @@ namespace Il2CppInterop.Runtime.Injection
 				}
 			}
 
-			// Token: 0x06000D6D RID: 3437 RVA: 0x00028FC0 File Offset: 0x000271C0
+			// Token: 0x06000D44 RID: 3396 RVA: 0x00028284 File Offset: 0x00026484
 			// Note: this type is marked as 'beforefieldinit'.
-			static CallerCountAttribute()
+			static ObfuscatedNameAttribute()
 			{
-				CustomAttributes.CallerCountAttribute.BwtOZZdMXEZDr1QIreO();
+				CustomAttributes.ObfuscatedNameAttribute.cXvwof3SYwlhZ6NWyGZ();
 			}
 
-			// Token: 0x06000D6E RID: 3438 RVA: 0x00028FD0 File Offset: 0x000271D0
-			internal static void Foi3Had1bArSuM9oWHe()
+			// Token: 0x06000D45 RID: 3397 RVA: 0x00028294 File Offset: 0x00026494
+			internal static void vaeIph30v6bXxjltnn7()
 			{
 				hIDAYxH6DWLHIthQgC.oDuBOTgYK();
 			}
 
-			// Token: 0x06000D6F RID: 3439 RVA: 0x00028FE0 File Offset: 0x000271E0
-			internal static bool l7NhLldnPOWCyk1HLxF()
+			// Token: 0x06000D46 RID: 3398 RVA: 0x000282A4 File Offset: 0x000264A4
+			internal static void n4dUUZ3sIfL77MljbRi()
 			{
-				return CustomAttributes.CallerCountAttribute.aL7i1hd556Fq0rKPNWG == null;
+				nHwRpygmi6xxZAssJn.EmlEpH4Phw();
 			}
 
-			// Token: 0x06000D70 RID: 3440 RVA: 0x00028FF4 File Offset: 0x000271F4
-			internal static CustomAttributes.CallerCountAttribute tuuwQWd3i1NwJ3kmBSF()
+			// Token: 0x06000D47 RID: 3399 RVA: 0x000282B4 File Offset: 0x000264B4
+			internal static bool bT994S3pIIeCrL2Jabn()
 			{
-				return CustomAttributes.CallerCountAttribute.aL7i1hd556Fq0rKPNWG;
+				return CustomAttributes.ObfuscatedNameAttribute.t6kgCB3J6NJZ6vx6gNO == null;
 			}
 
-			// Token: 0x06000D71 RID: 3441 RVA: 0x00029004 File Offset: 0x00027204
-			internal static void BwtOZZdMXEZDr1QIreO()
+			// Token: 0x06000D48 RID: 3400 RVA: 0x000282C8 File Offset: 0x000264C8
+			internal static CustomAttributes.ObfuscatedNameAttribute eTHppR3VH8Ixa8rReWm()
+			{
+				return CustomAttributes.ObfuscatedNameAttribute.t6kgCB3J6NJZ6vx6gNO;
+			}
+
+			// Token: 0x06000D49 RID: 3401 RVA: 0x000282D8 File Offset: 0x000264D8
+			internal static void cXvwof3SYwlhZ6NWyGZ()
 			{
 				hIDAYxH6DWLHIthQgC.zSLipEDdx();
 			}
 
-			// Token: 0x04000993 RID: 2451
-			public readonly int Count;
+			// Token: 0x04000986 RID: 2438
+			public readonly string ObfuscatedName;
 
-			// Token: 0x04000994 RID: 2452
-			internal static CustomAttributes.CallerCountAttribute aL7i1hd556Fq0rKPNWG;
+			// Token: 0x04000987 RID: 2439
+			private static CustomAttributes.ObfuscatedNameAttribute t6kgCB3J6NJZ6vx6gNO;
 		}
 
-		// Token: 0x02000134 RID: 308
+		// Token: 0x02000131 RID: 305
 		[AttributeUsage(AttributeTargets.Method, Inherited = false)]
 		public class CachedScanResultsAttribute : Attribute
 		{
-			// Token: 0x06000D72 RID: 3442 RVA: 0x00029014 File Offset: 0x00027214
+			// Token: 0x06000D4A RID: 3402 RVA: 0x000282E8 File Offset: 0x000264E8
 			public CachedScanResultsAttribute()
 			{
-				hIDAYxH6DWLHIthQgC.oDuBOTgYK();
-				CustomAttributes.CachedScanResultsAttribute.Au5i5bwHjgXiQuf6Z81();
+				CustomAttributes.CachedScanResultsAttribute.UA4KcE3mlXSU8F4ri3K();
+				CustomAttributes.CachedScanResultsAttribute.fIDxuN37P4uaQTkqnuc();
 				base..ctor();
 				int num = 0;
-				if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_78bdbfb54f5c42368a7dbf88905820e8 == 0)
+				if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_3b7b1d35d0b845dea3db033f6ba5ccb5 == 0)
 				{
 					num = 0;
 				}
@@ -229,57 +158,63 @@ namespace Il2CppInterop.Runtime.Injection
 				}
 			}
 
-			// Token: 0x06000D73 RID: 3443 RVA: 0x00029078 File Offset: 0x00027278
+			// Token: 0x06000D4B RID: 3403 RVA: 0x0002834C File Offset: 0x0002654C
 			// Note: this type is marked as 'beforefieldinit'.
 			static CachedScanResultsAttribute()
 			{
-				CustomAttributes.CachedScanResultsAttribute.DNyT4pwA7mrKhevWcYq();
+				CustomAttributes.CachedScanResultsAttribute.eaaUTJ3PYkKPiN1vmri();
 			}
 
-			// Token: 0x06000D74 RID: 3444 RVA: 0x00029088 File Offset: 0x00027288
-			internal static void Au5i5bwHjgXiQuf6Z81()
+			// Token: 0x06000D4C RID: 3404 RVA: 0x0002835C File Offset: 0x0002655C
+			internal static void UA4KcE3mlXSU8F4ri3K()
 			{
-				nHwRpygmi6xxZAssJn.MZ6my7dBdJ();
+				hIDAYxH6DWLHIthQgC.oDuBOTgYK();
 			}
 
-			// Token: 0x06000D75 RID: 3445 RVA: 0x00029098 File Offset: 0x00027298
-			internal static bool IxthqVd40DjGn7vtAdF()
+			// Token: 0x06000D4D RID: 3405 RVA: 0x0002836C File Offset: 0x0002656C
+			internal static void fIDxuN37P4uaQTkqnuc()
 			{
-				return CustomAttributes.CachedScanResultsAttribute.A5k67ldpmB3jxa3ayYr == null;
+				nHwRpygmi6xxZAssJn.EmlEpH4Phw();
 			}
 
-			// Token: 0x06000D76 RID: 3446 RVA: 0x000290AC File Offset: 0x000272AC
-			internal static CustomAttributes.CachedScanResultsAttribute RseiLcdzEfet4bdH1Q0()
+			// Token: 0x06000D4E RID: 3406 RVA: 0x0002837C File Offset: 0x0002657C
+			internal static bool EtGDh43uTnGdoFCSGAS()
 			{
-				return CustomAttributes.CachedScanResultsAttribute.A5k67ldpmB3jxa3ayYr;
+				return CustomAttributes.CachedScanResultsAttribute.oxZNoi3NBdiekF6L22G == null;
 			}
 
-			// Token: 0x06000D77 RID: 3447 RVA: 0x000290BC File Offset: 0x000272BC
-			internal static void DNyT4pwA7mrKhevWcYq()
+			// Token: 0x06000D4F RID: 3407 RVA: 0x00028390 File Offset: 0x00026590
+			internal static CustomAttributes.CachedScanResultsAttribute hIejVf3D36Nh0sCsVX7()
+			{
+				return CustomAttributes.CachedScanResultsAttribute.oxZNoi3NBdiekF6L22G;
+			}
+
+			// Token: 0x06000D50 RID: 3408 RVA: 0x000283A0 File Offset: 0x000265A0
+			internal static void eaaUTJ3PYkKPiN1vmri()
 			{
 				hIDAYxH6DWLHIthQgC.zSLipEDdx();
 			}
 
-			// Token: 0x04000995 RID: 2453
+			// Token: 0x04000988 RID: 2440
 			public long MetadataInitFlagRva;
 
-			// Token: 0x04000996 RID: 2454
+			// Token: 0x04000989 RID: 2441
 			public long MetadataInitTokenRva;
 
-			// Token: 0x04000997 RID: 2455
+			// Token: 0x0400098A RID: 2442
 			public int RefRangeEnd;
 
-			// Token: 0x04000998 RID: 2456
+			// Token: 0x0400098B RID: 2443
 			public int RefRangeStart;
 
-			// Token: 0x04000999 RID: 2457
+			// Token: 0x0400098C RID: 2444
 			public int XrefRangeEnd;
 
-			// Token: 0x0400099A RID: 2458
+			// Token: 0x0400098D RID: 2445
 			public int XrefRangeStart;
 
-			// Token: 0x0400099B RID: 2459
-			internal static CustomAttributes.CachedScanResultsAttribute A5k67ldpmB3jxa3ayYr;
+			// Token: 0x0400098E RID: 2446
+			internal static CustomAttributes.CachedScanResultsAttribute oxZNoi3NBdiekF6L22G;
 		}
 	}
 }

@@ -7,8 +7,8 @@ using pFRqcJyyWJ2hUZv2rN;
 public sealed class ObfuscationAttribute : Attribute
 {
 	// Token: 0x17000004 RID: 4
-	// (get) Token: 0x0600006D RID: 109 RVA: 0x0000528C File Offset: 0x0000348C
-	// (set) Token: 0x0600006E RID: 110 RVA: 0x00005294 File Offset: 0x00003494
+	// (get) Token: 0x0600006D RID: 109 RVA: 0x00005414 File Offset: 0x00003614
+	// (set) Token: 0x0600006E RID: 110 RVA: 0x0000541C File Offset: 0x0000361C
 	public bool ApplyToMembers
 	{
 		get
@@ -26,7 +26,7 @@ public sealed class ObfuscationAttribute : Attribute
 				case 1:
 					this.m_applyToMembers = value;
 					num2 = 0;
-					if (global::ObfuscationAttribute.SU60Tc2lC3khYGRIYur() != null)
+					if (!global::ObfuscationAttribute.Gs68GZkUpNhka51utQr())
 					{
 						num2 = 0;
 						continue;
@@ -39,8 +39,8 @@ public sealed class ObfuscationAttribute : Attribute
 	}
 
 	// Token: 0x17000005 RID: 5
-	// (get) Token: 0x0600006F RID: 111 RVA: 0x000052E8 File Offset: 0x000034E8
-	// (set) Token: 0x06000070 RID: 112 RVA: 0x000052F0 File Offset: 0x000034F0
+	// (get) Token: 0x0600006F RID: 111 RVA: 0x00005470 File Offset: 0x00003670
+	// (set) Token: 0x06000070 RID: 112 RVA: 0x00005478 File Offset: 0x00003678
 	public bool Exclude
 	{
 		get
@@ -60,7 +60,7 @@ public sealed class ObfuscationAttribute : Attribute
 				case 1:
 					this.m_exclude = value;
 					num2 = 0;
-					if (!global::ObfuscationAttribute.SUtm5i2ne9vlg3p4gUO())
+					if (global::ObfuscationAttribute.vVyy0Qkf3fwXH0n6Uwr() == null)
 					{
 						num2 = 0;
 					}
@@ -71,8 +71,8 @@ public sealed class ObfuscationAttribute : Attribute
 	}
 
 	// Token: 0x17000006 RID: 6
-	// (get) Token: 0x06000071 RID: 113 RVA: 0x00005344 File Offset: 0x00003544
-	// (set) Token: 0x06000072 RID: 114 RVA: 0x0000534C File Offset: 0x0000354C
+	// (get) Token: 0x06000071 RID: 113 RVA: 0x000054CC File Offset: 0x000036CC
+	// (set) Token: 0x06000072 RID: 114 RVA: 0x000054D4 File Offset: 0x000036D4
 	public string Feature
 	{
 		get
@@ -92,7 +92,7 @@ public sealed class ObfuscationAttribute : Attribute
 				case 1:
 					this.m_feature = value;
 					num2 = 0;
-					if (global::ObfuscationAttribute.SU60Tc2lC3khYGRIYur() == null)
+					if (global::ObfuscationAttribute.Gs68GZkUpNhka51utQr())
 					{
 						num2 = 0;
 					}
@@ -103,8 +103,8 @@ public sealed class ObfuscationAttribute : Attribute
 	}
 
 	// Token: 0x17000007 RID: 7
-	// (get) Token: 0x06000073 RID: 115 RVA: 0x000053A0 File Offset: 0x000035A0
-	// (set) Token: 0x06000074 RID: 116 RVA: 0x000053A8 File Offset: 0x000035A8
+	// (get) Token: 0x06000073 RID: 115 RVA: 0x00005528 File Offset: 0x00003728
+	// (set) Token: 0x06000074 RID: 116 RVA: 0x00005530 File Offset: 0x00003730
 	public bool StripAfterObfuscation
 	{
 		get
@@ -119,29 +119,29 @@ public sealed class ObfuscationAttribute : Attribute
 			{
 				switch (num2)
 				{
-				default:
-					return;
 				case 1:
 					this.m_strip = value;
 					num2 = 0;
-					if (!global::ObfuscationAttribute.SUtm5i2ne9vlg3p4gUO())
+					if (global::ObfuscationAttribute.vVyy0Qkf3fwXH0n6Uwr() == null)
 					{
 						num2 = 0;
+						continue;
 					}
-					break;
+					continue;
 				}
+				break;
 			}
 		}
 	}
 
-	// Token: 0x06000075 RID: 117 RVA: 0x000053FC File Offset: 0x000035FC
+	// Token: 0x06000075 RID: 117 RVA: 0x00005584 File Offset: 0x00003784
 	public ObfuscationAttribute()
 	{
 		hIDAYxH6DWLHIthQgC.oDuBOTgYK();
-		nHwRpygmi6xxZAssJn.UoDdI5CpWg();
+		nHwRpygmi6xxZAssJn.dxI7NE9hn1();
 		this.m_applyToMembers = true;
 		this.m_exclude = true;
-		this.m_feature = hIDAYxH6DWLHIthQgC.gSCeTtiku(--120282258 ^ 2066840512 ^ <Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_98fd8e694684493ba2ae034d20be4be9);
+		this.m_feature = hIDAYxH6DWLHIthQgC.gSCeTtiku(711244972 ^ 931514114 ^ <Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_e987b181869c485d9a6dd6b754a96fff);
 		this.m_strip = true;
 		base..ctor();
 		int num = 0;
@@ -156,16 +156,16 @@ public sealed class ObfuscationAttribute : Attribute
 		}
 	}
 
-	// Token: 0x06000076 RID: 118 RVA: 0x0000549C File Offset: 0x0000369C
-	internal static bool SUtm5i2ne9vlg3p4gUO()
+	// Token: 0x06000076 RID: 118 RVA: 0x00005624 File Offset: 0x00003824
+	internal static bool Gs68GZkUpNhka51utQr()
 	{
-		return global::ObfuscationAttribute.Dj9jPK2tp8pRMXpk5b7 == null;
+		return global::ObfuscationAttribute.LY7N4Bkg6q6mrdwn68R == null;
 	}
 
-	// Token: 0x06000077 RID: 119 RVA: 0x000054A8 File Offset: 0x000036A8
-	internal static global::ObfuscationAttribute SU60Tc2lC3khYGRIYur()
+	// Token: 0x06000077 RID: 119 RVA: 0x00005630 File Offset: 0x00003830
+	internal static global::ObfuscationAttribute vVyy0Qkf3fwXH0n6Uwr()
 	{
-		return global::ObfuscationAttribute.Dj9jPK2tp8pRMXpk5b7;
+		return global::ObfuscationAttribute.LY7N4Bkg6q6mrdwn68R;
 	}
 
 	// Token: 0x04000025 RID: 37
@@ -181,5 +181,5 @@ public sealed class ObfuscationAttribute : Attribute
 	private bool m_strip;
 
 	// Token: 0x04000029 RID: 41
-	internal static global::ObfuscationAttribute Dj9jPK2tp8pRMXpk5b7;
+	internal static global::ObfuscationAttribute LY7N4Bkg6q6mrdwn68R;
 }

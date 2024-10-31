@@ -11,278 +11,291 @@ namespace Il2CppInterop.Runtime
 	// Token: 0x0200000C RID: 12
 	public static class Il2CppClassPointerStore<T>
 	{
-		// Token: 0x060001D2 RID: 466 RVA: 0x00009B40 File Offset: 0x00007D40
+		// Token: 0x060001B1 RID: 433 RVA: 0x00009014 File Offset: 0x00007214
 		static Il2CppClassPointerStore()
 		{
-			int num = 17;
-			int num2 = num;
+			int num = 6;
 			for (;;)
 			{
-				Type type;
-				string assemblyName;
-				string text;
-				switch (num2)
+				int num2 = num;
+				for (;;)
 				{
-				case 0:
-					goto IL_391;
-				case 1:
-					goto IL_376;
-				case 2:
-					goto IL_376;
-				case 3:
-					goto IL_47E;
-				case 4:
-					if (C3coDViAdD8xeVgEqlF.i2IAUFsOOC(type, C3coDViAdD8xeVgEqlF.wMsiU3J676))
+					string text;
+					Type type;
+					string assemblyName;
+					switch (num2)
 					{
-						goto IL_2D7;
-					}
-					num2 = 7;
-					if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_ddf0bbff3ec54ad39c6b2ba58dc80058 == 0)
+					case 0:
+						goto IL_588;
+					case 1:
+						return;
+					case 2:
+						try
+						{
+							for (;;)
+							{
+								IEnumerator<CustomAttributeData> enumerator;
+								if (DsbfFKXX7uNX6vkdwrK.muOq5LWqgj(enumerator, DsbfFKXX7uNX6vkdwrK.S71XcJhR1P))
+								{
+									goto IL_13A;
+								}
+								int num3 = 4;
+								if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_6776fc69415b4d309be658e7e8ac3a28 == 0)
+								{
+									num3 = 3;
+								}
+								CustomAttributeData customAttributeData;
+								for (;;)
+								{
+									IL_E6:
+									switch (num3)
+									{
+									case 1:
+									{
+										CustomAttributeTypedArgument customAttributeTypedArgument = ePrArqXqL0nwAexthXu.muOq5LWqgj(customAttributeData, ePrArqXqL0nwAexthXu.gd1X5v9e57)[0];
+										num3 = 5;
+										continue;
+									}
+									case 2:
+										goto IL_13A;
+									case 3:
+										if (!CiJop65IqHJCv8k5I3G.muOq5LWqgj(sUf7ZRLz1Mkj4wr0Hsi.muOq5LWqgj(customAttributeData, sUf7ZRLz1Mkj4wr0Hsi.g7pXlU6uAB), KrP4bwqDeBbRGf2nlBC.muOq5LWqgj(typeof(CustomAttributes.ObfuscatedNameAttribute).TypeHandle, KrP4bwqDeBbRGf2nlBC.cd8qmkqhJV), CiJop65IqHJCv8k5I3G.Lvb5dhFO0X))
+										{
+											num3 = 1;
+											if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_5395ed2b7ead4e349835ba3f56e39138 != 0)
+											{
+												num3 = 0;
+												continue;
+											}
+											continue;
+										}
+										break;
+									case 4:
+										goto IL_1E8;
+									case 5:
+									{
+										CustomAttributeTypedArgument customAttributeTypedArgument;
+										text = (string)XP6qXMXALhP7n5O0V3r.muOq5LWqgj(ref customAttributeTypedArgument, XP6qXMXALhP7n5O0V3r.s2ZXLtfoYi);
+										num3 = 0;
+										if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_b1a14f54e3674a8baf7d5ab6ab85764a != 0)
+										{
+											num3 = 0;
+											continue;
+										}
+										continue;
+									}
+									}
+									break;
+								}
+								continue;
+								IL_13A:
+								customAttributeData = enumerator.Current;
+								int num4 = 3;
+								num3 = num4;
+								goto IL_E6;
+							}
+							IL_1E8:
+							goto IL_354;
+						}
+						finally
+						{
+							IEnumerator<CustomAttributeData> enumerator;
+							if (enumerator != null)
+							{
+								int num5 = 0;
+								if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_23fed2b647424ffc818af5297e87fd1e != 0)
+								{
+									num5 = 1;
+								}
+								for (;;)
+								{
+									switch (num5)
+									{
+									case 1:
+										DgmGQ6Xkkf4mL7ILqee.muOq5LWqgj(enumerator, DgmGQ6Xkkf4mL7ILqee.HVMX2hXO7v);
+										num5 = 0;
+										if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_7fef7bb77728417ab4965dd0775b5899 == 0)
+										{
+											num5 = 0;
+											continue;
+										}
+										continue;
+									}
+									break;
+								}
+							}
+						}
+						goto IL_25F;
+					case 3:
+						if (ETkfenXYdV7mZoxQuMk.muOq5LWqgj(DntuIqXvnK7u0GS7C3Y.muOq5LWqgj(gIn8YIXOSnwqLCe9jPR.muOq5LWqgj(type, gIn8YIXOSnwqLCe9jPR.T7JXtdJIXG), DntuIqXvnK7u0GS7C3Y.MtVXx7Ojw5), hIDAYxH6DWLHIthQgC.gSCeTtiku(--1634178851 ^ 1811055278 ^ <Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_420bdc7f003c47439a9f8331e71194a1), ETkfenXYdV7mZoxQuMk.C2aX8tN1uC))
+						{
+							assemblyName = uLfVht5XqcdpSvFumbD.muOq5LWqgj(iAjf1xXJiu54FU5mWuc.muOq5LWqgj(H7sTDIX6mLowxq3qtAF.muOq5LWqgj(MNuouJXnhvnoqseBC5Q.muOq5LWqgj(type, MNuouJXnhvnoqseBC5Q.LQDXbKGuGg), H7sTDIX6mLowxq3qtAF.srTXy5VTLt), iAjf1xXJiu54FU5mWuc.Lb7Xpx7KRp), hIDAYxH6DWLHIthQgC.gSCeTtiku(-104288533 + 922129515 ^ 357266360 ^ <Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_b169d8ea412f45e99e430384ddc8908b), uLfVht5XqcdpSvFumbD.YFG5cZFN0S);
+							goto IL_623;
+						}
+						num2 = 6;
+						if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_0272cc4de9694915be17746e515675c8 != 0)
+						{
+							num2 = 8;
+							continue;
+						}
+						continue;
+					case 4:
+						goto IL_338;
+					case 5:
+						hIDAYxH6DWLHIthQgC.oDuBOTgYK();
+						num2 = 15;
+						continue;
+					case 6:
+						hIDAYxH6DWLHIthQgC.zSLipEDdx();
+						num2 = 5;
+						if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_f2d764a5c50346e296f681b93e45dafa == 0)
+						{
+							num2 = 4;
+							continue;
+						}
+						continue;
+					case 7:
+						goto IL_3BB;
+					case 8:
+						goto IL_39B;
+					case 9:
+						goto IL_47E;
+					case 10:
+						break;
+					case 11:
 					{
+						IEnumerator<CustomAttributeData> enumerator = Ka8A8KLaebPcMXVy1G9.muOq5LWqgj(type, Ka8A8KLaebPcMXVy1G9.ATBLZd8HD1).GetEnumerator();
 						num2 = 2;
 						continue;
 					}
-					continue;
-				case 5:
-					if (!yKeRDXiJjbcfcjRW83c.i2IAUFsOOC(DL7sCUiR6bSaPfs2nrg.i2IAUFsOOC(oUPpDZiLA4FIMOvUoml.i2IAUFsOOC(type, oUPpDZiLA4FIMOvUoml.DJei7t4vNa), DL7sCUiR6bSaPfs2nrg.EbbikWjPFZ), hIDAYxH6DWLHIthQgC.gSCeTtiku(-660285926 << 2 ^ 1658682285 ^ <Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_b15bb2810b414d8fba6ffddaf7154f62), yKeRDXiJjbcfcjRW83c.XrLiWY1lq9))
-					{
-						goto IL_FE;
+					case 12:
+						goto IL_588;
+					case 13:
+						goto IL_338;
+					case 14:
+						break;
+					case 15:
+						goto IL_9B;
+					case 16:
+						goto IL_2FC;
+					case 17:
+						goto IL_338;
+					case 18:
+						goto IL_354;
+					case 19:
+						goto IL_4F5;
+					case 20:
+						goto IL_25F;
+					case 21:
+						goto IL_25F;
+					case 22:
+						type = KrP4bwqDeBbRGf2nlBC.muOq5LWqgj(typeof(T).TypeHandle, KrP4bwqDeBbRGf2nlBC.cd8qmkqhJV);
+						num2 = 20;
+						if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_adb34a81d7cc4fbea898664370a8645f != 0)
+						{
+							num2 = 23;
+							continue;
+						}
+						continue;
+					case 23:
+						if (EiWs6qLo2gS3eyLsSqv.muOq5LWqgj(type, EiWs6qLo2gS3eyLsSqv.mf6LU0UEDh))
+						{
+							num2 = 14;
+							continue;
+						}
+						goto IL_47E;
+					default:
+						goto IL_588;
 					}
-					num2 = 9;
-					if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_d01f42186cf2421f90d71301ed147eb1 == 0)
+					text = PTKvoMLfDDsJo1Y7iZK.muOq5LWqgj(type, PTKvoMLfDDsJo1Y7iZK.RMSL1lrYOT);
+					num2 = 11;
+					continue;
+					IL_25F:
+					ly4732LewWpYGPNJstq.muOq5LWqgj(WWZfDKLjkEDkZQlmo8Z.muOq5LWqgj(NPnZLfXD1HmWJPMofW9.muOq5LWqgj(yB6PVMXNXPxJ2TCnJQ3.muOq5LWqgj(muvbU0XsW3UUUY5vr65.muOq5LWqgj(muvbU0XsW3UUUY5vr65.fvGXS8Igke), yB6PVMXNXPxJ2TCnJQ3.MjdXuvYnUI).FirstOrDefault((Assembly it) => XXsbDZLXBpXOTAuVQqA.muOq5LWqgj(iAjf1xXJiu54FU5mWuc.muOq5LWqgj(H7sTDIX6mLowxq3qtAF.muOq5LWqgj(it, H7sTDIX6mLowxq3qtAF.srTXy5VTLt), iAjf1xXJiu54FU5mWuc.Lb7Xpx7KRp), hIDAYxH6DWLHIthQgC.gSCeTtiku(1371503382 + -1420905238 ^ -531564828 ^ <Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_ffe1ad8c1cf94bc78c25e67b0264547e), XXsbDZLXBpXOTAuVQqA.UVLLcpMwbl)), uLfVht5XqcdpSvFumbD.muOq5LWqgj(hIDAYxH6DWLHIthQgC.gSCeTtiku(457203345 ^ -2052212554 ^ -611976595 ^ <Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_6dbfd13d96434eb59d868fecd0ad1cda), y1wUHLqoFyW6gbQN93u.muOq5LWqgj(type, y1wUHLqoFyW6gbQN93u.la8qUHBwms), uLfVht5XqcdpSvFumbD.YFG5cZFN0S), NPnZLfXD1HmWJPMofW9.cihXmIGq7V), WWZfDKLjkEDkZQlmo8Z.ci3LQbLuSn), ly4732LewWpYGPNJstq.H5lLK14RGs);
+					num2 = 0;
+					if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_c04403f838344b38b3a8911774a446ea != 0)
 					{
-						num2 = 11;
+						num2 = 1;
 						continue;
 					}
 					continue;
-				case 6:
-					goto IL_2D7;
-				case 7:
-					VmRujOiiZNyGw0OupQa.i2IAUFsOOC(du1ws7iq1lRxNm9OoMA.i2IAUFsOOC(type, du1ws7iq1lRxNm9OoMA.Tqli9bucs8), VmRujOiiZNyGw0OupQa.GLViItStVx);
-					num2 = 10;
+					IL_3BB:
+					if (JCwQlA5sGlTyuRZuORY.muOq5LWqgj(type, KrP4bwqDeBbRGf2nlBC.muOq5LWqgj(typeof(string).TypeHandle, KrP4bwqDeBbRGf2nlBC.cd8qmkqhJV), JCwQlA5sGlTyuRZuORY.fqC5SwdxA5))
+					{
+						goto IL_25F;
+					}
+					num2 = 19;
+					if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_23fed2b647424ffc818af5297e87fd1e == 0)
+					{
+						num2 = 3;
+						continue;
+					}
 					continue;
-				case 8:
-					goto IL_47E;
-				case 9:
-					nHwRpygmi6xxZAssJn.MZ6my7dBdJ();
-					num2 = 0;
-					if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_282cf292112a4cf49ec1b8b2e2e7602a == 0)
+					IL_338:
+					if (O89uLpAnm1WpPc87QBx.muOq5LWqgj(type, O89uLpAnm1WpPc87QBx.vPZAb56ULa))
+					{
+						num2 = 20;
+						continue;
+					}
+					goto IL_3BB;
+					IL_2FC:
+					Il2CppClassPointerStore<T>.NativeClassPtr = IL2CPP.GetIl2CppNestedType(Il2CppClassPointerStore.GetNativeClassPointer(RO0g2Vqz1eEynR0MNrr.muOq5LWqgj(type, RO0g2Vqz1eEynR0MNrr.f6M5lgRiE7)), text);
+					num2 = 17;
+					if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_7fef7bb77728417ab4965dd0775b5899 == 0)
+					{
+						num2 = 16;
+						continue;
+					}
+					continue;
+					IL_354:
+					if (!VLrg85XHOgiyZAl4v1U.muOq5LWqgj(type, VLrg85XHOgiyZAl4v1U.zJMXhwiWgM))
+					{
+						num2 = 12;
+						continue;
+					}
+					goto IL_2FC;
+					IL_47E:
+					ly4732LewWpYGPNJstq.muOq5LWqgj(WWZfDKLjkEDkZQlmo8Z.muOq5LWqgj(type, WWZfDKLjkEDkZQlmo8Z.ci3LQbLuSn), ly4732LewWpYGPNJstq.H5lLK14RGs);
+					num2 = 4;
+					continue;
+					IL_588:
+					if (rsZ3wmLIoERoV03dQL9.muOq5LWqgj(DntuIqXvnK7u0GS7C3Y.muOq5LWqgj(gIn8YIXOSnwqLCe9jPR.muOq5LWqgj(type, gIn8YIXOSnwqLCe9jPR.T7JXtdJIXG), DntuIqXvnK7u0GS7C3Y.MtVXx7Ojw5), hIDAYxH6DWLHIthQgC.gSCeTtiku(-104288533 + 922129515 ^ 259750398 ^ <Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_3b7b1d35d0b845dea3db033f6ba5ccb5), rsZ3wmLIoERoV03dQL9.K8rLdSBH8T))
+					{
+						num2 = 3;
+						continue;
+					}
+					goto IL_39B;
+					IL_623:
+					Il2CppClassPointerStore<T>.NativeClassPtr = IL2CPP.GetIl2CppClass(assemblyName, HHiRKIXVe2nYDoVajEL.muOq5LWqgj(type, HHiRKIXVe2nYDoVajEL.C0TX0X9P3i) ?? "", text);
+					num2 = 13;
+					if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_ce8abd079f9447b3bade260ffc64f0b8 == 0)
 					{
 						num2 = 0;
 						continue;
 					}
 					continue;
-				case 10:
-					goto IL_376;
-				case 11:
-					assemblyName = z4S0e1U05BsRVVK2fNl.i2IAUFsOOC(qWK6n0ibv10dsJ4DBOh.i2IAUFsOOC(PAALrciZ2xbL1TkKgXd.i2IAUFsOOC(BxCF5Pirv4081M3ZWUE.i2IAUFsOOC(type, BxCF5Pirv4081M3ZWUE.wrJiDQPPJd), PAALrciZ2xbL1TkKgXd.Ajyio1TNQd), qWK6n0ibv10dsJ4DBOh.Q46ifneaVx), hIDAYxH6DWLHIthQgC.gSCeTtiku(-813371636 ^ -1417491858 ^ <Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_636316cf576545aba2f7d326dd7e140b), z4S0e1U05BsRVVK2fNl.aarUNWns9V);
-					goto IL_602;
-				case 12:
-				{
-					IEnumerator<CustomAttributeData> enumerator = nyWYK4iGLqOdRnZBbPe.i2IAUFsOOC(type, nyWYK4iGLqOdRnZBbPe.hfyiYiWugV).GetEnumerator();
-					num2 = 21;
-					continue;
+					IL_39B:
+					assemblyName = DntuIqXvnK7u0GS7C3Y.muOq5LWqgj(gIn8YIXOSnwqLCe9jPR.muOq5LWqgj(type, gIn8YIXOSnwqLCe9jPR.T7JXtdJIXG), DntuIqXvnK7u0GS7C3Y.MtVXx7Ojw5);
+					goto IL_623;
 				}
-				case 13:
-					goto IL_FE;
-				case 14:
-					goto IL_3AC;
-				case 15:
-					goto IL_35B;
-				case 16:
-					hIDAYxH6DWLHIthQgC.oDuBOTgYK();
-					num2 = 9;
-					continue;
-				case 17:
-					hIDAYxH6DWLHIthQgC.zSLipEDdx();
-					num2 = 16;
-					continue;
-				case 18:
-					return;
-				case 19:
-					goto IL_52E;
-				case 20:
-					goto IL_3AC;
-				case 21:
-					try
-					{
-						for (;;)
-						{
-							IL_169:
-							IEnumerator<CustomAttributeData> enumerator;
-							if (sMonWyi0m0eKdsb3oFd.i2IAUFsOOC(enumerator, sMonWyi0m0eKdsb3oFd.G31iN30Web))
-							{
-								goto IL_204;
-							}
-							int num3 = 5;
-							int num4 = num3;
-							CustomAttributeData customAttributeData;
-							for (;;)
-							{
-								IL_147:
-								switch (num4)
-								{
-								case 1:
-								{
-									CustomAttributeTypedArgument customAttributeTypedArgument = delipvity1M1GyKLYJc.i2IAUFsOOC(customAttributeData, delipvity1M1GyKLYJc.bSZixpsPis)[0];
-									num4 = 2;
-									if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_1d16dd38ead14cb191f3b77c23c04ed4 == 0)
-									{
-										num4 = 1;
-										continue;
-									}
-									continue;
-								}
-								case 2:
-								{
-									CustomAttributeTypedArgument customAttributeTypedArgument;
-									text = (string)cRfWfBih7ABuZjlWTdx.i2IAUFsOOC(ref customAttributeTypedArgument, cRfWfBih7ABuZjlWTdx.EtAi8NUS4M);
-									num4 = 4;
-									continue;
-								}
-								case 3:
-									if (Q57NvyUKOvY5KovuDBT.i2IAUFsOOC(XO3ipPiaDQLTyQ7gh1m.i2IAUFsOOC(customAttributeData, XO3ipPiaDQLTyQ7gh1m.a18iCSdI7A), byRw0gA2NyqHkl03ii9.i2IAUFsOOC(typeof(CustomAttributes.ObfuscatedNameAttribute).TypeHandle, byRw0gA2NyqHkl03ii9.lfRAy1v3an), Q57NvyUKOvY5KovuDBT.G0AU5uNCnx))
-									{
-										goto IL_169;
-									}
-									num4 = 1;
-									if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_0e76a731caf34f7495b20ae26aa97571 == 0)
-									{
-										num4 = 0;
-										continue;
-									}
-									continue;
-								case 4:
-									goto IL_169;
-								case 5:
-									goto IL_234;
-								}
-								break;
-							}
-							IL_204:
-							customAttributeData = enumerator.Current;
-							num4 = 3;
-							goto IL_147;
-						}
-						IL_234:
-						goto IL_35B;
-					}
-					finally
-					{
-						IEnumerator<CustomAttributeData> enumerator;
-						if (enumerator != null)
-						{
-							goto IL_28C;
-						}
-						int num5 = 0;
-						if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_a36e967c0f044e9ebf523536bdec8e28 == 0)
-						{
-							num5 = 0;
-						}
-						IL_263:
-						switch (num5)
-						{
-						case 2:
-							IL_28C:
-							DOGJJXiuWsS2u63HZGH.i2IAUFsOOC(enumerator, DOGJJXiuWsS2u63HZGH.wb2iEctcbL);
-							num5 = 0;
-							if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_e236d804047744298c2380563ba7eca0 == 0)
-							{
-								num5 = 1;
-								goto IL_263;
-							}
-							goto IL_263;
-						}
-					}
-					goto IL_2D7;
-				case 22:
-					break;
-				default:
-					goto IL_391;
-				}
-				IL_7F:
-				Il2CppClassPointerStore<T>.NativeClassPtr = IL2CPP.GetIl2CppNestedType(Il2CppClassPointerStore.GetNativeClassPointer(aNXqaFUaF5FInd1YJEI.i2IAUFsOOC(type, aNXqaFUaF5FInd1YJEI.nN3UCtcdVR)), text);
-				num2 = 1;
-				if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_a2b24b0de55344c2b8aaf8116dbc4d16 == 0)
-				{
-					num2 = 1;
-					continue;
-				}
-				continue;
-				IL_2D7:
-				text = el3Dwo9OYrba9URt3tt.i2IAUFsOOC(type, el3Dwo9OYrba9URt3tt.qs29XcBOk2);
-				num2 = 3;
-				if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_9c5de7c7e06f4557898ef7a8362c30ee == 0)
-				{
-					num2 = 12;
-					continue;
-				}
-				continue;
-				IL_376:
-				if (l3AN43qrOBxKsw7pvOY.i2IAUFsOOC(type, l3AN43qrOBxKsw7pvOY.l5BqD0Sj3Q))
-				{
-					num2 = 20;
-					continue;
-				}
-				goto IL_52E;
-				IL_391:
-				type = byRw0gA2NyqHkl03ii9.i2IAUFsOOC(typeof(T).TypeHandle, byRw0gA2NyqHkl03ii9.lfRAy1v3an);
-				num2 = 4;
-				continue;
-				IL_3AC:
-				VmRujOiiZNyGw0OupQa.i2IAUFsOOC(du1ws7iq1lRxNm9OoMA.i2IAUFsOOC(BppC3Yi2DVM9pmTLX4F.i2IAUFsOOC(XyROwpisEIvlmvUZ77r.i2IAUFsOOC(UI8SapiwIHe6ifgloKj.i2IAUFsOOC(UI8SapiwIHe6ifgloKj.o15ieq9nRt), XyROwpisEIvlmvUZ77r.hd7iQAJrNs).FirstOrDefault((Assembly it) => KXbVLO90rvxCycuMdcc.i2IAUFsOOC(qWK6n0ibv10dsJ4DBOh.i2IAUFsOOC(PAALrciZ2xbL1TkKgXd.i2IAUFsOOC(it, PAALrciZ2xbL1TkKgXd.Ajyio1TNQd), qWK6n0ibv10dsJ4DBOh.Q46ifneaVx), hIDAYxH6DWLHIthQgC.gSCeTtiku(1140735436 ^ 1519022690 ^ <Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_1d16dd38ead14cb191f3b77c23c04ed4), KXbVLO90rvxCycuMdcc.jp69NlJ4ca)), z4S0e1U05BsRVVK2fNl.i2IAUFsOOC(hIDAYxH6DWLHIthQgC.gSCeTtiku(618117306 ^ 1309678116 ^ <Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_7c2c0376e816400db5716cff194385b2), XbWY87UAp2s3iIUpBiV.i2IAUFsOOC(type, XbWY87UAp2s3iIUpBiV.tomUUWdyuW), z4S0e1U05BsRVVK2fNl.aarUNWns9V), BppC3Yi2DVM9pmTLX4F.w9YiyXHXR8), du1ws7iq1lRxNm9OoMA.Tqli9bucs8), VmRujOiiZNyGw0OupQa.GLViItStVx);
-				num2 = 18;
-				continue;
-				IL_47E:
-				if (!z4BRwT9Ki3wnMXvZB09.i2IAUFsOOC(DL7sCUiR6bSaPfs2nrg.i2IAUFsOOC(oUPpDZiLA4FIMOvUoml.i2IAUFsOOC(type, oUPpDZiLA4FIMOvUoml.DJei7t4vNa), DL7sCUiR6bSaPfs2nrg.EbbikWjPFZ), hIDAYxH6DWLHIthQgC.gSCeTtiku(--1039077110 ^ 2040715171 ^ <Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_5d181dabf1ed42eca63023d24d927754), z4BRwT9Ki3wnMXvZB09.EZw95Edmkf))
-				{
-					goto IL_FE;
-				}
-				num2 = 5;
-				if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_2210d7ca22c24335b32d80ca3ef84b8e == 0)
-				{
-					num2 = 2;
-					continue;
-				}
-				continue;
-				IL_52E:
-				if (dPsigOUwJdO4bwskNJ5.i2IAUFsOOC(type, byRw0gA2NyqHkl03ii9.i2IAUFsOOC(typeof(string).TypeHandle, byRw0gA2NyqHkl03ii9.lfRAy1v3an), dPsigOUwJdO4bwskNJ5.hvvUeCiIEf))
-				{
-					num2 = 14;
-					continue;
-				}
-				break;
-				IL_602:
-				string namespaze;
-				if ((namespaze = TcwSo6iPWCyPEnGaRRK.i2IAUFsOOC(type, TcwSo6iPWCyPEnGaRRK.EslidaZLCQ)) == null)
-				{
-					namespaze = "";
-				}
-				Il2CppClassPointerStore<T>.NativeClassPtr = IL2CPP.GetIl2CppClass(assemblyName, namespaze, text);
-				num2 = 2;
-				continue;
-				IL_FE:
-				assemblyName = DL7sCUiR6bSaPfs2nrg.i2IAUFsOOC(oUPpDZiLA4FIMOvUoml.i2IAUFsOOC(type, oUPpDZiLA4FIMOvUoml.DJei7t4vNa), DL7sCUiR6bSaPfs2nrg.EbbikWjPFZ);
-				goto IL_602;
-				IL_35B:
-				if (GOeV2nicGjskpCnGtWX.i2IAUFsOOC(type, GOeV2nicGjskpCnGtWX.JDui6xxA7H))
-				{
-					goto IL_7F;
-				}
-				num2 = 3;
+				IL_9B:
+				nHwRpygmi6xxZAssJn.EmlEpH4Phw();
+				num = 22;
 			}
+			return;
+			IL_4F5:;
 		}
 
-		// Token: 0x060001D3 RID: 467 RVA: 0x0000A1A0 File Offset: 0x000083A0
-		internal static bool ruyWjQxCjmfwIypLrtZ()
+		// Token: 0x060001B2 RID: 434 RVA: 0x000096A4 File Offset: 0x000078A4
+		internal static bool BamDHAOgHL5xYu4Kvj0()
 		{
-			return Il2CppClassPointerStore<T>.A3pTPqxa3AAWYh3mO1a == null;
+			return Il2CppClassPointerStore<T>.XioR8gOTpMwxPJlkCQi == null;
 		}
 
-		// Token: 0x060001D4 RID: 468 RVA: 0x0000A1B4 File Offset: 0x000083B4
-		internal static object Rqlh2bxtSkyaXIpALpm()
+		// Token: 0x060001B3 RID: 435 RVA: 0x000096B8 File Offset: 0x000078B8
+		internal static object AMxQrgOo2w0KaoFIqgq()
 		{
-			return Il2CppClassPointerStore<T>.A3pTPqxa3AAWYh3mO1a;
+			return Il2CppClassPointerStore<T>.XioR8gOTpMwxPJlkCQi;
 		}
 
 		// Token: 0x04000022 RID: 34
@@ -292,6 +305,6 @@ namespace Il2CppInterop.Runtime
 		public static Type CreatedTypeRedirect;
 
 		// Token: 0x04000024 RID: 36
-		internal static object A3pTPqxa3AAWYh3mO1a;
+		private static object XioR8gOTpMwxPJlkCQi;
 	}
 }

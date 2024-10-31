@@ -5,26 +5,26 @@ using pFRqcJyyWJ2hUZv2rN;
 
 namespace Il2CppInterop.Runtime.Runtime.VersionSpecific.Assembly
 {
-	// Token: 0x0200010B RID: 267
+	// Token: 0x02000109 RID: 265
 	[ApplicableToUnityVersionsSince("5.2.2")]
 	public class NativeAssemblyStructHandler_16_0 : INativeAssemblyStructHandler, INativeStructHandler
 	{
-		// Token: 0x06000C0A RID: 3082 RVA: 0x00012EA4 File Offset: 0x000110A4
+		// Token: 0x06000BE6 RID: 3046 RVA: 0x00012258 File Offset: 0x00010458
 		public int Size()
 		{
 			return sizeof(NativeAssemblyStructHandler_16_0.Il2CppAssembly_16_0);
 		}
 
-		// Token: 0x06000C0B RID: 3083 RVA: 0x00012EB4 File Offset: 0x000110B4
+		// Token: 0x06000BE7 RID: 3047 RVA: 0x00012268 File Offset: 0x00010468
 		public unsafe INativeAssemblyStruct CreateNewStruct()
 		{
 			NativeAssemblyStructHandler_16_0.Il2CppAssembly_16_0* ptr2;
-			IntPtr ptr = ptr2 = MarshalExtend.AllocHGlobal(this.Size());
+			IntPtr ptr = ptr2 = NativeAssemblyStructHandler_16_0.pLOYKeJbN9JTKvF1kbw(this.Size());
 			*ptr2 = default(NativeAssemblyStructHandler_16_0.Il2CppAssembly_16_0);
 			return new NativeAssemblyStructHandler_16_0.NativeStructWrapper(ptr);
 		}
 
-		// Token: 0x06000C0C RID: 3084 RVA: 0x00012EE4 File Offset: 0x000110E4
+		// Token: 0x06000BE8 RID: 3048 RVA: 0x00012298 File Offset: 0x00010498
 		public unsafe INativeAssemblyStruct Wrap(Il2CppAssembly* ptr)
 		{
 			int num = 1;
@@ -39,7 +39,7 @@ namespace Il2CppInterop.Runtime.Runtime.VersionSpecific.Assembly
 						goto IL_54;
 					}
 					num2 = 0;
-					if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_37633ff27b934257920d0d03faf0bd54 != 0)
+					if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_cb2874465fa5416db806f31e03cc475c == 0)
 					{
 						num2 = 0;
 						continue;
@@ -53,14 +53,14 @@ namespace Il2CppInterop.Runtime.Runtime.VersionSpecific.Assembly
 			return new NativeAssemblyStructHandler_16_0.NativeStructWrapper(ptr);
 		}
 
-		// Token: 0x06000C0D RID: 3085 RVA: 0x00012F4C File Offset: 0x0001114C
+		// Token: 0x06000BE9 RID: 3049 RVA: 0x00012300 File Offset: 0x00010500
 		public NativeAssemblyStructHandler_16_0()
 		{
 			hIDAYxH6DWLHIthQgC.oDuBOTgYK();
-			NativeAssemblyStructHandler_16_0.Nb8vJmLgiZbFs4B7GwA();
+			NativeAssemblyStructHandler_16_0.AQKhB1J6Gy593jc1pXw();
 			base..ctor();
 			int num = 0;
-			if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_1d16dd38ead14cb191f3b77c23c04ed4 != 0)
+			if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_c04403f838344b38b3a8911774a446ea == 0)
 			{
 				num = 0;
 			}
@@ -71,64 +71,70 @@ namespace Il2CppInterop.Runtime.Runtime.VersionSpecific.Assembly
 			}
 		}
 
-		// Token: 0x06000C0E RID: 3086 RVA: 0x00012FB0 File Offset: 0x000111B0
+		// Token: 0x06000BEA RID: 3050 RVA: 0x00012364 File Offset: 0x00010564
 		// Note: this type is marked as 'beforefieldinit'.
 		static NativeAssemblyStructHandler_16_0()
 		{
-			NativeAssemblyStructHandler_16_0.aik4ErLlZo2nMHwgofZ();
+			NativeAssemblyStructHandler_16_0.KjaEAbJyZr6aYdgURDZ();
 		}
 
-		// Token: 0x06000C0F RID: 3087 RVA: 0x00012FC0 File Offset: 0x000111C0
-		internal static bool WHmJt0LyRRp0wWAMhYh()
+		// Token: 0x06000BEB RID: 3051 RVA: 0x00012374 File Offset: 0x00010574
+		internal static IntPtr pLOYKeJbN9JTKvF1kbw(int size)
 		{
-			return NativeAssemblyStructHandler_16_0.SNmjpLL24pdi2VFmRhp == null;
+			return MarshalExtend.AllocHGlobal(size);
 		}
 
-		// Token: 0x06000C10 RID: 3088 RVA: 0x00012FD4 File Offset: 0x000111D4
-		internal static NativeAssemblyStructHandler_16_0 jCUigILSLAJTmNu2Pc5()
+		// Token: 0x06000BEC RID: 3052 RVA: 0x00012388 File Offset: 0x00010588
+		internal static bool sRsX8xJ8nBjuqoEEC1k()
 		{
-			return NativeAssemblyStructHandler_16_0.SNmjpLL24pdi2VFmRhp;
+			return NativeAssemblyStructHandler_16_0.LJpqGGJY34V97kjWDc6 == null;
 		}
 
-		// Token: 0x06000C11 RID: 3089 RVA: 0x00012FE4 File Offset: 0x000111E4
-		internal static void Nb8vJmLgiZbFs4B7GwA()
+		// Token: 0x06000BED RID: 3053 RVA: 0x0001239C File Offset: 0x0001059C
+		internal static NativeAssemblyStructHandler_16_0 EqJWOsJn6MC1KHGwFJU()
 		{
-			nHwRpygmi6xxZAssJn.MZ6my7dBdJ();
+			return NativeAssemblyStructHandler_16_0.LJpqGGJY34V97kjWDc6;
 		}
 
-		// Token: 0x06000C12 RID: 3090 RVA: 0x00012FF4 File Offset: 0x000111F4
-		internal static void aik4ErLlZo2nMHwgofZ()
+		// Token: 0x06000BEE RID: 3054 RVA: 0x000123AC File Offset: 0x000105AC
+		internal static void AQKhB1J6Gy593jc1pXw()
+		{
+			nHwRpygmi6xxZAssJn.EmlEpH4Phw();
+		}
+
+		// Token: 0x06000BEF RID: 3055 RVA: 0x000123BC File Offset: 0x000105BC
+		internal static void KjaEAbJyZr6aYdgURDZ()
 		{
 			hIDAYxH6DWLHIthQgC.zSLipEDdx();
 		}
 
-		// Token: 0x04000927 RID: 2343
-		private static NativeAssemblyStructHandler_16_0 SNmjpLL24pdi2VFmRhp;
+		// Token: 0x0400091C RID: 2332
+		private static NativeAssemblyStructHandler_16_0 LJpqGGJY34V97kjWDc6;
 
-		// Token: 0x0200010C RID: 268
+		// Token: 0x0200010A RID: 266
 		internal struct Il2CppAssembly_16_0
 		{
-			// Token: 0x04000928 RID: 2344
+			// Token: 0x0400091D RID: 2333
 			public int imageIndex;
 
-			// Token: 0x04000929 RID: 2345
+			// Token: 0x0400091E RID: 2334
 			public int customAttributeIndex;
 
-			// Token: 0x0400092A RID: 2346
+			// Token: 0x0400091F RID: 2335
 			public NativeAssemblyNameStructHandler_16_0.Il2CppAssemblyName_16_0 aname;
 		}
 
-		// Token: 0x0200010D RID: 269
+		// Token: 0x0200010B RID: 267
 		internal class NativeStructWrapper : INativeAssemblyStruct, INativeStruct
 		{
-			// Token: 0x06000C13 RID: 3091 RVA: 0x00027B68 File Offset: 0x00025D68
+			// Token: 0x06000BF0 RID: 3056 RVA: 0x00026EF4 File Offset: 0x000250F4
 			public NativeStructWrapper(IntPtr ptr)
 			{
-				hIDAYxH6DWLHIthQgC.oDuBOTgYK();
-				NativeAssemblyStructHandler_16_0.NativeStructWrapper.Hm6N4nPm1Y3Ni9iKjAu();
+				NativeAssemblyStructHandler_16_0.NativeStructWrapper.xPQgJT4nCmPKjWe5p1o();
+				nHwRpygmi6xxZAssJn.EmlEpH4Phw();
 				base..ctor();
 				int num = 1;
-				if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_bc244a0192c343599cd1cf83671e02ab != 0)
+				if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_43cc35cb254148318955c7f83ade60f1 == 0)
 				{
 					num = 1;
 				}
@@ -136,22 +142,22 @@ namespace Il2CppInterop.Runtime.Runtime.VersionSpecific.Assembly
 				{
 					switch (num)
 					{
-					default:
-						return;
 					case 1:
 						this.<Pointer>k__BackingField = ptr;
 						num = 0;
-						if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_570d4e075bf443fcbaca8db32e007291 == 0)
+						if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_5395ed2b7ead4e349835ba3f56e39138 == 0)
 						{
 							num = 0;
+							continue;
 						}
-						break;
+						continue;
 					}
+					break;
 				}
 			}
 
 			// Token: 0x1700048D RID: 1165
-			// (get) Token: 0x06000C14 RID: 3092 RVA: 0x00027BF8 File Offset: 0x00025DF8
+			// (get) Token: 0x06000BF1 RID: 3057 RVA: 0x00026F84 File Offset: 0x00025184
 			private unsafe NativeAssemblyStructHandler_16_0.Il2CppAssembly_16_0* _
 			{
 				get
@@ -161,11 +167,11 @@ namespace Il2CppInterop.Runtime.Runtime.VersionSpecific.Assembly
 			}
 
 			// Token: 0x1700048E RID: 1166
-			// (get) Token: 0x06000C15 RID: 3093 RVA: 0x00027C08 File Offset: 0x00025E08
+			// (get) Token: 0x06000BF2 RID: 3058 RVA: 0x00026F94 File Offset: 0x00025194
 			public IntPtr Pointer { get; }
 
 			// Token: 0x1700048F RID: 1167
-			// (get) Token: 0x06000C16 RID: 3094 RVA: 0x00027C18 File Offset: 0x00025E18
+			// (get) Token: 0x06000BF3 RID: 3059 RVA: 0x00026FA4 File Offset: 0x000251A4
 			public unsafe Il2CppAssembly* AssemblyPointer
 			{
 				get
@@ -175,8 +181,8 @@ namespace Il2CppInterop.Runtime.Runtime.VersionSpecific.Assembly
 			}
 
 			// Token: 0x17000490 RID: 1168
-			// (get) Token: 0x06000C17 RID: 3095 RVA: 0x00027C28 File Offset: 0x00025E28
-			// (set) Token: 0x06000C18 RID: 3096 RVA: 0x00027C44 File Offset: 0x00025E44
+			// (get) Token: 0x06000BF4 RID: 3060 RVA: 0x00026FB4 File Offset: 0x000251B4
+			// (set) Token: 0x06000BF5 RID: 3061 RVA: 0x00026FD0 File Offset: 0x000251D0
 			public unsafe INativeAssemblyNameStruct Name
 			{
 				get
@@ -196,7 +202,7 @@ namespace Il2CppInterop.Runtime.Runtime.VersionSpecific.Assembly
 						case 1:
 							this._->aname = *(NativeAssemblyNameStructHandler_16_0.Il2CppAssemblyName_16_0*)this.Name.AssemblyNamePointer;
 							num2 = 0;
-							if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_b15bb2810b414d8fba6ffddaf7154f62 == 0)
+							if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_3e2009ed69c04f5799431b4e58cafb2a == 0)
 							{
 								num2 = 0;
 							}
@@ -207,7 +213,7 @@ namespace Il2CppInterop.Runtime.Runtime.VersionSpecific.Assembly
 			}
 
 			// Token: 0x17000491 RID: 1169
-			// (get) Token: 0x06000C19 RID: 3097 RVA: 0x00027CB8 File Offset: 0x00025EB8
+			// (get) Token: 0x06000BF6 RID: 3062 RVA: 0x00027044 File Offset: 0x00025244
 			public unsafe ref Il2CppImage* Image
 			{
 				get
@@ -216,33 +222,39 @@ namespace Il2CppInterop.Runtime.Runtime.VersionSpecific.Assembly
 				}
 			}
 
-			// Token: 0x06000C1A RID: 3098 RVA: 0x00027CC8 File Offset: 0x00025EC8
+			// Token: 0x06000BF7 RID: 3063 RVA: 0x00027054 File Offset: 0x00025254
 			// Note: this type is marked as 'beforefieldinit'.
 			static NativeStructWrapper()
+			{
+				NativeAssemblyStructHandler_16_0.NativeStructWrapper.EkEsBG4bVwvLpLJqCts();
+			}
+
+			// Token: 0x06000BF8 RID: 3064 RVA: 0x00027064 File Offset: 0x00025264
+			internal static void xPQgJT4nCmPKjWe5p1o()
+			{
+				hIDAYxH6DWLHIthQgC.oDuBOTgYK();
+			}
+
+			// Token: 0x06000BF9 RID: 3065 RVA: 0x00027074 File Offset: 0x00025274
+			internal static bool m2KNAn4YM0gFcoS6XVB()
+			{
+				return NativeAssemblyStructHandler_16_0.NativeStructWrapper.h64p0v4x1q9Fww8W2oM == null;
+			}
+
+			// Token: 0x06000BFA RID: 3066 RVA: 0x00027088 File Offset: 0x00025288
+			internal static NativeAssemblyStructHandler_16_0.NativeStructWrapper wpbvQZ48LHSvbDwsDmJ()
+			{
+				return NativeAssemblyStructHandler_16_0.NativeStructWrapper.h64p0v4x1q9Fww8W2oM;
+			}
+
+			// Token: 0x06000BFB RID: 3067 RVA: 0x00027098 File Offset: 0x00025298
+			internal static void EkEsBG4bVwvLpLJqCts()
 			{
 				hIDAYxH6DWLHIthQgC.zSLipEDdx();
 			}
 
-			// Token: 0x06000C1B RID: 3099 RVA: 0x00027CD8 File Offset: 0x00025ED8
-			internal static void Hm6N4nPm1Y3Ni9iKjAu()
-			{
-				nHwRpygmi6xxZAssJn.MZ6my7dBdJ();
-			}
-
-			// Token: 0x06000C1C RID: 3100 RVA: 0x00027CE8 File Offset: 0x00025EE8
-			internal static bool LdcjUyPOjDs2LVrI6Yy()
-			{
-				return NativeAssemblyStructHandler_16_0.NativeStructWrapper.Kaj0IrPVsNdD6103aSl == null;
-			}
-
-			// Token: 0x06000C1D RID: 3101 RVA: 0x00027CFC File Offset: 0x00025EFC
-			internal static NativeAssemblyStructHandler_16_0.NativeStructWrapper IcssWGPXJX7GSBuqKhK()
-			{
-				return NativeAssemblyStructHandler_16_0.NativeStructWrapper.Kaj0IrPVsNdD6103aSl;
-			}
-
-			// Token: 0x0400092C RID: 2348
-			internal static object Kaj0IrPVsNdD6103aSl;
+			// Token: 0x04000921 RID: 2337
+			private static object h64p0v4x1q9Fww8W2oM;
 		}
 	}
 }

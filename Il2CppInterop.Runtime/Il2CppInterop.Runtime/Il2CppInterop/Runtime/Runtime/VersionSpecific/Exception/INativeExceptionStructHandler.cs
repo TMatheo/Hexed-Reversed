@@ -2,13 +2,13 @@
 
 namespace Il2CppInterop.Runtime.Runtime.VersionSpecific.Exception
 {
-	// Token: 0x020000B0 RID: 176
+	// Token: 0x020000AE RID: 174
 	public interface INativeExceptionStructHandler : INativeStructHandler
 	{
-		// Token: 0x0600066D RID: 1645
+		// Token: 0x06000652 RID: 1618
 		INativeExceptionStruct CreateNewStruct();
 
-		// Token: 0x0600066E RID: 1646
+		// Token: 0x06000653 RID: 1619
 		unsafe INativeExceptionStruct Wrap(Il2CppException* exceptionPointer);
 	}
 }

@@ -2,10 +2,10 @@
 
 namespace Il2CppInterop.Runtime.Runtime
 {
-	// Token: 0x02000027 RID: 39
+	// Token: 0x02000025 RID: 37
 	public struct Il2CppMetadataGenericContainerHandle
 	{
-		// Token: 0x0400005C RID: 92
+		// Token: 0x04000051 RID: 81
 		private unsafe readonly void* dummy;
 	}
 }

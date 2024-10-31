@@ -13,181 +13,180 @@ namespace CoreRuntime.Manager
 	// Token: 0x02000004 RID: 4
 	internal class CheatManager
 	{
-		// Token: 0x06000010 RID: 16 RVA: 0x00002BE0 File Offset: 0x00000DE0
-		internal static void InjectCheats()
+		// Token: 0x06000010 RID: 16 RVA: 0x00002BF4 File Offset: 0x00000DF4
+		internal static void InjectCheats(object baseDir)
 		{
-			int num = 7;
+			int num = 1;
 			int num2 = num;
 			for (;;)
 			{
 				string text;
 				string text2;
-				int num6;
+				string[] array;
+				int num5;
 				switch (num2)
 				{
 				case 0:
-					goto IL_2B2;
+					goto IL_D6;
 				case 1:
-					return;
-				case 2:
-					goto IL_372;
-				case 3:
-					goto IL_324;
-				case 4:
-					try
-					{
-						HexedCheat initializedCheat = CheatManager.GetInitializedCheat(yP5fMZBjTmqZYcit9N.Vkgsu7Vsh(zelf6M69pMimavaTIu.Vkgsu7Vsh(text, zelf6M69pMimavaTIu.fHYuOLo83), yP5fMZBjTmqZYcit9N.SfabSpTad), text);
-						int num3 = 3;
-						int num4 = num3;
-						for (;;)
-						{
-							switch (num4)
-							{
-							case 1:
-								goto IL_10C;
-							case 2:
-								goto IL_C2;
-							case 3:
-								if (initializedCheat == null)
-								{
-									num4 = 2;
-									if (<Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_23687291198447029e19a2a39902facf != 0)
-									{
-										num4 = 0;
-										continue;
-									}
-									continue;
-								}
-								break;
-							}
-							CheatManager.LoadCheat(initializedCheat);
-							num4 = 0;
-							if (<Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_d66866237d0b48d682cf8ce1bb2cd7e5 == 0)
-							{
-								num4 = 1;
-							}
-						}
-						IL_C2:
-						IL_10C:
-						goto IL_2FF;
-					}
-					catch (Exception ex)
-					{
-						int num5 = 1;
-						if (<Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_23687291198447029e19a2a39902facf == 0)
-						{
-							num5 = 1;
-						}
-						for (;;)
-						{
-							switch (num5)
-							{
-							case 1:
-								Logger.LogError(RIQx5ZiROgKkHOkUM4.Vkgsu7Vsh(hIDAYxH6DWLHIthQgC.gSCeTtiku(~-792453756 ^ 1842059710 ^ <Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_b4bbcacefe2f460eafc92ef2d3c6d009), text, hIDAYxH6DWLHIthQgC.gSCeTtiku(-2037873068 ^ -379176231 ^ <Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_9c110458729f49b6849ba1fbab8493e1), A2ntJAeMt4fxRTnjkv.Vkgsu7Vsh(ex, A2ntJAeMt4fxRTnjkv.MkiokOlrR), RIQx5ZiROgKkHOkUM4.IUi0pWndJ));
-								num5 = 0;
-								if (<Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_f78ec114ba134530b494cb8149d9ceec != 0)
-								{
-									num5 = 0;
-									continue;
-								}
-								continue;
-							}
-							break;
-						}
-						goto IL_2FF;
-					}
-					return;
-				case 5:
-					goto IL_324;
-				case 6:
-					text2 = GFqAQHOdVUCtrs7yZx.Vkgsu7Vsh(I14MH3n6ECHaPQAxZ1.Vkgsu7Vsh(GT3G9MQmIwCwwyX5KR.Vkgsu7Vsh(WZedFaJiQANw5LiGpN.Vkgsu7Vsh(VitR1pcm0SIa2t7r5D.Vkgsu7Vsh(VitR1pcm0SIa2t7r5D.EHUAVMHB4), WZedFaJiQANw5LiGpN.LtbCTM2En), GT3G9MQmIwCwwyX5KR.voTIvcHbX), I14MH3n6ECHaPQAxZ1.LrhlfQyIY), hIDAYxH6DWLHIthQgC.gSCeTtiku(1177397061 ^ -1609575317 ^ -1529739117 ^ <Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_b4bbcacefe2f460eafc92ef2d3c6d009), GFqAQHOdVUCtrs7yZx.EXWmoUsjs);
-					num2 = 11;
-					if (<Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_abcb54034558476aaf1951a09e1b79df != 0)
-					{
-						num2 = 12;
-						continue;
-					}
-					continue;
-				case 7:
-					Logger.Log(hIDAYxH6DWLHIthQgC.gSCeTtiku(--511643923 ^ 1174972787 ^ <Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_d0387cb39b814697b488c05864006b9d));
-					num2 = 2;
-					if (<Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_ac5a396fb1314f03b00a1c1c1fb25832 == 0)
-					{
-						num2 = 6;
-						continue;
-					}
-					continue;
-				case 8:
-					break;
-				case 9:
-					goto IL_2FF;
-				case 10:
-					num6 = 0;
+					Logger.Log(hIDAYxH6DWLHIthQgC.gSCeTtiku(-424048639 ^ -279887877 ^ <Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_77caaf9658ab4228a2d653f72c318338));
 					num2 = 0;
-					if (<Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_d0387cb39b814697b488c05864006b9d != 0)
-					{
-						num2 = 5;
-						continue;
-					}
-					continue;
-				case 11:
-					return;
-				case 12:
-					if (!IBS4ZI7iaKStfGopPy.Vkgsu7Vsh(text2, IBS4ZI7iaKStfGopPy.pb6xOfEqO))
-					{
-						goto IL_372;
-					}
-					num2 = 0;
-					if (<Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_c562bff83da649f1af22aec8f521fe1d != 0)
+					if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_302aed8b9a4f4b8894d39c085f0150b4 == 0)
 					{
 						num2 = 0;
 						continue;
 					}
 					continue;
+				case 2:
+					return;
+				case 3:
+					goto IL_142;
+				case 4:
+					break;
+				case 5:
+					goto IL_153;
+				case 6:
+					goto IL_32E;
+				case 7:
+					break;
+				case 8:
+					try
+					{
+						HexedCheat initializedCheat = CheatManager.GetInitializedCheat(z5UjQhq2ecKKv2c1tp.k0sBmDS26(Vd8YPpvV4xhGkNakYI.k0sBmDS26(text, Vd8YPpvV4xhGkNakYI.bbOnRnUMl), z5UjQhq2ecKKv2c1tp.RH7ZWQXiv), text);
+						int num3 = 0;
+						if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_19219e20007142d38523f07c38cd8ec6 == 0)
+						{
+							num3 = 0;
+						}
+						for (;;)
+						{
+							switch (num3)
+							{
+							case 1:
+								CheatManager.LoadCheat(initializedCheat);
+								num3 = 2;
+								if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_cb53c5012b8c473a8f1d4a4b097db321 != 0)
+								{
+									num3 = 2;
+									continue;
+								}
+								continue;
+							case 2:
+								goto IL_271;
+							}
+							if (initializedCheat == null)
+							{
+								break;
+							}
+							num3 = 1;
+							if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_de322c5a808a465f983b33be6a7ea7ef != 0)
+							{
+								num3 = 1;
+							}
+						}
+						IL_271:
+						goto IL_39D;
+					}
+					catch (Exception ex)
+					{
+						int num4 = 0;
+						if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_07c5f71fed22450f81f9184893afd453 == 0)
+						{
+							num4 = 0;
+						}
+						for (;;)
+						{
+							switch (num4)
+							{
+							default:
+								Logger.LogError(rghARJlj9PKwpFfxVB.k0sBmDS26(hIDAYxH6DWLHIthQgC.gSCeTtiku(-302969512 ^ -326571577 ^ <Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_f1d9115f72ff4ae08fad04714cff8c0b), text, hIDAYxH6DWLHIthQgC.gSCeTtiku(-1008514440 ^ -1635783653 ^ <Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_edac2a2703904f2eb7963a4223e202ad), NQFXa88t3aiMnaICQL.k0sBmDS26(ex, NQFXa88t3aiMnaICQL.eHtxbBBPb), rghARJlj9PKwpFfxVB.GsCIoZXQ7));
+								num4 = 1;
+								if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_f53b57d82f9641e38009d875ec2f8244 == 0)
+								{
+									num4 = 1;
+								}
+								break;
+							case 1:
+								goto IL_31F;
+							}
+						}
+						IL_31F:
+						goto IL_39D;
+					}
+					goto IL_32E;
+				case 9:
+					goto IL_142;
+				case 10:
+					goto IL_39D;
+				case 11:
+					array = gIg11KoJbLcUoXvYkY.k0sBmDS26(text2, hIDAYxH6DWLHIthQgC.gSCeTtiku(-1432950048 ^ -742303311 ^ <Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_9a741f44c50c48bd9a4c027118ac2b16), gIg11KoJbLcUoXvYkY.FDECGHIh0);
+					num2 = 12;
+					if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_77caaf9658ab4228a2d653f72c318338 == 0)
+					{
+						num2 = 2;
+						continue;
+					}
+					continue;
+				case 12:
+					num5 = 0;
+					num2 = 7;
+					continue;
+				case 13:
+					return;
 				default:
-					goto IL_2B2;
+					goto IL_D6;
 				}
-				IL_20B:
-				string[] array;
-				text = array[num6];
-				num2 = 4;
-				continue;
-				IL_324:
-				if (num6 < array.Length)
+				if (num5 >= array.Length)
 				{
-					goto IL_20B;
+					return;
 				}
-				num2 = 0;
-				if (<Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_da83835e17544063b3591183e7e2848e == 0)
-				{
-					num2 = 1;
-					continue;
-				}
-				continue;
-				IL_2B2:
-				array = QoFkDNPcNfLS0ciKO7.Vkgsu7Vsh(text2, hIDAYxH6DWLHIthQgC.gSCeTtiku(75611088 << 1 ^ 615822116 ^ <Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_9aed36fa797e461e98c578cb5ad6472b), QoFkDNPcNfLS0ciKO7.sZT3cyDkd);
-				num2 = 10;
-				continue;
-				IL_2FF:
-				num6++;
-				num2 = 0;
-				if (<Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_7ce8ad79e1da4729a888a21f9f3ca981 == 0)
-				{
-					num2 = 3;
-					continue;
-				}
-				continue;
-				IL_372:
-				Logger.LogError(zvhtvFTqnly6SIjNjO.Vkgsu7Vsh(hIDAYxH6DWLHIthQgC.gSCeTtiku(-1264955662 ^ -319949204 ^ <Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_d0387cb39b814697b488c05864006b9d), text2, hIDAYxH6DWLHIthQgC.gSCeTtiku(-414254214 ^ -2033603463 ^ <Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_c41248e324ff4126a99c2492f21b311a), zvhtvFTqnly6SIjNjO.xCpY5PslR));
 				num2 = 3;
-				if (<Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_da83835e17544063b3591183e7e2848e == 0)
+				if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_ac5f2597813e4d7a94eff6f2688ca1d4 == 0)
 				{
-					num2 = 11;
+					num2 = 2;
+					continue;
+				}
+				continue;
+				IL_D6:
+				text2 = UTpGGxhoI4R5rF9a0u.k0sBmDS26(baseDir, hIDAYxH6DWLHIthQgC.gSCeTtiku(262802384 >> 2 ^ 1301019010 ^ <Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_389e5b4ff8ba426c905f46214455c4b7), UTpGGxhoI4R5rF9a0u.OFsmmTv3c);
+				num2 = 6;
+				continue;
+				IL_142:
+				text = array[num5];
+				num2 = 8;
+				continue;
+				IL_153:
+				Logger.LogError(zH1lR7T8lFVuJcYw4Z.k0sBmDS26(hIDAYxH6DWLHIthQgC.gSCeTtiku(1817815500 ^ 1356103774 ^ <Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_a95e338918c04556aaf47418274cca2d), text2, hIDAYxH6DWLHIthQgC.gSCeTtiku(-1124848506 ^ -1181907587 ^ 209918265 ^ <Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_23b0c345fbea449596466ee9cdf54e9d), zH1lR7T8lFVuJcYw4Z.d6xMvUixE));
+				num2 = 2;
+				if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_e1faf0249a9e4741bd6472e4b44f3b13 != 0)
+				{
+					num2 = 0;
+					continue;
+				}
+				continue;
+				IL_32E:
+				if (!a8IeJy4EwC8FdRdvgP.k0sBmDS26(text2, a8IeJy4EwC8FdRdvgP.Bw8rlyu3w))
+				{
+					goto IL_153;
+				}
+				num2 = 11;
+				if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_23b0c345fbea449596466ee9cdf54e9d == 0)
+				{
+					num2 = 8;
+					continue;
+				}
+				continue;
+				IL_39D:
+				num5++;
+				num2 = 2;
+				if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_0d6f1b1d53ea401dac5370118afd5971 != 0)
+				{
+					num2 = 4;
 				}
 			}
 		}
 
-		// Token: 0x06000011 RID: 17 RVA: 0x00003004 File Offset: 0x00001204
+		// Token: 0x06000011 RID: 17 RVA: 0x00002FD4 File Offset: 0x000011D4
 		private static HexedCheat GetInitializedCheat(object assembly, object fullPath)
 		{
 			HexedCheat result;
@@ -196,12 +195,12 @@ namespace CoreRuntime.Manager
 				Type[] source;
 				try
 				{
-					source = VIebeSMDp0kkRTHbCc.Vkgsu7Vsh(assembly, VIebeSMDp0kkRTHbCc.XMC54SGlN);
+					source = eH4ALaHuRa2t99i1cQ.k0sBmDS26(assembly, eH4ALaHuRa2t99i1cQ.yAQaITYRi);
 				}
 				catch (ReflectionTypeLoadException ex)
 				{
-					source = (from t in SkeXNSE2pyNeYVds9O.Vkgsu7Vsh(ex, SkeXNSE2pyNeYVds9O.pypzapEE1)
-					where j6DRtekpQbb7WaLEdSb.Vkgsu7Vsh(t, null, j6DRtekpQbb7WaLEdSb.Yj3kk4a0r5)
+					source = (from t in NiPNZ1DAef8pYC5Mbd.k0sBmDS26(ex, NiPNZ1DAef8pYC5Mbd.dxHbDhyyi)
+					where reQRSLscoT5VJVd0ei.k0sBmDS26(t, null, reQRSLscoT5VJVd0ei.y6czZ96l3)
 					select t).ToArray<Type>();
 				}
 				Type type = source.FirstOrDefault(delegate(Type t)
@@ -213,47 +212,44 @@ namespace CoreRuntime.Manager
 						switch (num2)
 						{
 						default:
-							return false;
+							goto IL_24;
 						case 1:
-							if (jDgvQ9kKvt1qPVxuMGs.Vkgsu7Vsh(leXdUdkQnIXIpKm4I85.Vkgsu7Vsh(typeof(HexedCheat).TypeHandle, leXdUdkQnIXIpKm4I85.WhGkIJZ1F5), t, jDgvQ9kKvt1qPVxuMGs.EcVkFFIbl4))
+							if (!x2rMsp3OZkrJaD7C5qy.k0sBmDS26(EnlOxL3KU2n5cwR6bLM.k0sBmDS26(typeof(HexedCheat).TypeHandle, EnlOxL3KU2n5cwR6bLM.EMH3NTwRFd), t, x2rMsp3OZkrJaD7C5qy.Nag3XVD47b))
 							{
-								goto IL_4C;
+								return false;
 							}
 							num2 = 0;
-							if (<Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_da83835e17544063b3591183e7e2848e != 0)
+							if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_f6045cb8f6a845a2bd760bd08e5edb09 == 0)
 							{
 								num2 = 0;
 							}
 							break;
-						case 2:
-							goto IL_4C;
 						}
 					}
-					return false;
-					IL_4C:
-					return !yIYJilkaVLyMQrPr4Lo.Vkgsu7Vsh(t, yIYJilkaVLyMQrPr4Lo.TmEktxvBYm);
+					IL_24:
+					return !MSyrdQ353p0hbYxWLEd.k0sBmDS26(t, MSyrdQ353p0hbYxWLEd.Akl3gjOVeL);
 				});
-				if (j6DRtekpQbb7WaLEdSb.Vkgsu7Vsh(type, null, j6DRtekpQbb7WaLEdSb.Yj3kk4a0r5))
+				if (reQRSLscoT5VJVd0ei.k0sBmDS26(type, null, reQRSLscoT5VJVd0ei.y6czZ96l3))
 				{
-					HexedCheat hexedCheat = (HexedCheat)DDbnLNk8QFMuQJok0x9.Vkgsu7Vsh(type, DDbnLNk8QFMuQJok0x9.HfXkGM4qDi);
-					hexedCheat.Initialize(Y2A4uLkZyJ6vKYPFfYi.Vkgsu7Vsh(tZI3LRkyV9LOLwWdVmU.Vkgsu7Vsh(assembly, tZI3LRkyV9LOLwWdVmU.KYuk2OgN77), Y2A4uLkZyJ6vKYPFfYi.qWZkqj3EMM), sEIMuakdf4sv9FUlSAZ.Vkgsu7Vsh(sEIMuakdf4sv9FUlSAZ.O8pkwkqa4D), fullPath);
+					HexedCheat hexedCheat = (HexedCheat)dE8v3o3YO3XO58vKlLL.k0sBmDS26(type, dE8v3o3YO3XO58vKlLL.wMV33MWFp6);
+					hexedCheat.Initialize(W4JP3R3wWUrDG2tJWAL.k0sBmDS26(nvC01f3JULlc81JB7eV.k0sBmDS26(assembly, nvC01f3JULlc81JB7eV.XfI3dDMUZK), W4JP3R3wWUrDG2tJWAL.p2c3kj5BLS), GgydWZ32bEfa638WeRs.k0sBmDS26(GgydWZ32bEfa638WeRs.uZ03VZP1XP), fullPath);
 					result = hexedCheat;
 				}
 				else
 				{
-					Logger.LogError(GFqAQHOdVUCtrs7yZx.Vkgsu7Vsh(fullPath, hIDAYxH6DWLHIthQgC.gSCeTtiku(-369132611 + -1499432019 ^ -768186459 ^ <Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_24528a7679a644c78b49b0457f8d9d44), GFqAQHOdVUCtrs7yZx.EXWmoUsjs));
+					Logger.LogError(UTpGGxhoI4R5rF9a0u.k0sBmDS26(fullPath, hIDAYxH6DWLHIthQgC.gSCeTtiku(1551566658 ^ 938302652 ^ <Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_440bf9c5532843729f6af5bcc66b2a9f), UTpGGxhoI4R5rF9a0u.OFsmmTv3c));
 					result = null;
 				}
 			}
 			catch (Exception ex2)
 			{
-				Logger.LogError(zvhtvFTqnly6SIjNjO.Vkgsu7Vsh(fullPath, hIDAYxH6DWLHIthQgC.gSCeTtiku(237779630 ^ 1169372735 ^ <Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_33a8f57c176f4d198f1febe007b7e26a), A2ntJAeMt4fxRTnjkv.Vkgsu7Vsh(ex2, A2ntJAeMt4fxRTnjkv.MkiokOlrR), zvhtvFTqnly6SIjNjO.xCpY5PslR));
+				Logger.LogError(zH1lR7T8lFVuJcYw4Z.k0sBmDS26(fullPath, hIDAYxH6DWLHIthQgC.gSCeTtiku(1817964891 ^ 1621930128 ^ <Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_d509aebced084342a79500b2a43b1504), NQFXa88t3aiMnaICQL.k0sBmDS26(ex2, NQFXa88t3aiMnaICQL.eHtxbBBPb), zH1lR7T8lFVuJcYw4Z.d6xMvUixE));
 				result = null;
 			}
 			return result;
 		}
 
-		// Token: 0x06000012 RID: 18 RVA: 0x0000318C File Offset: 0x0000138C
+		// Token: 0x06000012 RID: 18 RVA: 0x00003140 File Offset: 0x00001340
 		private static void LoadCheat(object Cheat)
 		{
 			switch (1)
@@ -262,96 +258,90 @@ namespace CoreRuntime.Manager
 				try
 				{
 					CheatManager.LoadedCheats.Add(Cheat);
-					int num = 0;
-					if (<Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_9a072d45b7c649c39a88ec471b6efdd0 == 0)
-					{
-						num = 0;
-					}
+					int num = 2;
 					for (;;)
 					{
 						switch (num)
 						{
-						default:
-							Logger.LogSuccess(GFqAQHOdVUCtrs7yZx.Vkgsu7Vsh(hIDAYxH6DWLHIthQgC.gSCeTtiku(1476574665 ^ 1256064209 ^ <Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_0fa20338976f426eb44415ef660968e0), Cheat.Identifier, GFqAQHOdVUCtrs7yZx.EXWmoUsjs));
-							num = 2;
-							break;
 						case 1:
-							goto IL_C8;
-						case 2:
-							Cheat.OnLoad();
-							num = 1;
-							if (<Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_b4bbcacefe2f460eafc92ef2d3c6d009 == 0)
+							Cheat.OnLoad(null);
+							num = 0;
+							if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_de322c5a808a465f983b33be6a7ea7ef != 0)
 							{
 								num = 0;
+								continue;
 							}
-							break;
+							continue;
+						case 2:
+							Logger.LogSuccess(UTpGGxhoI4R5rF9a0u.k0sBmDS26(hIDAYxH6DWLHIthQgC.gSCeTtiku(7139485 >> 6 ^ 1166523169 ^ <Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_5ae564a9ecfe4f169a22d95bbec1499a), Cheat.Identifier, UTpGGxhoI4R5rF9a0u.OFsmmTv3c));
+							num = 1;
+							if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_92535530d9074294845959a55f7df47e == 0)
+							{
+								num = 1;
+								continue;
+							}
+							continue;
 						}
+						break;
 					}
-					IL_C8:;
 				}
 				catch (Exception value)
 				{
 					int num2 = 4;
+					if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_92535530d9074294845959a55f7df47e != 0)
+					{
+						num2 = 4;
+					}
 					for (;;)
 					{
 						DefaultInterpolatedStringHandler defaultInterpolatedStringHandler;
 						switch (num2)
 						{
 						case 1:
-							Logger.LogError(HUqyQtK9vUO9bfISNY.Vkgsu7Vsh(ref defaultInterpolatedStringHandler, HUqyQtK9vUO9bfISNY.IYKFLW0NA));
-							num2 = 5;
-							if (<Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_c6d0741241854289a704034f471da5dc == 0)
-							{
-								num2 = 5;
-								continue;
-							}
-							continue;
+							goto IL_1DA;
 						case 2:
-							OllYaFLKfaVbHwoY0T.Vkgsu7Vsh(ref defaultInterpolatedStringHandler, hIDAYxH6DWLHIthQgC.gSCeTtiku(-1248717335 ^ -185412895 ^ <Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_cacc3d1852de4d4da62058f287ab73b7), OllYaFLKfaVbHwoY0T.jdbri0BdE);
+							rc9mmsOYA6cpiVOdw5.k0sBmDS26(ref defaultInterpolatedStringHandler, Cheat.Identifier, rc9mmsOYA6cpiVOdw5.UUPXdwKSJ);
+							num2 = 5;
+							continue;
+						case 3:
+							defaultInterpolatedStringHandler.AppendFormatted<Exception>(value);
 							num2 = 0;
-							if (<Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_7c03e83d2472462fba97daf81c246812 == 0)
+							if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_4ef4db7550394672961cc88f5d0e800a == 0)
 							{
 								num2 = 0;
 								continue;
 							}
 							continue;
-						case 3:
-							PHliwfftrtxnGUGv86.Vkgsu7Vsh(ref defaultInterpolatedStringHandler, Cheat.Identifier, PHliwfftrtxnGUGv86.PPaXybFhf);
-							num2 = 1;
-							if (<Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_935ade0ca7864571bd1808f0d1435f90 == 0)
-							{
-								num2 = 2;
-								continue;
-							}
-							continue;
 						case 4:
 							defaultInterpolatedStringHandler = new DefaultInterpolatedStringHandler(21, 2);
-							num2 = 3;
+							num2 = 2;
 							continue;
 						case 5:
-							goto IL_1E3;
+							EqOyIWPBk4O8GIbets.k0sBmDS26(ref defaultInterpolatedStringHandler, hIDAYxH6DWLHIthQgC.gSCeTtiku(2087727082 ^ 1434059875 ^ 1550179102 ^ <Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_829df0732b4b433b8c0719880717f482), EqOyIWPBk4O8GIbets.OYCAQYjuo);
+							num2 = 3;
+							continue;
 						}
-						defaultInterpolatedStringHandler.AppendFormatted<Exception>(value);
-						num2 = 0;
-						if (<Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_d00406e72f9c42bf92f725eab93afd75 == 0)
+						Logger.LogError(Sbphjm5LFg5j2OSqxD.k0sBmDS26(ref defaultInterpolatedStringHandler, Sbphjm5LFg5j2OSqxD.tgcgXxaGu));
+						num2 = 1;
+						if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_0119f60806a248b6919db0af670ae27a == 0)
 						{
 							num2 = 1;
 						}
 					}
-					IL_1E3:;
+					IL_1DA:;
 				}
 				break;
 			}
 		}
 
-		// Token: 0x06000013 RID: 19 RVA: 0x000033BC File Offset: 0x000015BC
+		// Token: 0x06000013 RID: 19 RVA: 0x00003368 File Offset: 0x00001568
 		public CheatManager()
 		{
 			hIDAYxH6DWLHIthQgC.oDuBOTgYK();
-			nHwRpygmi6xxZAssJn.UoDdI5CpWg();
+			nHwRpygmi6xxZAssJn.dxI7NE9hn1();
 			base..ctor();
 			int num = 0;
-			if (<Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_a9e6643767b24faeb22874c272d31c0c == 0)
+			if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_5d0fdc373cde4068a8053e8907aa08b1 == 0)
 			{
 				num = 0;
 			}
@@ -362,63 +352,57 @@ namespace CoreRuntime.Manager
 			}
 		}
 
-		// Token: 0x06000014 RID: 20 RVA: 0x0000341C File Offset: 0x0000161C
+		// Token: 0x06000014 RID: 20 RVA: 0x000033C8 File Offset: 0x000015C8
 		// Note: this type is marked as 'beforefieldinit'.
 		static CheatManager()
 		{
-			int num = 3;
+			int num = 1;
+			int num2 = num;
 			for (;;)
 			{
-				int num2 = num;
-				for (;;)
+				switch (num2)
 				{
-					switch (num2)
+				case 1:
+					hIDAYxH6DWLHIthQgC.oDuBOTgYK();
+					num2 = 0;
+					if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_19c25a5301614c6080dd70b98665cdb7 == 0)
 					{
-					case 1:
-						CheatManager.LoadedCheats = new List<HexedCheat>();
 						num2 = 0;
-						if (<Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_a9e6643767b24faeb22874c272d31c0c != 0)
-						{
-							num2 = 0;
-							continue;
-						}
 						continue;
-					case 2:
-						nHwRpygmi6xxZAssJn.UoDdI5CpWg();
-						num2 = 1;
-						if (<Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_fb52a29d24de4440b04edf3fddca29f7 == 0)
-						{
-							num2 = 0;
-							continue;
-						}
-						continue;
-					case 3:
-						goto IL_2C;
 					}
+					continue;
+				case 2:
+					CheatManager.LoadedCheats = new List<HexedCheat>();
+					num2 = 3;
+					continue;
+				case 3:
 					return;
 				}
-				IL_2C:
-				hIDAYxH6DWLHIthQgC.oDuBOTgYK();
-				num = 2;
+				nHwRpygmi6xxZAssJn.dxI7NE9hn1();
+				num2 = 1;
+				if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_5d0fdc373cde4068a8053e8907aa08b1 != 0)
+				{
+					num2 = 2;
+				}
 			}
 		}
 
-		// Token: 0x06000015 RID: 21 RVA: 0x000034B8 File Offset: 0x000016B8
-		internal static bool mXUvTH2g3UhPO3uMXGG()
+		// Token: 0x06000015 RID: 21 RVA: 0x00003460 File Offset: 0x00001660
+		internal static bool mlpk6CkWWgygycbvNEj()
 		{
-			return CheatManager.XcEhYg2HFVFaMq4gEe5 == null;
+			return CheatManager.iAweaMk6PKtBRFaMdy2 == null;
 		}
 
-		// Token: 0x06000016 RID: 22 RVA: 0x000034C4 File Offset: 0x000016C4
-		internal static CheatManager jqpEEK29ZKcJgl7wVWN()
+		// Token: 0x06000016 RID: 22 RVA: 0x0000346C File Offset: 0x0000166C
+		internal static CheatManager hlGb4mkeyBRrZaWOFD2()
 		{
-			return CheatManager.XcEhYg2HFVFaMq4gEe5;
+			return CheatManager.iAweaMk6PKtBRFaMdy2;
 		}
 
 		// Token: 0x04000003 RID: 3
 		internal static readonly List<HexedCheat> LoadedCheats;
 
 		// Token: 0x04000004 RID: 4
-		private static CheatManager XcEhYg2HFVFaMq4gEe5;
+		internal static CheatManager iAweaMk6PKtBRFaMdy2;
 	}
 }

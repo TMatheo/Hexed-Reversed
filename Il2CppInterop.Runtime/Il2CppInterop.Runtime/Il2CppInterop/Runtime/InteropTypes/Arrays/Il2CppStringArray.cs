@@ -4,55 +4,56 @@ using pFRqcJyyWJ2hUZv2rN;
 
 namespace Il2CppInterop.Runtime.InteropTypes.Arrays
 {
-	// Token: 0x0200012F RID: 303
+	// Token: 0x0200012D RID: 301
 	public class Il2CppStringArray : Il2CppArrayBase<string>
 	{
-		// Token: 0x06000D40 RID: 3392 RVA: 0x000157D8 File Offset: 0x000139D8
+		// Token: 0x06000D1E RID: 3358 RVA: 0x00014B2C File Offset: 0x00012D2C
 		static Il2CppStringArray()
 		{
-			int num = 1;
+			int num = 3;
 			int num2 = num;
 			for (;;)
 			{
 				switch (num2)
 				{
 				case 1:
-					Il2CppStringArray.DdBq9mRiXdPG9XynkVS();
+					Il2CppStringArray.V83ERbpijYTsmXFdMWM();
 					num2 = 0;
-					if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_ad2b9d7065e34e71a0069eb107f69f59 == 0)
+					if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_92a7d78565474619a2c93ca9aa734139 == 0)
 					{
 						num2 = 0;
 						continue;
 					}
 					continue;
 				case 2:
-					Il2CppStringArray.N8kSrxRGNhfeg6mLKwD();
-					num2 = 3;
+					Il2CppStringArray.Jfu8yrpd3cXnmCAtdNt();
+					num2 = 0;
+					if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_441278fe93ad425f9343d4f7d1692fca != 0)
+					{
+						num2 = 1;
+						continue;
+					}
 					continue;
 				case 3:
-					Il2CppStringArray.iZo0klRaFgHvBMnH0D3(Il2CppStringArray.iItTXLRYPJcPdnwdO3U(typeof(Il2CppStringArray).TypeHandle, byRw0gA2NyqHkl03ii9.lfRAy1v3an));
-					num2 = 4;
+					Il2CppStringArray.Ne7OrspIs8nDfMwnk8p();
+					num2 = 2;
 					continue;
 				case 4:
 					return;
 				}
-				Il2CppStringArray.rpFN87RI70TIWN88qoS();
-				num2 = 2;
-				if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_5d181dabf1ed42eca63023d24d927754 != 0)
-				{
-					num2 = 2;
-				}
+				Il2CppStringArray.thfg0spEoOCmchK08R6(Il2CppStringArray.H8QZobpwOjIQfhpeMHj(typeof(Il2CppStringArray).TypeHandle, KrP4bwqDeBbRGf2nlBC.cd8qmkqhJV));
+				num2 = 4;
 			}
 		}
 
-		// Token: 0x06000D41 RID: 3393 RVA: 0x00015894 File Offset: 0x00013A94
+		// Token: 0x06000D1F RID: 3359 RVA: 0x00014BE8 File Offset: 0x00012DE8
 		public Il2CppStringArray(IntPtr pointer)
 		{
-			hIDAYxH6DWLHIthQgC.oDuBOTgYK();
-			Il2CppStringArray.N8kSrxRGNhfeg6mLKwD();
+			Il2CppStringArray.Jfu8yrpd3cXnmCAtdNt();
+			Il2CppStringArray.V83ERbpijYTsmXFdMWM();
 			base..ctor(pointer);
 			int num = 0;
-			if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_b4e45528af4644e9b080e05d5ff6ef54 == 0)
+			if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_508916f527eb4b05b32762ef07dd9e52 == 0)
 			{
 				num = 0;
 			}
@@ -63,14 +64,14 @@ namespace Il2CppInterop.Runtime.InteropTypes.Arrays
 			}
 		}
 
-		// Token: 0x06000D42 RID: 3394 RVA: 0x000158FC File Offset: 0x00013AFC
+		// Token: 0x06000D20 RID: 3360 RVA: 0x00014C50 File Offset: 0x00012E50
 		public Il2CppStringArray(long size)
 		{
 			hIDAYxH6DWLHIthQgC.oDuBOTgYK();
-			Il2CppStringArray.N8kSrxRGNhfeg6mLKwD();
-			base..ctor(Il2CppStringArray.ONrcjPRCoQLqr0oQHtW(size));
+			Il2CppStringArray.V83ERbpijYTsmXFdMWM();
+			base..ctor(Il2CppStringArray.NQyLVbpBIEG9YNsm3VG(size));
 			int num = 0;
-			if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_1d16dd38ead14cb191f3b77c23c04ed4 != 0)
+			if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_8378a46aa7ed47018832a42729b1bc3b != 0)
 			{
 				num = 0;
 			}
@@ -81,61 +82,58 @@ namespace Il2CppInterop.Runtime.InteropTypes.Arrays
 			}
 		}
 
-		// Token: 0x06000D43 RID: 3395 RVA: 0x00015968 File Offset: 0x00013B68
+		// Token: 0x06000D21 RID: 3361 RVA: 0x00014CBC File Offset: 0x00012EBC
 		public Il2CppStringArray(string[] arr)
 		{
-			Il2CppStringArray.rpFN87RI70TIWN88qoS();
-			Il2CppStringArray.N8kSrxRGNhfeg6mLKwD();
-			base..ctor(Il2CppStringArray.AllocateArray((long)arr.Length));
-			int num = 1;
-			if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_fcdd30171ceb4eb7a5570cbbc4f6aec1 == 0)
-			{
-				num = 0;
-			}
+			hIDAYxH6DWLHIthQgC.oDuBOTgYK();
+			Il2CppStringArray.V83ERbpijYTsmXFdMWM();
+			base..ctor(Il2CppStringArray.NQyLVbpBIEG9YNsm3VG((long)arr.Length));
+			int num = 2;
 			for (;;)
 			{
 				int num2;
 				switch (num)
 				{
+				case 0:
+					goto IL_A7;
 				case 1:
-					num2 = 0;
-					num = 5;
-					continue;
-				case 2:
 					num2++;
-					num = 2;
-					if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_3af7919884e4482186590a3e6e04f119 == 0)
+					num = 0;
+					if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_6a95c50bbb48420f8f11bb090d6d3bd5 == 0)
 					{
-						num = 3;
+						num = 0;
 						continue;
 					}
 					continue;
+				case 2:
+					num2 = 0;
+					num = 3;
+					continue;
 				case 3:
-					goto IL_D1;
+					goto IL_A7;
 				case 4:
 					return;
 				case 5:
-					goto IL_D1;
+					break;
+				default:
+					goto IL_A7;
 				}
-				IL_A6:
+				IL_7B:
 				this[num2] = arr[num2];
-				num = 2;
-				if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_d4e1c4caa68b4a76bc8f57ec8dfac2bc != 0)
+				num = 0;
+				if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_e5b00aa4c99144c78d3bd63e270496cb != 0)
 				{
-					num = 2;
+					num = 1;
 					continue;
 				}
 				continue;
-				IL_D1:
+				IL_A7:
 				if (num2 < arr.Length)
 				{
-					goto IL_A6;
+					goto IL_7B;
 				}
-				num = 1;
-				if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_75b92ac812f348208c578c3de71e2d57 == 0)
-				{
-					num = 4;
-				}
+				int num3 = 4;
+				num = num3;
 			}
 		}
 
@@ -144,88 +142,88 @@ namespace Il2CppInterop.Runtime.InteropTypes.Arrays
 		{
 			get
 			{
-				int num = 2;
+				int num = 3;
 				int num2 = num;
 				for (;;)
 				{
 					switch (num2)
 					{
 					case 1:
-						goto IL_EA;
-					case 2:
+						goto IL_33;
+					case 3:
 						if (index < 0)
 						{
-							num2 = 1;
-							if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_5a8626d471f54eba873ce59c8785d9b9 != 0)
-							{
-								num2 = 0;
-								continue;
-							}
+							num2 = 2;
 							continue;
 						}
-						break;
-					case 3:
-						goto IL_49;
+						goto IL_33;
 					}
-					if (index < Il2CppStringArray.crj6A8RtoF1Sg4E8jtn(this))
+					break;
+					IL_33:
+					if (index < Il2CppStringArray.yXSviApGr7x02IRMT8k(this))
 					{
-						goto IL_8B;
+						goto IL_BF;
 					}
-					num2 = 3;
+					num2 = 0;
+					if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_d2ec67b9ff6c4cd7af2a4ceec32c111c != 0)
+					{
+						num2 = 0;
+					}
 				}
-				IL_49:
-				throw new ArgumentOutOfRangeException(Il2CppStringArray.BHiKhhRxi6ZMAs6lmqb(189284862 - -678740789 ^ 668665678 ^ <Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_ea3a0368554c4e6093e0b0561ffd5cef), Il2CppStringArray.BHiKhhRxi6ZMAs6lmqb(1808198684 ^ 805410106 ^ <Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_fcdd30171ceb4eb7a5570cbbc4f6aec1));
-				IL_8B:
-				return Il2CppStringArray.uxRt2KR0faQ4mvtJTGn(*Il2CppStringArray.YwLc0yR8CnroIP9y1nE(Il2CppStringArray.YwLc0yR8CnroIP9y1nE(base.Pointer, 4 * Il2CppStringArray.ppds2hRhgtMQdUIbOZm(IreLT7A0Ync4AwEXIgw.thqANbO0eM), ksqFb8Il85Vq0skiabV.j8CIVKyZg8), index * Il2CppStringArray.ppds2hRhgtMQdUIbOZm(IreLT7A0Ync4AwEXIgw.thqANbO0eM), ksqFb8Il85Vq0skiabV.j8CIVKyZg8));
-				IL_EA:
-				goto IL_49;
+				throw new ArgumentOutOfRangeException(hIDAYxH6DWLHIthQgC.gSCeTtiku(~1524453083 ^ -177131277 ^ <Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_4da80845ebf7410ebbf942336f5ee27b), Il2CppStringArray.PuYZWSprIs5GZ08eV7b(-1459391761 ^ -390763933 ^ <Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_30f9f5d7d3f347ddac00a7ce0719d7cd));
+				IL_BF:
+				return Il2CppStringArray.ctvnbFpoiQSaAL5aNDl(*Il2CppStringArray.WIbZqkpguDiOvQU81QE(Il2CppStringArray.WIbZqkpguDiOvQU81QE(base.Pointer, 4 * Il2CppStringArray.o6ihXVpTqrTNxX75vlF(cQkHnrc4uCYVWodZmHM.qhnc3Q5HwY), apS1BFcfBa3gXUspL9j.A06c1GDsfl), index * Il2CppStringArray.o6ihXVpTqrTNxX75vlF(cQkHnrc4uCYVWodZmHM.qhnc3Q5HwY), apS1BFcfBa3gXUspL9j.A06c1GDsfl));
 			}
 			set
 			{
-				int num = 1;
-				int num2 = num;
+				int num = 2;
 				for (;;)
 				{
-					switch (num2)
+					int num2 = num;
+					for (;;)
 					{
-					case 1:
-						if (index >= 0)
+						switch (num2)
 						{
-							goto IL_6D;
-						}
-						num2 = 0;
-						if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_780e0c86b08f49d785f406cf802c7e87 == 0)
-						{
+						default:
+							goto IL_37;
+						case 1:
+							if (index >= Il2CppStringArray.yXSviApGr7x02IRMT8k(this))
+							{
+								goto IL_5B;
+							}
 							num2 = 0;
-							continue;
+							if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_cb2874465fa5416db806f31e03cc475c != 0)
+							{
+								num2 = 0;
+							}
+							break;
+						case 2:
+							if (index < 0)
+							{
+								goto IL_5B;
+							}
+							num2 = 1;
+							if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_c04403f838344b38b3a8911774a446ea != 0)
+							{
+								num2 = 1;
+							}
+							break;
+						case 3:
+							goto IL_5B;
+						case 4:
+							return;
 						}
-						continue;
-					case 3:
-						goto IL_6D;
-					case 4:
-						return;
 					}
-					break;
-					IL_6D:
-					if (index >= base.Length)
-					{
-						num2 = 2;
-						if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_46ba390073ec4df6883860abf17dbf6f == 0)
-						{
-							num2 = 2;
-						}
-					}
-					else
-					{
-						*Il2CppStringArray.YwLc0yR8CnroIP9y1nE(Il2CppStringArray.YwLc0yR8CnroIP9y1nE(base.Pointer, 4 * Il2CppStringArray.ppds2hRhgtMQdUIbOZm(IreLT7A0Ync4AwEXIgw.thqANbO0eM), ksqFb8Il85Vq0skiabV.j8CIVKyZg8), index * IreLT7A0Ync4AwEXIgw.i2IAUFsOOC(IreLT7A0Ync4AwEXIgw.thqANbO0eM), ksqFb8Il85Vq0skiabV.j8CIVKyZg8) = IL2CPP.ManagedStringToIl2Cpp(value);
-						num2 = 4;
-					}
+					IL_37:
+					*apS1BFcfBa3gXUspL9j.muOq5LWqgj(Il2CppStringArray.WIbZqkpguDiOvQU81QE(base.Pointer, 4 * Il2CppStringArray.o6ihXVpTqrTNxX75vlF(cQkHnrc4uCYVWodZmHM.qhnc3Q5HwY), apS1BFcfBa3gXUspL9j.A06c1GDsfl), index * Il2CppStringArray.o6ihXVpTqrTNxX75vlF(cQkHnrc4uCYVWodZmHM.qhnc3Q5HwY), apS1BFcfBa3gXUspL9j.A06c1GDsfl) = IL2CPP.ManagedStringToIl2Cpp(value);
+					num = 4;
 				}
-				throw new ArgumentOutOfRangeException(Il2CppStringArray.BHiKhhRxi6ZMAs6lmqb(256602955 + -2081249470 ^ -1673099359 ^ <Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_bdb78f8e72c9458b854f92ed163c1f40), Il2CppStringArray.BHiKhhRxi6ZMAs6lmqb(-1422024723 ^ -866534983 ^ <Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_ddf0bbff3ec54ad39c6b2ba58dc80058));
+				IL_5B:
+				throw new ArgumentOutOfRangeException(hIDAYxH6DWLHIthQgC.gSCeTtiku(457203345 ^ -2052212554 ^ -1779338507 ^ <Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_e6eb36653ec04a89bf8fa64932849f3b), hIDAYxH6DWLHIthQgC.gSCeTtiku(674965228 ^ 982390957 ^ <Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_7ac65c3fd4cb4629a8b893be89aed17d));
 			}
 		}
 
-		// Token: 0x06000D46 RID: 3398 RVA: 0x00015CDC File Offset: 0x00013EDC
+		// Token: 0x06000D24 RID: 3364 RVA: 0x00015008 File Offset: 0x00013208
 		public static implicit operator Il2CppStringArray(string[] arr)
 		{
 			int num = 1;
@@ -235,26 +233,30 @@ namespace Il2CppInterop.Runtime.InteropTypes.Arrays
 				switch (num2)
 				{
 				case 1:
-					if (arr != null)
+					if (arr == null)
 					{
-						goto IL_52;
+						goto IL_2F;
 					}
 					num2 = 0;
-					if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_806dbdb7f5194c2fa0c07a915df13fc8 == 0)
+					if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_6dbfd13d96434eb59d868fecd0ad1cda == 0)
 					{
 						num2 = 0;
 						continue;
 					}
 					continue;
+				case 2:
+					goto IL_2F;
 				}
 				break;
 			}
+			goto IL_5D;
+			IL_2F:
 			return null;
-			IL_52:
+			IL_5D:
 			return new Il2CppStringArray(arr);
 		}
 
-		// Token: 0x06000D47 RID: 3399 RVA: 0x00015D44 File Offset: 0x00013F44
+		// Token: 0x06000D25 RID: 3365 RVA: 0x00015098 File Offset: 0x00013298
 		private static IntPtr AllocateArray(long size)
 		{
 			int num = 1;
@@ -266,10 +268,10 @@ namespace Il2CppInterop.Runtime.InteropTypes.Arrays
 				case 1:
 					if (size >= 0L)
 					{
-						goto IL_8E;
+						goto IL_94;
 					}
 					num2 = 0;
-					if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_1d16dd38ead14cb191f3b77c23c04ed4 == 0)
+					if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_b4185925b5254e3aae05578c6a89b13c != 0)
 					{
 						num2 = 0;
 						continue;
@@ -278,95 +280,95 @@ namespace Il2CppInterop.Runtime.InteropTypes.Arrays
 				}
 				break;
 			}
-			throw new ArgumentOutOfRangeException(hIDAYxH6DWLHIthQgC.gSCeTtiku(1570093376 ^ 124806922 ^ <Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_d691a76a9c4746c9a1a67e34c67ca64b), Il2CppStringArray.BHiKhhRxi6ZMAs6lmqb(-1887629927 ^ -1552506850 ^ <Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_48b9993e573d4d08a64ac27c515a32b9));
-			IL_8E:
+			throw new ArgumentOutOfRangeException(Il2CppStringArray.PuYZWSprIs5GZ08eV7b(-1817151529 ^ -658580413 ^ <Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_bac7568f2bc04130b6b980225b2cc409), hIDAYxH6DWLHIthQgC.gSCeTtiku(106916134 + 835889755 ^ 1669285074 ^ <Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_ce8abd079f9447b3bade260ffc64f0b8));
+			IL_94:
 			IntPtr nativeClassPtr = Il2CppClassPointerStore<string>.NativeClassPtr;
 			if (nativeClassPtr == IntPtr.Zero)
 			{
-				throw new ArgumentException(hIDAYxH6DWLHIthQgC.gSCeTtiku(~499136732 ^ -1271966243 ^ <Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_806dbdb7f5194c2fa0c07a915df13fc8));
+				throw new ArgumentException(Il2CppStringArray.PuYZWSprIs5GZ08eV7b(1147518606 ^ 813546361 ^ <Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_2a3cb7fb82fa47c39f707a2393c1a340));
 			}
 			return IL2CPP.il2cpp_array_new(nativeClassPtr, (ulong)size);
 		}
 
-		// Token: 0x06000D48 RID: 3400 RVA: 0x00015E18 File Offset: 0x00014018
-		internal static void DdBq9mRiXdPG9XynkVS()
+		// Token: 0x06000D26 RID: 3366 RVA: 0x00015170 File Offset: 0x00013370
+		internal static void Ne7OrspIs8nDfMwnk8p()
 		{
 			hIDAYxH6DWLHIthQgC.zSLipEDdx();
 		}
 
-		// Token: 0x06000D49 RID: 3401 RVA: 0x00015E28 File Offset: 0x00014028
-		internal static void rpFN87RI70TIWN88qoS()
+		// Token: 0x06000D27 RID: 3367 RVA: 0x00015180 File Offset: 0x00013380
+		internal static void Jfu8yrpd3cXnmCAtdNt()
 		{
 			hIDAYxH6DWLHIthQgC.oDuBOTgYK();
 		}
 
-		// Token: 0x06000D4A RID: 3402 RVA: 0x00015E38 File Offset: 0x00014038
-		internal static void N8kSrxRGNhfeg6mLKwD()
+		// Token: 0x06000D28 RID: 3368 RVA: 0x00015190 File Offset: 0x00013390
+		internal static void V83ERbpijYTsmXFdMWM()
 		{
-			nHwRpygmi6xxZAssJn.MZ6my7dBdJ();
+			nHwRpygmi6xxZAssJn.EmlEpH4Phw();
 		}
 
-		// Token: 0x06000D4B RID: 3403 RVA: 0x00015E48 File Offset: 0x00014048
-		internal static Type iItTXLRYPJcPdnwdO3U(RuntimeTypeHandle A_0, object A_1)
+		// Token: 0x06000D29 RID: 3369 RVA: 0x000151A0 File Offset: 0x000133A0
+		internal static Type H8QZobpwOjIQfhpeMHj(RuntimeTypeHandle A_0, object A_1)
 		{
-			return byRw0gA2NyqHkl03ii9.i2IAUFsOOC(A_0, A_1);
+			return KrP4bwqDeBbRGf2nlBC.muOq5LWqgj(A_0, A_1);
 		}
 
-		// Token: 0x06000D4C RID: 3404 RVA: 0x00015E60 File Offset: 0x00014060
-		internal static void iZo0klRaFgHvBMnH0D3(Type A_0)
+		// Token: 0x06000D2A RID: 3370 RVA: 0x000151B8 File Offset: 0x000133B8
+		internal static void thfg0spEoOCmchK08R6(Type A_0)
 		{
 			Il2CppArrayBase<string>.StaticCtorBody(A_0);
 		}
 
-		// Token: 0x06000D4D RID: 3405 RVA: 0x00015E74 File Offset: 0x00014074
-		internal static bool MRhTBURqVLOurMVeqq4()
+		// Token: 0x06000D2B RID: 3371 RVA: 0x000151CC File Offset: 0x000133CC
+		internal static bool NKKKyrpCvWLpPFFLuXG()
 		{
-			return Il2CppStringArray.AjcmreRUV8NNPYMtIPg == null;
+			return Il2CppStringArray.HILaZZpWkqnooiRIsLL == null;
 		}
 
-		// Token: 0x06000D4E RID: 3406 RVA: 0x00015E88 File Offset: 0x00014088
-		internal static Il2CppStringArray Kpe881R9LLVTPWToQ31()
+		// Token: 0x06000D2C RID: 3372 RVA: 0x000151E0 File Offset: 0x000133E0
+		internal static Il2CppStringArray HNbg0ap9rCJWKww6LXm()
 		{
-			return Il2CppStringArray.AjcmreRUV8NNPYMtIPg;
+			return Il2CppStringArray.HILaZZpWkqnooiRIsLL;
 		}
 
-		// Token: 0x06000D4F RID: 3407 RVA: 0x00015E98 File Offset: 0x00014098
-		internal static IntPtr ONrcjPRCoQLqr0oQHtW(long size)
+		// Token: 0x06000D2D RID: 3373 RVA: 0x000151F0 File Offset: 0x000133F0
+		internal static IntPtr NQyLVbpBIEG9YNsm3VG(long size)
 		{
 			return Il2CppStringArray.AllocateArray(size);
 		}
 
-		// Token: 0x06000D50 RID: 3408 RVA: 0x00015EAC File Offset: 0x000140AC
-		internal static int crj6A8RtoF1Sg4E8jtn(object A_0)
+		// Token: 0x06000D2E RID: 3374 RVA: 0x00015204 File Offset: 0x00013404
+		internal static int yXSviApGr7x02IRMT8k(object A_0)
 		{
 			return A_0.Length;
 		}
 
-		// Token: 0x06000D51 RID: 3409 RVA: 0x00015EC0 File Offset: 0x000140C0
-		internal static object BHiKhhRxi6ZMAs6lmqb(int \u0020)
+		// Token: 0x06000D2F RID: 3375 RVA: 0x00015218 File Offset: 0x00013418
+		internal static object PuYZWSprIs5GZ08eV7b(int \u0020)
 		{
 			return hIDAYxH6DWLHIthQgC.gSCeTtiku(\u0020);
 		}
 
-		// Token: 0x06000D52 RID: 3410 RVA: 0x00015ED4 File Offset: 0x000140D4
-		internal static int ppds2hRhgtMQdUIbOZm(object A_0)
+		// Token: 0x06000D30 RID: 3376 RVA: 0x0001522C File Offset: 0x0001342C
+		internal static int o6ihXVpTqrTNxX75vlF(object A_0)
 		{
-			return IreLT7A0Ync4AwEXIgw.i2IAUFsOOC(A_0);
+			return cQkHnrc4uCYVWodZmHM.muOq5LWqgj(A_0);
 		}
 
-		// Token: 0x06000D53 RID: 3411 RVA: 0x00015EE8 File Offset: 0x000140E8
-		internal static IntPtr YwLc0yR8CnroIP9y1nE(IntPtr A_0, int A_1, object A_2)
+		// Token: 0x06000D31 RID: 3377 RVA: 0x00015240 File Offset: 0x00013440
+		internal static IntPtr WIbZqkpguDiOvQU81QE(IntPtr A_0, int A_1, object A_2)
 		{
-			return ksqFb8Il85Vq0skiabV.i2IAUFsOOC(A_0, A_1, A_2);
+			return apS1BFcfBa3gXUspL9j.muOq5LWqgj(A_0, A_1, A_2);
 		}
 
-		// Token: 0x06000D54 RID: 3412 RVA: 0x00015F04 File Offset: 0x00014104
-		internal static object uxRt2KR0faQ4mvtJTGn(IntPtr il2CppString)
+		// Token: 0x06000D32 RID: 3378 RVA: 0x0001525C File Offset: 0x0001345C
+		internal static object ctvnbFpoiQSaAL5aNDl(IntPtr il2CppString)
 		{
 			return IL2CPP.Il2CppStringToManaged(il2CppString);
 		}
 
-		// Token: 0x0400098E RID: 2446
-		private static Il2CppStringArray AjcmreRUV8NNPYMtIPg;
+		// Token: 0x04000983 RID: 2435
+		internal static Il2CppStringArray HILaZZpWkqnooiRIsLL;
 	}
 }

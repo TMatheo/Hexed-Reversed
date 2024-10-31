@@ -4,26 +4,26 @@ using pFRqcJyyWJ2hUZv2rN;
 
 namespace Il2CppInterop.Runtime.Runtime.VersionSpecific.EventInfo
 {
-	// Token: 0x020000B2 RID: 178
+	// Token: 0x020000B0 RID: 176
 	[ApplicableToUnityVersionsSince("5.2.2")]
 	public class NativeEventInfoStructHandler_16_0 : INativeEventInfoStructHandler, INativeStructHandler
 	{
-		// Token: 0x06000676 RID: 1654 RVA: 0x00010AB4 File Offset: 0x0000ECB4
+		// Token: 0x0600065B RID: 1627 RVA: 0x0000FE94 File Offset: 0x0000E094
 		public int Size()
 		{
 			return sizeof(NativeEventInfoStructHandler_16_0.Il2CppEventInfo_16_0);
 		}
 
-		// Token: 0x06000677 RID: 1655 RVA: 0x00010AC4 File Offset: 0x0000ECC4
+		// Token: 0x0600065C RID: 1628 RVA: 0x0000FEA4 File Offset: 0x0000E0A4
 		public unsafe INativeEventInfoStruct CreateNewStruct()
 		{
 			NativeEventInfoStructHandler_16_0.Il2CppEventInfo_16_0* ptr2;
-			IntPtr ptr = ptr2 = NativeEventInfoStructHandler_16_0.vQI9ZmcGnF9E7jA43AB(this.Size());
+			IntPtr ptr = ptr2 = NativeEventInfoStructHandler_16_0.LSqCiJbrEmnp1ogyqrn(this.Size());
 			*ptr2 = default(NativeEventInfoStructHandler_16_0.Il2CppEventInfo_16_0);
 			return new NativeEventInfoStructHandler_16_0.NativeStructWrapper(ptr);
 		}
 
-		// Token: 0x06000678 RID: 1656 RVA: 0x00010AF4 File Offset: 0x0000ECF4
+		// Token: 0x0600065D RID: 1629 RVA: 0x0000FED4 File Offset: 0x0000E0D4
 		public unsafe INativeEventInfoStruct Wrap(Il2CppEventInfo* ptr)
 		{
 			int num = 1;
@@ -38,7 +38,7 @@ namespace Il2CppInterop.Runtime.Runtime.VersionSpecific.EventInfo
 						goto IL_54;
 					}
 					num2 = 0;
-					if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_330a825ae0544050af4112bb9a37f6bb != 0)
+					if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_adb8decd62b945dda713f7b22b6b95ca == 0)
 					{
 						num2 = 0;
 						continue;
@@ -52,14 +52,14 @@ namespace Il2CppInterop.Runtime.Runtime.VersionSpecific.EventInfo
 			return new NativeEventInfoStructHandler_16_0.NativeStructWrapper(ptr);
 		}
 
-		// Token: 0x06000679 RID: 1657 RVA: 0x00010B5C File Offset: 0x0000ED5C
+		// Token: 0x0600065E RID: 1630 RVA: 0x0000FF3C File Offset: 0x0000E13C
 		public NativeEventInfoStructHandler_16_0()
 		{
-			NativeEventInfoStructHandler_16_0.WwVlsrcYOxnsVwWWlj8();
-			NativeEventInfoStructHandler_16_0.n79d8wcaSns1icjYDBy();
+			NativeEventInfoStructHandler_16_0.Q0n2DVbTNnJWr7AOneb();
+			NativeEventInfoStructHandler_16_0.KZgopQbgcTgV6aKlBvs();
 			base..ctor();
 			int num = 0;
-			if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_c23fbb8072754781976c5c809c25ef15 == 0)
+			if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_7dfb1d10537744ca9e949b6b3a3eac09 != 0)
 			{
 				num = 0;
 			}
@@ -70,111 +70,111 @@ namespace Il2CppInterop.Runtime.Runtime.VersionSpecific.EventInfo
 			}
 		}
 
-		// Token: 0x0600067A RID: 1658 RVA: 0x00010BC0 File Offset: 0x0000EDC0
+		// Token: 0x0600065F RID: 1631 RVA: 0x0000FFA0 File Offset: 0x0000E1A0
 		// Note: this type is marked as 'beforefieldinit'.
 		static NativeEventInfoStructHandler_16_0()
 		{
-			NativeEventInfoStructHandler_16_0.iXVWuucC0IkqrlXGcO6();
+			NativeEventInfoStructHandler_16_0.uVbZM1botaQ9tQvQnnS();
 		}
 
-		// Token: 0x0600067B RID: 1659 RVA: 0x00010BD0 File Offset: 0x0000EDD0
-		internal static IntPtr vQI9ZmcGnF9E7jA43AB(int size)
+		// Token: 0x06000660 RID: 1632 RVA: 0x0000FFB0 File Offset: 0x0000E1B0
+		internal static IntPtr LSqCiJbrEmnp1ogyqrn(int size)
 		{
 			return MarshalExtend.AllocHGlobal(size);
 		}
 
-		// Token: 0x0600067C RID: 1660 RVA: 0x00010BE4 File Offset: 0x0000EDE4
-		internal static bool SFf6PPcikTkf0YGwWv6()
+		// Token: 0x06000661 RID: 1633 RVA: 0x0000FFC4 File Offset: 0x0000E1C4
+		internal static bool pHZkbZbBeB5f2fOEOwG()
 		{
-			return NativeEventInfoStructHandler_16_0.uTaGcZc9IPIGPSrawfl == null;
+			return NativeEventInfoStructHandler_16_0.sLLvw0bEVbGo2yjWQIc == null;
 		}
 
-		// Token: 0x0600067D RID: 1661 RVA: 0x00010BF8 File Offset: 0x0000EDF8
-		internal static NativeEventInfoStructHandler_16_0 wgeLhbcIkWrnEv9l7O9()
+		// Token: 0x06000662 RID: 1634 RVA: 0x0000FFD8 File Offset: 0x0000E1D8
+		internal static NativeEventInfoStructHandler_16_0 NS0Dv4bGtwxocdXIc2R()
 		{
-			return NativeEventInfoStructHandler_16_0.uTaGcZc9IPIGPSrawfl;
+			return NativeEventInfoStructHandler_16_0.sLLvw0bEVbGo2yjWQIc;
 		}
 
-		// Token: 0x0600067E RID: 1662 RVA: 0x00010C08 File Offset: 0x0000EE08
-		internal static void WwVlsrcYOxnsVwWWlj8()
+		// Token: 0x06000663 RID: 1635 RVA: 0x0000FFE8 File Offset: 0x0000E1E8
+		internal static void Q0n2DVbTNnJWr7AOneb()
 		{
 			hIDAYxH6DWLHIthQgC.oDuBOTgYK();
 		}
 
-		// Token: 0x0600067F RID: 1663 RVA: 0x00010C18 File Offset: 0x0000EE18
-		internal static void n79d8wcaSns1icjYDBy()
+		// Token: 0x06000664 RID: 1636 RVA: 0x0000FFF8 File Offset: 0x0000E1F8
+		internal static void KZgopQbgcTgV6aKlBvs()
 		{
-			nHwRpygmi6xxZAssJn.MZ6my7dBdJ();
+			nHwRpygmi6xxZAssJn.EmlEpH4Phw();
 		}
 
-		// Token: 0x06000680 RID: 1664 RVA: 0x00010C28 File Offset: 0x0000EE28
-		internal static void iXVWuucC0IkqrlXGcO6()
+		// Token: 0x06000665 RID: 1637 RVA: 0x00010008 File Offset: 0x0000E208
+		internal static void uVbZM1botaQ9tQvQnnS()
 		{
 			hIDAYxH6DWLHIthQgC.zSLipEDdx();
 		}
 
-		// Token: 0x040002E1 RID: 737
-		internal static NativeEventInfoStructHandler_16_0 uTaGcZc9IPIGPSrawfl;
+		// Token: 0x040002D6 RID: 726
+		internal static NativeEventInfoStructHandler_16_0 sLLvw0bEVbGo2yjWQIc;
 
-		// Token: 0x020000B3 RID: 179
+		// Token: 0x020000B1 RID: 177
 		internal struct Il2CppEventInfo_16_0
 		{
-			// Token: 0x040002E2 RID: 738
+			// Token: 0x040002D7 RID: 727
 			public unsafe byte* name;
 
-			// Token: 0x040002E3 RID: 739
+			// Token: 0x040002D8 RID: 728
 			public unsafe Il2CppTypeStruct* eventType;
 
-			// Token: 0x040002E4 RID: 740
+			// Token: 0x040002D9 RID: 729
 			public unsafe Il2CppClass* parent;
 
-			// Token: 0x040002E5 RID: 741
+			// Token: 0x040002DA RID: 730
 			public unsafe Il2CppMethodInfo* add;
 
-			// Token: 0x040002E6 RID: 742
+			// Token: 0x040002DB RID: 731
 			public unsafe Il2CppMethodInfo* remove;
 
-			// Token: 0x040002E7 RID: 743
+			// Token: 0x040002DC RID: 732
 			public unsafe Il2CppMethodInfo* raise;
 
-			// Token: 0x040002E8 RID: 744
+			// Token: 0x040002DD RID: 733
 			public int customAttributeIndex;
 		}
 
-		// Token: 0x020000B4 RID: 180
+		// Token: 0x020000B2 RID: 178
 		internal class NativeStructWrapper : INativeEventInfoStruct, INativeStruct
 		{
-			// Token: 0x06000681 RID: 1665 RVA: 0x0001D0C4 File Offset: 0x0001B2C4
+			// Token: 0x06000666 RID: 1638 RVA: 0x0001C45C File Offset: 0x0001A65C
 			public NativeStructWrapper(IntPtr ptr)
 			{
-				NativeEventInfoStructHandler_16_0.NativeStructWrapper.s1X85HZfW8W0n0bfef4();
-				nHwRpygmi6xxZAssJn.MZ6my7dBdJ();
+				hIDAYxH6DWLHIthQgC.oDuBOTgYK();
+				NativeEventInfoStructHandler_16_0.NativeStructWrapper.DuQyLeDc6q0HyppktXo();
 				base..ctor();
-				int num = 0;
-				if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_c474f43efb4d4f17b5c0c1bf3216ef4d == 0)
+				int num = 1;
+				if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_cfadd7e02c524ea298356b7415bd67b6 != 0)
 				{
-					num = 0;
+					num = 1;
 				}
 				for (;;)
 				{
 					switch (num)
 					{
-					default:
-						this.<Pointer>k__BackingField = ptr;
-						num = 1;
-						if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_c474f43efb4d4f17b5c0c1bf3216ef4d == 0)
-						{
-							num = 1;
-						}
-						break;
 					case 1:
-						return;
+						this.<Pointer>k__BackingField = ptr;
+						num = 0;
+						if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_b3f20ce588d04b909ddcdcdf767eb5d4 != 0)
+						{
+							num = 0;
+							continue;
+						}
+						continue;
 					}
+					break;
 				}
 			}
 
 			// Token: 0x17000176 RID: 374
-			// (get) Token: 0x06000682 RID: 1666 RVA: 0x0001D154 File Offset: 0x0001B354
+			// (get) Token: 0x06000667 RID: 1639 RVA: 0x0001C4EC File Offset: 0x0001A6EC
 			private unsafe NativeEventInfoStructHandler_16_0.Il2CppEventInfo_16_0* _
 			{
 				get
@@ -184,11 +184,11 @@ namespace Il2CppInterop.Runtime.Runtime.VersionSpecific.EventInfo
 			}
 
 			// Token: 0x17000177 RID: 375
-			// (get) Token: 0x06000683 RID: 1667 RVA: 0x0001D164 File Offset: 0x0001B364
+			// (get) Token: 0x06000668 RID: 1640 RVA: 0x0001C4FC File Offset: 0x0001A6FC
 			public IntPtr Pointer { get; }
 
 			// Token: 0x17000178 RID: 376
-			// (get) Token: 0x06000684 RID: 1668 RVA: 0x0001D174 File Offset: 0x0001B374
+			// (get) Token: 0x06000669 RID: 1641 RVA: 0x0001C50C File Offset: 0x0001A70C
 			public unsafe Il2CppEventInfo* EventInfoPointer
 			{
 				get
@@ -198,7 +198,7 @@ namespace Il2CppInterop.Runtime.Runtime.VersionSpecific.EventInfo
 			}
 
 			// Token: 0x17000179 RID: 377
-			// (get) Token: 0x06000685 RID: 1669 RVA: 0x0001D184 File Offset: 0x0001B384
+			// (get) Token: 0x0600066A RID: 1642 RVA: 0x0001C51C File Offset: 0x0001A71C
 			public unsafe ref IntPtr Name
 			{
 				get
@@ -208,7 +208,7 @@ namespace Il2CppInterop.Runtime.Runtime.VersionSpecific.EventInfo
 			}
 
 			// Token: 0x1700017A RID: 378
-			// (get) Token: 0x06000686 RID: 1670 RVA: 0x0001D19C File Offset: 0x0001B39C
+			// (get) Token: 0x0600066B RID: 1643 RVA: 0x0001C534 File Offset: 0x0001A734
 			public unsafe ref Il2CppTypeStruct* EventType
 			{
 				get
@@ -218,7 +218,7 @@ namespace Il2CppInterop.Runtime.Runtime.VersionSpecific.EventInfo
 			}
 
 			// Token: 0x1700017B RID: 379
-			// (get) Token: 0x06000687 RID: 1671 RVA: 0x0001D1B0 File Offset: 0x0001B3B0
+			// (get) Token: 0x0600066C RID: 1644 RVA: 0x0001C548 File Offset: 0x0001A748
 			public unsafe ref Il2CppClass* Parent
 			{
 				get
@@ -228,7 +228,7 @@ namespace Il2CppInterop.Runtime.Runtime.VersionSpecific.EventInfo
 			}
 
 			// Token: 0x1700017C RID: 380
-			// (get) Token: 0x06000688 RID: 1672 RVA: 0x0001D1C4 File Offset: 0x0001B3C4
+			// (get) Token: 0x0600066D RID: 1645 RVA: 0x0001C55C File Offset: 0x0001A75C
 			public unsafe ref Il2CppMethodInfo* Add
 			{
 				get
@@ -238,7 +238,7 @@ namespace Il2CppInterop.Runtime.Runtime.VersionSpecific.EventInfo
 			}
 
 			// Token: 0x1700017D RID: 381
-			// (get) Token: 0x06000689 RID: 1673 RVA: 0x0001D1D8 File Offset: 0x0001B3D8
+			// (get) Token: 0x0600066E RID: 1646 RVA: 0x0001C570 File Offset: 0x0001A770
 			public unsafe ref Il2CppMethodInfo* Remove
 			{
 				get
@@ -248,7 +248,7 @@ namespace Il2CppInterop.Runtime.Runtime.VersionSpecific.EventInfo
 			}
 
 			// Token: 0x1700017E RID: 382
-			// (get) Token: 0x0600068A RID: 1674 RVA: 0x0001D1EC File Offset: 0x0001B3EC
+			// (get) Token: 0x0600066F RID: 1647 RVA: 0x0001C584 File Offset: 0x0001A784
 			public unsafe ref Il2CppMethodInfo* Raise
 			{
 				get
@@ -257,39 +257,39 @@ namespace Il2CppInterop.Runtime.Runtime.VersionSpecific.EventInfo
 				}
 			}
 
-			// Token: 0x0600068B RID: 1675 RVA: 0x0001D200 File Offset: 0x0001B400
+			// Token: 0x06000670 RID: 1648 RVA: 0x0001C598 File Offset: 0x0001A798
 			// Note: this type is marked as 'beforefieldinit'.
 			static NativeStructWrapper()
 			{
-				NativeEventInfoStructHandler_16_0.NativeStructWrapper.mI9XTvZPrx1BHyrvuwd();
+				NativeEventInfoStructHandler_16_0.NativeStructWrapper.gcnTK9DkYhDX0k2fEiV();
 			}
 
-			// Token: 0x0600068C RID: 1676 RVA: 0x0001D210 File Offset: 0x0001B410
-			internal static void s1X85HZfW8W0n0bfef4()
+			// Token: 0x06000671 RID: 1649 RVA: 0x0001C5A8 File Offset: 0x0001A7A8
+			internal static void DuQyLeDc6q0HyppktXo()
 			{
-				hIDAYxH6DWLHIthQgC.oDuBOTgYK();
+				nHwRpygmi6xxZAssJn.EmlEpH4Phw();
 			}
 
-			// Token: 0x0600068D RID: 1677 RVA: 0x0001D220 File Offset: 0x0001B420
-			internal static bool eOd8QIZoWDjBSqVBjkl()
+			// Token: 0x06000672 RID: 1650 RVA: 0x0001C5B8 File Offset: 0x0001A7B8
+			internal static bool TJst0IDLkNXq99FK0xl()
 			{
-				return NativeEventInfoStructHandler_16_0.NativeStructWrapper.milMUpZZmjVSskh7g2J == null;
+				return NativeEventInfoStructHandler_16_0.NativeStructWrapper.F3obAKDA6weKm5TGhBp == null;
 			}
 
-			// Token: 0x0600068E RID: 1678 RVA: 0x0001D234 File Offset: 0x0001B434
-			internal static NativeEventInfoStructHandler_16_0.NativeStructWrapper N6W51TZbTvoitmZEo2n()
+			// Token: 0x06000673 RID: 1651 RVA: 0x0001C5CC File Offset: 0x0001A7CC
+			internal static NativeEventInfoStructHandler_16_0.NativeStructWrapper kQhJ1CDX95MyEuZsWkN()
 			{
-				return NativeEventInfoStructHandler_16_0.NativeStructWrapper.milMUpZZmjVSskh7g2J;
+				return NativeEventInfoStructHandler_16_0.NativeStructWrapper.F3obAKDA6weKm5TGhBp;
 			}
 
-			// Token: 0x0600068F RID: 1679 RVA: 0x0001D244 File Offset: 0x0001B444
-			internal static void mI9XTvZPrx1BHyrvuwd()
+			// Token: 0x06000674 RID: 1652 RVA: 0x0001C5DC File Offset: 0x0001A7DC
+			internal static void gcnTK9DkYhDX0k2fEiV()
 			{
 				hIDAYxH6DWLHIthQgC.zSLipEDdx();
 			}
 
-			// Token: 0x040002EA RID: 746
-			private static object milMUpZZmjVSskh7g2J;
+			// Token: 0x040002DF RID: 735
+			private static object F3obAKDA6weKm5TGhBp;
 		}
 	}
 }

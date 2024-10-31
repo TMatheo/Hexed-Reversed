@@ -2,13 +2,13 @@
 
 namespace Il2CppInterop.Runtime.Runtime.VersionSpecific.Image
 {
-	// Token: 0x02000094 RID: 148
+	// Token: 0x02000092 RID: 146
 	public interface INativeImageStructHandler : INativeStructHandler
 	{
-		// Token: 0x0600059A RID: 1434
+		// Token: 0x06000580 RID: 1408
 		INativeImageStruct CreateNewStruct();
 
-		// Token: 0x0600059B RID: 1435
+		// Token: 0x06000581 RID: 1409
 		unsafe INativeImageStruct Wrap(Il2CppImage* imagePointer);
 	}
 }

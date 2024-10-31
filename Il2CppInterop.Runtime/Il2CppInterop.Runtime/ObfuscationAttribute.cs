@@ -2,13 +2,13 @@
 using MaoFcf2Vq4taIANM6n;
 using pFRqcJyyWJ2hUZv2rN;
 
-// Token: 0x02000137 RID: 311
+// Token: 0x02000134 RID: 308
 [AttributeUsage(AttributeTargets.Assembly | AttributeTargets.Class | AttributeTargets.Struct | AttributeTargets.Enum | AttributeTargets.Method | AttributeTargets.Property | AttributeTargets.Field | AttributeTargets.Event | AttributeTargets.Interface | AttributeTargets.Parameter | AttributeTargets.Delegate, AllowMultiple = true, Inherited = false)]
 public sealed class ObfuscationAttribute : Attribute
 {
 	// Token: 0x170004E3 RID: 1251
-	// (get) Token: 0x06000D8F RID: 3471 RVA: 0x0002944C File Offset: 0x0002764C
-	// (set) Token: 0x06000D90 RID: 3472 RVA: 0x0002945C File Offset: 0x0002765C
+	// (get) Token: 0x06000D67 RID: 3431 RVA: 0x00028714 File Offset: 0x00026914
+	// (set) Token: 0x06000D68 RID: 3432 RVA: 0x00028724 File Offset: 0x00026924
 	public bool ApplyToMembers
 	{
 		get
@@ -23,24 +23,24 @@ public sealed class ObfuscationAttribute : Attribute
 			{
 				switch (num2)
 				{
-				default:
-					return;
 				case 1:
 					this.m_applyToMembers = value;
 					num2 = 0;
-					if (!ObfuscationAttribute.wFCAmXe2lC0nZFpXThb())
+					if (!ObfuscationAttribute.uWshFE12DMeGfhPdQx7())
 					{
 						num2 = 0;
+						continue;
 					}
-					break;
+					continue;
 				}
+				break;
 			}
 		}
 	}
 
 	// Token: 0x170004E4 RID: 1252
-	// (get) Token: 0x06000D91 RID: 3473 RVA: 0x000294B8 File Offset: 0x000276B8
-	// (set) Token: 0x06000D92 RID: 3474 RVA: 0x000294C8 File Offset: 0x000276C8
+	// (get) Token: 0x06000D69 RID: 3433 RVA: 0x00028780 File Offset: 0x00026980
+	// (set) Token: 0x06000D6A RID: 3434 RVA: 0x00028790 File Offset: 0x00026990
 	public bool Exclude
 	{
 		get
@@ -55,24 +55,24 @@ public sealed class ObfuscationAttribute : Attribute
 			{
 				switch (num2)
 				{
-				default:
-					return;
 				case 1:
 					this.m_exclude = value;
 					num2 = 0;
-					if (ObfuscationAttribute.uQXNyXeygTTynr6bCx8() == null)
+					if (ObfuscationAttribute.Y30Q941HIyeohiTMqFa() != null)
 					{
 						num2 = 0;
+						continue;
 					}
-					break;
+					continue;
 				}
+				break;
 			}
 		}
 	}
 
 	// Token: 0x170004E5 RID: 1253
-	// (get) Token: 0x06000D93 RID: 3475 RVA: 0x00029524 File Offset: 0x00027724
-	// (set) Token: 0x06000D94 RID: 3476 RVA: 0x00029534 File Offset: 0x00027734
+	// (get) Token: 0x06000D6B RID: 3435 RVA: 0x000287EC File Offset: 0x000269EC
+	// (set) Token: 0x06000D6C RID: 3436 RVA: 0x000287FC File Offset: 0x000269FC
 	public string Feature
 	{
 		get
@@ -92,7 +92,7 @@ public sealed class ObfuscationAttribute : Attribute
 				case 1:
 					this.m_feature = value;
 					num2 = 0;
-					if (ObfuscationAttribute.uQXNyXeygTTynr6bCx8() == null)
+					if (!ObfuscationAttribute.uWshFE12DMeGfhPdQx7())
 					{
 						num2 = 0;
 					}
@@ -103,8 +103,8 @@ public sealed class ObfuscationAttribute : Attribute
 	}
 
 	// Token: 0x170004E6 RID: 1254
-	// (get) Token: 0x06000D95 RID: 3477 RVA: 0x00029590 File Offset: 0x00027790
-	// (set) Token: 0x06000D96 RID: 3478 RVA: 0x000295A0 File Offset: 0x000277A0
+	// (get) Token: 0x06000D6D RID: 3437 RVA: 0x00028858 File Offset: 0x00026A58
+	// (set) Token: 0x06000D6E RID: 3438 RVA: 0x00028868 File Offset: 0x00026A68
 	public bool StripAfterObfuscation
 	{
 		get
@@ -124,7 +124,7 @@ public sealed class ObfuscationAttribute : Attribute
 				case 1:
 					this.m_strip = value;
 					num2 = 0;
-					if (ObfuscationAttribute.uQXNyXeygTTynr6bCx8() == null)
+					if (!ObfuscationAttribute.uWshFE12DMeGfhPdQx7())
 					{
 						num2 = 0;
 					}
@@ -134,14 +134,14 @@ public sealed class ObfuscationAttribute : Attribute
 		}
 	}
 
-	// Token: 0x06000D97 RID: 3479 RVA: 0x000295FC File Offset: 0x000277FC
+	// Token: 0x06000D6F RID: 3439 RVA: 0x000288C4 File Offset: 0x00026AC4
 	public ObfuscationAttribute()
 	{
-		ObfuscationAttribute.hwSR5beSROsNo3nnWUL();
-		nHwRpygmi6xxZAssJn.MZ6my7dBdJ();
+		ObfuscationAttribute.yfOYad1hNDPWtMoeEGR();
+		ObfuscationAttribute.cWj2yq1OkGj6UjaAFce();
 		this.m_applyToMembers = true;
 		this.m_exclude = true;
-		this.m_feature = ObfuscationAttribute.OR0cMgega0eHkbdYABg(2082337970 - -1918242524 ^ -1671688348 ^ <Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_9f56599a6a304695b6cfc284bd7d7c9a);
+		this.m_feature = hIDAYxH6DWLHIthQgC.gSCeTtiku(407862330 ^ 1124214615 ^ <Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_ce8abd079f9447b3bade260ffc64f0b8);
 		this.m_strip = true;
 		base..ctor();
 		int num = 0;
@@ -156,55 +156,49 @@ public sealed class ObfuscationAttribute : Attribute
 		}
 	}
 
-	// Token: 0x06000D98 RID: 3480 RVA: 0x000296A8 File Offset: 0x000278A8
+	// Token: 0x06000D70 RID: 3440 RVA: 0x0002896C File Offset: 0x00026B6C
 	// Note: this type is marked as 'beforefieldinit'.
 	static ObfuscationAttribute()
-	{
-		ObfuscationAttribute.SVAnmqelYMeCw6CyPDx();
-	}
-
-	// Token: 0x06000D99 RID: 3481 RVA: 0x000296B8 File Offset: 0x000278B8
-	internal static bool wFCAmXe2lC0nZFpXThb()
-	{
-		return ObfuscationAttribute.meaGwJeQ3mgamrPTQID == null;
-	}
-
-	// Token: 0x06000D9A RID: 3482 RVA: 0x000296CC File Offset: 0x000278CC
-	internal static ObfuscationAttribute uQXNyXeygTTynr6bCx8()
-	{
-		return ObfuscationAttribute.meaGwJeQ3mgamrPTQID;
-	}
-
-	// Token: 0x06000D9B RID: 3483 RVA: 0x000296DC File Offset: 0x000278DC
-	internal static void hwSR5beSROsNo3nnWUL()
-	{
-		hIDAYxH6DWLHIthQgC.oDuBOTgYK();
-	}
-
-	// Token: 0x06000D9C RID: 3484 RVA: 0x000296EC File Offset: 0x000278EC
-	internal static object OR0cMgega0eHkbdYABg(int \u0020)
-	{
-		return hIDAYxH6DWLHIthQgC.gSCeTtiku(\u0020);
-	}
-
-	// Token: 0x06000D9D RID: 3485 RVA: 0x00029700 File Offset: 0x00027900
-	internal static void SVAnmqelYMeCw6CyPDx()
 	{
 		hIDAYxH6DWLHIthQgC.zSLipEDdx();
 	}
 
-	// Token: 0x040009A0 RID: 2464
+	// Token: 0x06000D71 RID: 3441 RVA: 0x0002897C File Offset: 0x00026B7C
+	internal static bool uWshFE12DMeGfhPdQx7()
+	{
+		return ObfuscationAttribute.OcxdMq1k8pBuEYVsIHC == null;
+	}
+
+	// Token: 0x06000D72 RID: 3442 RVA: 0x00028990 File Offset: 0x00026B90
+	internal static ObfuscationAttribute Y30Q941HIyeohiTMqFa()
+	{
+		return ObfuscationAttribute.OcxdMq1k8pBuEYVsIHC;
+	}
+
+	// Token: 0x06000D73 RID: 3443 RVA: 0x000289A0 File Offset: 0x00026BA0
+	internal static void yfOYad1hNDPWtMoeEGR()
+	{
+		hIDAYxH6DWLHIthQgC.oDuBOTgYK();
+	}
+
+	// Token: 0x06000D74 RID: 3444 RVA: 0x000289B0 File Offset: 0x00026BB0
+	internal static void cWj2yq1OkGj6UjaAFce()
+	{
+		nHwRpygmi6xxZAssJn.EmlEpH4Phw();
+	}
+
+	// Token: 0x04000993 RID: 2451
 	private bool m_applyToMembers;
 
-	// Token: 0x040009A1 RID: 2465
+	// Token: 0x04000994 RID: 2452
 	private bool m_exclude;
 
-	// Token: 0x040009A2 RID: 2466
+	// Token: 0x04000995 RID: 2453
 	private string m_feature;
 
-	// Token: 0x040009A3 RID: 2467
+	// Token: 0x04000996 RID: 2454
 	private bool m_strip;
 
-	// Token: 0x040009A4 RID: 2468
-	private static ObfuscationAttribute meaGwJeQ3mgamrPTQID;
+	// Token: 0x04000997 RID: 2455
+	internal static ObfuscationAttribute OcxdMq1k8pBuEYVsIHC;
 }

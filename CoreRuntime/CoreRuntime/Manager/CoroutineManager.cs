@@ -10,7 +10,7 @@ namespace CoreRuntime.Manager
 	// Token: 0x02000006 RID: 6
 	public static class CoroutineManager
 	{
-		// Token: 0x0600001D RID: 29 RVA: 0x000034CC File Offset: 0x000016CC
+		// Token: 0x0600001D RID: 29 RVA: 0x00003474 File Offset: 0x00001674
 		public static void RunCoroutine(IEnumerator routine)
 		{
 			int num = 1;
@@ -19,132 +19,139 @@ namespace CoreRuntime.Manager
 			{
 				switch (num2)
 				{
+				default:
+					return;
 				case 1:
 					CoroutineManager.QueuedEnums.Add(new CoroutineWrap(routine));
 					num2 = 0;
-					if (<Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_44b91839abc74b4e80f4fbc7e2f95d46 != 0)
+					if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_a7b8f11a3dc04c2894575bc1f957bd5d != 0)
 					{
 						num2 = 0;
-						continue;
 					}
-					continue;
+					break;
 				}
-				break;
 			}
 		}
 
-		// Token: 0x0600001E RID: 30 RVA: 0x0000352C File Offset: 0x0000172C
+		// Token: 0x0600001E RID: 30 RVA: 0x000034D4 File Offset: 0x000016D4
 		public static void StopCoroutine(IEnumerator routine)
 		{
-			int num = 3;
-			int num2 = num;
+			int num = 1;
 			for (;;)
 			{
+				int num2 = num;
 				CoroutineWrap coroutineWrap;
-				switch (num2)
+				for (;;)
 				{
-				case 1:
-					if (coroutineWrap == null)
+					switch (num2)
 					{
-						num2 = 5;
+					case 1:
+						num2 = 0;
+						if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_71c7cb2bd1f54a2da861ecddf0125b03 != 0)
+						{
+							num2 = 0;
+							continue;
+						}
+						continue;
+					case 2:
+						return;
+					case 3:
+						goto IL_86;
+					case 4:
+						if (coroutineWrap == null)
+						{
+							return;
+						}
+						num2 = 2;
+						if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_0d6f1b1d53ea401dac5370118afd5971 != 0)
+						{
+							num2 = 5;
+							continue;
+						}
+						continue;
+					case 5:
+						CoroutineManager.QueuedEnums.Remove(coroutineWrap);
+						num2 = 2;
+						if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_5d0fdc373cde4068a8053e8907aa08b1 == 0)
+						{
+							num2 = 2;
+							continue;
+						}
 						continue;
 					}
-					goto IL_BE;
-				case 2:
-					CS$<>8__locals1.routine = routine2;
-					num2 = 6;
-					if (<Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_fa60916c7a1349c5b763a777fb2641c6 != 0)
-					{
-						num2 = 4;
-						continue;
-					}
-					continue;
-				case 3:
-					num2 = 2;
-					continue;
-				case 4:
-					goto IL_BE;
-				case 6:
-					coroutineWrap = (from x in CoroutineManager.QueuedEnums
-					where x._coroutine == CS$<>8__locals1.routine
-					select x).FirstOrDefault<CoroutineWrap>();
-					num2 = 0;
-					if (<Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_2fb74f9d085344138f63a1f1e086a85d != 0)
-					{
-						num2 = 1;
-						continue;
-					}
-					continue;
+					goto Block_1;
 				}
-				break;
-				IL_BE:
-				CoroutineManager.QueuedEnums.Remove(coroutineWrap);
-				num2 = 0;
-				if (<Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_87e5b6540b634fc2ba51a8e24880693f != 0)
-				{
-					num2 = 0;
-				}
+				IL_86:
+				coroutineWrap = (from x in CoroutineManager.QueuedEnums
+				where x._coroutine == CS$<>8__locals1.routine
+				select x).FirstOrDefault<CoroutineWrap>();
+				num = 4;
+				continue;
+				IL_B2:
+				CS$<>8__locals1.routine = routine2;
+				num = 3;
+				continue;
+				Block_1:
+				goto IL_B2;
 			}
 		}
 
-		// Token: 0x0600001F RID: 31 RVA: 0x00003634 File Offset: 0x00001834
+		// Token: 0x0600001F RID: 31 RVA: 0x000035D0 File Offset: 0x000017D0
 		// Note: this type is marked as 'beforefieldinit'.
 		static CoroutineManager()
 		{
-			int num = 3;
+			int num = 2;
 			int num2 = num;
 			for (;;)
 			{
 				switch (num2)
 				{
 				case 1:
-					CoroutineManager.QueuedEnums = new List<CoroutineWrap>();
+					nHwRpygmi6xxZAssJn.dxI7NE9hn1();
 					num2 = 0;
-					if (<Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_ffa29b8d81de4abeb6a7b629819de9ed == 0)
+					if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_70bc873b0ed747178a0929a3d2ee0102 != 0)
 					{
 						num2 = 0;
 						continue;
 					}
 					continue;
 				case 2:
-					nHwRpygmi6xxZAssJn.UoDdI5CpWg();
+					hIDAYxH6DWLHIthQgC.oDuBOTgYK();
 					num2 = 1;
-					if (<Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_0bdee027790a49d8af2e7ff913456ed0 == 0)
+					if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_781114abd2034347956064bb551f8f7d == 0)
 					{
 						num2 = 1;
 						continue;
 					}
 					continue;
 				case 3:
-					hIDAYxH6DWLHIthQgC.oDuBOTgYK();
-					num2 = 2;
-					if (<Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_4cbcb2d46d6c4286be8cf3e1dde6ad8c == 0)
-					{
-						num2 = 0;
-						continue;
-					}
-					continue;
+					return;
 				}
-				break;
+				CoroutineManager.QueuedEnums = new List<CoroutineWrap>();
+				num2 = 3;
+				if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_70bc873b0ed747178a0929a3d2ee0102 == 0)
+				{
+					num2 = 0;
+				}
 			}
 		}
 
-		// Token: 0x06000020 RID: 32 RVA: 0x000036E0 File Offset: 0x000018E0
-		internal static bool NBnyZo2sYZp64Qfc0Aj()
+		// Token: 0x06000020 RID: 32 RVA: 0x0000367C File Offset: 0x0000187C
+		internal static bool dp1BUjki6k7mg5iO2N0()
 		{
-			return CoroutineManager.zL1a802hZBtB0kerMqR == null;
+			return CoroutineManager.qv7Fs7kG3gMZSPURGM3 == null;
 		}
 
-		// Token: 0x06000021 RID: 33 RVA: 0x000036EC File Offset: 0x000018EC
-		internal static CoroutineManager sbg5Zq2cvOOgwLS3FLO()
+		// Token: 0x06000021 RID: 33 RVA: 0x00003688 File Offset: 0x00001888
+		internal static CoroutineManager dgYvqikurJyJZep6QPB()
 		{
-			return CoroutineManager.zL1a802hZBtB0kerMqR;
+			return CoroutineManager.qv7Fs7kG3gMZSPURGM3;
 		}
 
 		// Token: 0x04000009 RID: 9
 		internal static List<CoroutineWrap> QueuedEnums;
 
 		// Token: 0x0400000A RID: 10
-		private static CoroutineManager zL1a802hZBtB0kerMqR;
+		internal static CoroutineManager qv7Fs7kG3gMZSPURGM3;
 	}
 }

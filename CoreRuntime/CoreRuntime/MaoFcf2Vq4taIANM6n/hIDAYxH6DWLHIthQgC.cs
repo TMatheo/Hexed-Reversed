@@ -15,7 +15,7 @@ namespace MaoFcf2Vq4taIANM6n
 	// Token: 0x02000016 RID: 22
 	internal class hIDAYxH6DWLHIthQgC
 	{
-		// Token: 0x06000078 RID: 120 RVA: 0x000054B0 File Offset: 0x000036B0
+		// Token: 0x06000078 RID: 120 RVA: 0x00005638 File Offset: 0x00003838
 		static hIDAYxH6DWLHIthQgC()
 		{
 			hIDAYxH6DWLHIthQgC.e1I76Dk1A = false;
@@ -38,17 +38,17 @@ namespace MaoFcf2Vq4taIANM6n
 			}
 		}
 
-		// Token: 0x06000079 RID: 121 RVA: 0x00005560 File Offset: 0x00003760
+		// Token: 0x06000079 RID: 121 RVA: 0x000056E8 File Offset: 0x000038E8
 		internal hIDAYxH6DWLHIthQgC()
 		{
 		}
 
-		// Token: 0x0600007A RID: 122 RVA: 0x00005568 File Offset: 0x00003768
-		private void mL8dQnqyNB()
+		// Token: 0x0600007A RID: 122 RVA: 0x000056F0 File Offset: 0x000038F0
+		private void Nq97KdTXXe()
 		{
 		}
 
-		// Token: 0x0600007B RID: 123 RVA: 0x0000556C File Offset: 0x0000376C
+		// Token: 0x0600007B RID: 123 RVA: 0x000056F4 File Offset: 0x000038F4
 		internal static byte[] hIDHAYx6D(object \u0020)
 		{
 			uint[] array = new uint[16];
@@ -164,37 +164,37 @@ namespace MaoFcf2Vq4taIANM6n
 			return array4;
 		}
 
-		// Token: 0x0600007C RID: 124 RVA: 0x00005BD0 File Offset: 0x00003DD0
+		// Token: 0x0600007C RID: 124 RVA: 0x00005D58 File Offset: 0x00003F58
 		private static void DLH2IthQg(ref uint \u0020, uint \u0020, uint \u0020, uint \u0020, uint \u0020, ushort \u0020, uint \u0020, object \u0020)
 		{
 			\u0020 += hIDAYxH6DWLHIthQgC.qHMTQ5yL3(\u0020 + ((\u0020 & \u0020) | (~\u0020 & \u0020)) + \u0020[(int)\u0020] + hIDAYxH6DWLHIthQgC.SrDpPJg0d[(int)(\u0020 - 1U)], \u0020);
 		}
 
-		// Token: 0x0600007D RID: 125 RVA: 0x00005BFC File Offset: 0x00003DFC
+		// Token: 0x0600007D RID: 125 RVA: 0x00005D84 File Offset: 0x00003F84
 		private static void T1axoFcfV(ref uint \u0020, uint \u0020, uint \u0020, uint \u0020, uint \u0020, ushort \u0020, uint \u0020, object \u0020)
 		{
 			\u0020 += hIDAYxH6DWLHIthQgC.qHMTQ5yL3(\u0020 + ((\u0020 & \u0020) | (\u0020 & ~\u0020)) + \u0020[(int)\u0020] + hIDAYxH6DWLHIthQgC.SrDpPJg0d[(int)(\u0020 - 1U)], \u0020);
 		}
 
-		// Token: 0x0600007E RID: 126 RVA: 0x00005C28 File Offset: 0x00003E28
+		// Token: 0x0600007E RID: 126 RVA: 0x00005DB0 File Offset: 0x00003FB0
 		private static void d4tqaIANM(ref uint \u0020, uint \u0020, uint \u0020, uint \u0020, uint \u0020, ushort \u0020, uint \u0020, object \u0020)
 		{
 			\u0020 += hIDAYxH6DWLHIthQgC.qHMTQ5yL3(\u0020 + (\u0020 ^ \u0020 ^ \u0020) + \u0020[(int)\u0020] + hIDAYxH6DWLHIthQgC.SrDpPJg0d[(int)(\u0020 - 1U)], \u0020);
 		}
 
-		// Token: 0x0600007F RID: 127 RVA: 0x00005C50 File Offset: 0x00003E50
+		// Token: 0x0600007F RID: 127 RVA: 0x00005DD8 File Offset: 0x00003FD8
 		private static void LnTa1stFP(ref uint \u0020, uint \u0020, uint \u0020, uint \u0020, uint \u0020, ushort \u0020, uint \u0020, object \u0020)
 		{
 			\u0020 += hIDAYxH6DWLHIthQgC.qHMTQ5yL3(\u0020 + (\u0020 ^ (\u0020 | ~\u0020)) + \u0020[(int)\u0020] + hIDAYxH6DWLHIthQgC.SrDpPJg0d[(int)(\u0020 - 1U)], \u0020);
 		}
 
-		// Token: 0x06000080 RID: 128 RVA: 0x00005C78 File Offset: 0x00003E78
+		// Token: 0x06000080 RID: 128 RVA: 0x00005E00 File Offset: 0x00004000
 		private static uint qHMTQ5yL3(uint \u0020, ushort \u0020)
 		{
 			return \u0020 >> (int)(32 - \u0020) | \u0020 << (int)\u0020;
 		}
 
-		// Token: 0x06000081 RID: 129 RVA: 0x00005C8C File Offset: 0x00003E8C
+		// Token: 0x06000081 RID: 129 RVA: 0x00005E14 File Offset: 0x00004014
 		internal static byte[] KBfNgPHJl(object \u0020)
 		{
 			if (!hIDAYxH6DWLHIthQgC.BVBfH8LsP())
@@ -204,7 +204,7 @@ namespace MaoFcf2Vq4taIANM6n
 			return hIDAYxH6DWLHIthQgC.hIDHAYx6D(\u0020);
 		}
 
-		// Token: 0x06000082 RID: 130 RVA: 0x00005CAC File Offset: 0x00003EAC
+		// Token: 0x06000082 RID: 130 RVA: 0x00005E34 File Offset: 0x00004034
 		private static void RFMD89GDa()
 		{
 			try
@@ -216,7 +216,7 @@ namespace MaoFcf2Vq4taIANM6n
 			}
 		}
 
-		// Token: 0x06000083 RID: 131 RVA: 0x00005CDC File Offset: 0x00003EDC
+		// Token: 0x06000083 RID: 131 RVA: 0x00005E64 File Offset: 0x00004064
 		internal static bool BVBfH8LsP()
 		{
 			if (!hIDAYxH6DWLHIthQgC.CPGmeecTL)
@@ -227,7 +227,7 @@ namespace MaoFcf2Vq4taIANM6n
 			return hIDAYxH6DWLHIthQgC.e1I76Dk1A;
 		}
 
-		// Token: 0x06000084 RID: 132 RVA: 0x00005CF8 File Offset: 0x00003EF8
+		// Token: 0x06000084 RID: 132 RVA: 0x00005E80 File Offset: 0x00004080
 		internal byte[] Xf3RuiTPT()
 		{
 			int length = "{11111-22222-40001-00001}".Length;
@@ -238,7 +238,7 @@ namespace MaoFcf2Vq4taIANM6n
 			};
 		}
 
-		// Token: 0x06000085 RID: 133 RVA: 0x00005D18 File Offset: 0x00003F18
+		// Token: 0x06000085 RID: 133 RVA: 0x00005EA0 File Offset: 0x000040A0
 		internal byte[] caelxLNP2()
 		{
 			int length = "{11111-22222-40001-00002}".Length;
@@ -249,7 +249,7 @@ namespace MaoFcf2Vq4taIANM6n
 			};
 		}
 
-		// Token: 0x06000086 RID: 134 RVA: 0x00005D38 File Offset: 0x00003F38
+		// Token: 0x06000086 RID: 134 RVA: 0x00005EC0 File Offset: 0x000040C0
 		internal byte[] JmTEkpCbj()
 		{
 			int length = "{11111-22222-50001-00001}".Length;
@@ -260,7 +260,7 @@ namespace MaoFcf2Vq4taIANM6n
 			};
 		}
 
-		// Token: 0x06000087 RID: 135 RVA: 0x00005D58 File Offset: 0x00003F58
+		// Token: 0x06000087 RID: 135 RVA: 0x00005EE0 File Offset: 0x000040E0
 		internal byte[] EkggYQXiI()
 		{
 			int length = "{11111-22222-50001-00002}".Length;
@@ -271,7 +271,7 @@ namespace MaoFcf2Vq4taIANM6n
 			};
 		}
 
-		// Token: 0x06000088 RID: 136 RVA: 0x00005D78 File Offset: 0x00003F78
+		// Token: 0x06000088 RID: 136 RVA: 0x00005F00 File Offset: 0x00004100
 		public static void k2fyjktZb(RuntimeTypeHandle \u0020)
 		{
 			try
@@ -283,7 +283,7 @@ namespace MaoFcf2Vq4taIANM6n
 					lock (cc86JSicc)
 					{
 						Dictionary<int, int> dictionary = new Dictionary<int, int>();
-						BinaryReader binaryReader = new BinaryReader(typeof(hIDAYxH6DWLHIthQgC).Assembly.GetManifestResourceStream("sMSJsAHBaySJODr4W3.RF8vdSgfS3tILA2PH1"));
+						BinaryReader binaryReader = new BinaryReader(typeof(hIDAYxH6DWLHIthQgC).Assembly.GetManifestResourceStream("By0SyBeQBBC4kDobtH.lSgEp2GfUBYJkKRXDq"));
 						binaryReader.BaseStream.Position = 0L;
 						byte[] array = binaryReader.ReadBytes((int)binaryReader.BaseStream.Length);
 						binaryReader.Close();
@@ -323,10 +323,10 @@ namespace MaoFcf2Vq4taIANM6n
 								num3 = num3;
 								uint num9 = num3;
 								uint num10 = num3;
-								uint num11 = 1757104966U;
-								uint num12 = 1144258727U;
-								uint num13 = 1869244103U;
-								uint num14 = 1261469018U;
+								uint num11 = 998683886U;
+								uint num12 = 1179002974U;
+								uint num13 = 619078290U;
+								uint num14 = 1077569903U;
 								ulong num15 = (ulong)(num12 * 1722488229U);
 								num15 |= 1UL;
 								num11 = (uint)((ulong)(num11 * num11) % num15);
@@ -454,7 +454,7 @@ namespace MaoFcf2Vq4taIANM6n
 			}
 		}
 
-		// Token: 0x06000089 RID: 137 RVA: 0x00006424 File Offset: 0x00004624
+		// Token: 0x06000089 RID: 137 RVA: 0x000065AC File Offset: 0x000047AC
 		internal static void oDuBOTgYK()
 		{
 			if (Debugger.IsAttached)
@@ -463,13 +463,13 @@ namespace MaoFcf2Vq4taIANM6n
 			}
 		}
 
-		// Token: 0x0600008A RID: 138 RVA: 0x0000643C File Offset: 0x0000463C
+		// Token: 0x0600008A RID: 138 RVA: 0x000065C4 File Offset: 0x000047C4
 		private static int gG68OgEs5()
 		{
 			return 5;
 		}
 
-		// Token: 0x0600008B RID: 139 RVA: 0x00006440 File Offset: 0x00004640
+		// Token: 0x0600008B RID: 139 RVA: 0x000065C8 File Offset: 0x000047C8
 		internal static void ATI5Y1kI0()
 		{
 			try
@@ -490,7 +490,7 @@ namespace MaoFcf2Vq4taIANM6n
 			}
 		}
 
-		// Token: 0x0600008C RID: 140 RVA: 0x00006498 File Offset: 0x00004698
+		// Token: 0x0600008C RID: 140 RVA: 0x00006620 File Offset: 0x00004820
 		internal static SymmetricAlgorithm LtAJclWeT()
 		{
 			SymmetricAlgorithm result = null;
@@ -512,7 +512,7 @@ namespace MaoFcf2Vq4taIANM6n
 			return result;
 		}
 
-		// Token: 0x0600008D RID: 141 RVA: 0x000064E8 File Offset: 0x000046E8
+		// Token: 0x0600008D RID: 141 RVA: 0x00006670 File Offset: 0x00004870
 		private byte[] hVec8LoPP()
 		{
 			int length = "{11111-22222-20001-00001}".Length;
@@ -523,7 +523,7 @@ namespace MaoFcf2Vq4taIANM6n
 			};
 		}
 
-		// Token: 0x0600008E RID: 142 RVA: 0x00006508 File Offset: 0x00004708
+		// Token: 0x0600008E RID: 142 RVA: 0x00006690 File Offset: 0x00004890
 		private byte[] aKRZE6Th1()
 		{
 			int length = "{11111-22222-20001-00002}".Length;
@@ -534,7 +534,7 @@ namespace MaoFcf2Vq4taIANM6n
 			};
 		}
 
-		// Token: 0x0600008F RID: 143 RVA: 0x00006528 File Offset: 0x00004728
+		// Token: 0x0600008F RID: 143 RVA: 0x000066B0 File Offset: 0x000048B0
 		internal static void EZdsFxqyB(object \u0020, object \u0020, uint \u0020, object \u0020)
 		{
 			while (\u0020 > 0U)
@@ -546,13 +546,13 @@ namespace MaoFcf2Vq4taIANM6n
 			}
 		}
 
-		// Token: 0x06000090 RID: 144 RVA: 0x0000656C File Offset: 0x0000476C
+		// Token: 0x06000090 RID: 144 RVA: 0x000066F4 File Offset: 0x000048F4
 		internal static void LKsFIQxCl(object \u0020, object \u0020, int \u0020, int \u0020)
 		{
 			\u0020.TransformBlock(\u0020, \u0020, \u0020, \u0020, \u0020);
 		}
 
-		// Token: 0x06000091 RID: 145 RVA: 0x0000657C File Offset: 0x0000477C
+		// Token: 0x06000091 RID: 145 RVA: 0x00006704 File Offset: 0x00004904
 		internal static uint mf83VSwim(uint \u0020, int \u0020, long \u0020, object \u0020)
 		{
 			for (int i = 0; i < \u0020; i++)
@@ -570,7 +570,7 @@ namespace MaoFcf2Vq4taIANM6n
 			return 0U;
 		}
 
-		// Token: 0x06000092 RID: 146 RVA: 0x000065E4 File Offset: 0x000047E4
+		// Token: 0x06000092 RID: 146 RVA: 0x0000676C File Offset: 0x0000496C
 		internal static void zSLipEDdx()
 		{
 			if (hIDAYxH6DWLHIthQgC.dJ60ZwGG7 == null)
@@ -731,13 +731,13 @@ namespace MaoFcf2Vq4taIANM6n
 			}
 		}
 
-		// Token: 0x06000093 RID: 147 RVA: 0x00006A98 File Offset: 0x00004C98
+		// Token: 0x06000093 RID: 147 RVA: 0x00006C20 File Offset: 0x00004E20
 		private static Stream GOV9AYHwR()
 		{
 			return new MemoryStream();
 		}
 
-		// Token: 0x06000094 RID: 148 RVA: 0x00006AA0 File Offset: 0x00004CA0
+		// Token: 0x06000094 RID: 148 RVA: 0x00006C28 File Offset: 0x00004E28
 		private static byte[] HymVi6xxZ(object \u0020)
 		{
 			byte[] array;
@@ -756,7 +756,7 @@ namespace MaoFcf2Vq4taIANM6n
 			return array;
 		}
 
-		// Token: 0x06000095 RID: 149 RVA: 0x00006B0C File Offset: 0x00004D0C
+		// Token: 0x06000095 RID: 149 RVA: 0x00006C94 File Offset: 0x00004E94
 		internal static object xssAJn5FR(object \u0020)
 		{
 			try
@@ -792,13 +792,13 @@ namespace MaoFcf2Vq4taIANM6n
 			return "";
 		}
 
-		// Token: 0x06000096 RID: 150 RVA: 0x00006C3C File Offset: 0x00004E3C
+		// Token: 0x06000096 RID: 150 RVA: 0x00006DC4 File Offset: 0x00004FC4
 		private static byte[] dcJwyWJ2h(object \u0020)
 		{
 			return ((MemoryStream)\u0020).ToArray();
 		}
 
-		// Token: 0x06000097 RID: 151 RVA: 0x00006C4C File Offset: 0x00004E4C
+		// Token: 0x06000097 RID: 151 RVA: 0x00006DD4 File Offset: 0x00004FD4
 		internal byte[] OZvj2rN0e()
 		{
 			int length = "{11111-22222-30001-00001}".Length;
@@ -809,7 +809,7 @@ namespace MaoFcf2Vq4taIANM6n
 			};
 		}
 
-		// Token: 0x06000098 RID: 152 RVA: 0x00006C6C File Offset: 0x00004E6C
+		// Token: 0x06000098 RID: 152 RVA: 0x00006DF4 File Offset: 0x00004FF4
 		internal byte[] tPnkNfto2()
 		{
 			int length = "{11111-22222-30001-00002}".Length;
@@ -820,7 +820,7 @@ namespace MaoFcf2Vq4taIANM6n
 			};
 		}
 
-		// Token: 0x06000099 RID: 153 RVA: 0x00006C8C File Offset: 0x00004E8C
+		// Token: 0x06000099 RID: 153 RVA: 0x00006E14 File Offset: 0x00005014
 		[MethodImpl(MethodImplOptions.NoInlining)]
 		private static void BAASgSTaW(object \u0020)
 		{
@@ -830,7 +830,7 @@ namespace MaoFcf2Vq4taIANM6n
 			}, null);
 		}
 
-		// Token: 0x0600009A RID: 154 RVA: 0x00006CBC File Offset: 0x00004EBC
+		// Token: 0x0600009A RID: 154 RVA: 0x00006E44 File Offset: 0x00005044
 		[MethodImpl(MethodImplOptions.NoInlining)]
 		internal static string gSCeTtiku(int \u0020)
 		{
@@ -838,8 +838,8 @@ namespace MaoFcf2Vq4taIANM6n
 			{
 				hIDAYxH6DWLHIthQgC.ReW45iIw5 = new List<string>();
 				hIDAYxH6DWLHIthQgC.asMnx1K5s = new List<int>();
-				hIDAYxH6DWLHIthQgC.BAASgSTaW(typeof(hIDAYxH6DWLHIthQgC).GetTypeInfo().Assembly.GetManifestResourceStream("vq4ehGkYGmaK9uooFQ.rPFfsC8LGcSaZJsZhI"));
-				nHwRpygmi6xxZAssJn.UoDdI5CpWg();
+				hIDAYxH6DWLHIthQgC.BAASgSTaW(typeof(hIDAYxH6DWLHIthQgC).GetTypeInfo().Assembly.GetManifestResourceStream("4DXMZm3r9EyGrxtk77.bBgUp9JLROsO3mMOgM"));
+				nHwRpygmi6xxZAssJn.dxI7NE9hn1();
 			}
 			if (hIDAYxH6DWLHIthQgC.HDHKHhTXP < 75)
 			{
@@ -888,14 +888,14 @@ namespace MaoFcf2Vq4taIANM6n
 			return "";
 		}
 
-		// Token: 0x0600009B RID: 155 RVA: 0x00006EB0 File Offset: 0x000050B0
+		// Token: 0x0600009B RID: 155 RVA: 0x00007038 File Offset: 0x00005238
 		private hIDAYxH6DWLHIthQgC(byte[] \u0020, byte[] \u0020)
 		{
 			this.EG7tVH7R7 = \u0020;
 			this.OnMCBfq5Q = \u0020;
 		}
 
-		// Token: 0x0600009C RID: 156 RVA: 0x00006EC8 File Offset: 0x000050C8
+		// Token: 0x0600009C RID: 156 RVA: 0x00007050 File Offset: 0x00005250
 		private byte[] jQ6W68dSe(byte[] \u0020)
 		{
 			if (\u0020.Length == 0)
@@ -959,7 +959,7 @@ namespace MaoFcf2Vq4taIANM6n
 			return array;
 		}
 
-		// Token: 0x0600009D RID: 157 RVA: 0x000070AC File Offset: 0x000052AC
+		// Token: 0x0600009D RID: 157 RVA: 0x00007234 File Offset: 0x00005434
 		private uint PFqopCc2r(uint \u0020)
 		{
 			int num = 668931134;
@@ -991,7 +991,7 @@ namespace MaoFcf2Vq4taIANM6n
 			return ((num8 << 11) - num2 ^ num3) - num12;
 		}
 
-		// Token: 0x0600009E RID: 158 RVA: 0x00007188 File Offset: 0x00005388
+		// Token: 0x0600009E RID: 158 RVA: 0x00007310 File Offset: 0x00005510
 		internal static string PdFXUg04j(object \u0020)
 		{
 			"{11111-22222-50001-00000}".Trim();
@@ -999,7 +999,7 @@ namespace MaoFcf2Vq4taIANM6n
 			return Encoding.Unicode.GetString(array, 0, array.Length);
 		}
 
-		// Token: 0x0600009F RID: 159 RVA: 0x000071B8 File Offset: 0x000053B8
+		// Token: 0x0600009F RID: 159 RVA: 0x00007340 File Offset: 0x00005540
 		private static byte[] RoZLa7qiD(object \u0020)
 		{
 			return new hIDAYxH6DWLHIthQgC(new byte[]
@@ -1057,44 +1057,44 @@ namespace MaoFcf2Vq4taIANM6n
 			}).jQ6W68dSe(\u0020);
 		}
 
-		// Token: 0x060000A0 RID: 160 RVA: 0x000071EC File Offset: 0x000053EC
+		// Token: 0x060000A0 RID: 160 RVA: 0x00007374 File Offset: 0x00005574
 		private byte[] htFdmQ9eP()
 		{
 			return null;
 		}
 
-		// Token: 0x060000A1 RID: 161 RVA: 0x000071FC File Offset: 0x000053FC
+		// Token: 0x060000A1 RID: 161 RVA: 0x00007384 File Offset: 0x00005584
 		private byte[] dbXPZLbLV()
 		{
 			return null;
 		}
 
-		// Token: 0x060000A2 RID: 162 RVA: 0x0000720C File Offset: 0x0000540C
-		internal static bool e5iW939MeW9I3b1V6q()
+		// Token: 0x060000A2 RID: 162 RVA: 0x00007394 File Offset: 0x00005594
+		internal static bool cL6aYiiACi4tGxE41U()
 		{
 			return null == null;
 		}
 
-		// Token: 0x060000A3 RID: 163 RVA: 0x00007214 File Offset: 0x00005414
-		internal static object l3hR13hFOY6aTPk5L1()
+		// Token: 0x060000A3 RID: 163 RVA: 0x0000739C File Offset: 0x0000559C
+		internal static object gcDExYuVfLU6A4Q8jw()
 		{
 			return null;
 		}
 
 		// Token: 0x0400002A RID: 42
-		private static bool e1I76Dk1A;
+		private static Dictionary<int, int> FmWIypaNX;
 
 		// Token: 0x0400002B RID: 43
-		private static byte[] Bh317U1vE;
+		private static RSACryptoServiceProvider dJ60ZwGG7;
 
 		// Token: 0x0400002C RID: 44
-		private static List<int> asMnx1K5s;
+		private static object iGWr5uXHi;
 
 		// Token: 0x0400002D RID: 45
-		private byte[] EG7tVH7R7;
+		private byte[] OnMCBfq5Q;
 
 		// Token: 0x0400002E RID: 46
-		private static List<string> ReW45iIw5;
+		private static Assembly mLdMA9iPk;
 
 		// Token: 0x0400002F RID: 47
 		private static uint[] SrDpPJg0d = new uint[]
@@ -1166,66 +1166,66 @@ namespace MaoFcf2Vq4taIANM6n
 		};
 
 		// Token: 0x04000030 RID: 48
-		private static RSACryptoServiceProvider dJ60ZwGG7;
+		private static bool e1I76Dk1A;
 
 		// Token: 0x04000031 RID: 49
-		private static object iGWr5uXHi;
+		private static List<string> ReW45iIw5;
 
 		// Token: 0x04000032 RID: 50
-		private static bool CPGmeecTL = false;
-
-		// Token: 0x04000033 RID: 51
-		private byte[] OnMCBfq5Q;
-
-		// Token: 0x04000034 RID: 52
-		private static int HDHKHhTXP;
-
-		// Token: 0x04000035 RID: 53
 		private static byte[] RVsUi7vv8;
 
-		// Token: 0x04000036 RID: 54
-		private static Dictionary<int, int> FmWIypaNX;
+		// Token: 0x04000033 RID: 51
+		private static int HDHKHhTXP;
 
-		// Token: 0x04000037 RID: 55
+		// Token: 0x04000034 RID: 52
 		private static object CC86JSicc;
 
+		// Token: 0x04000035 RID: 53
+		private static List<int> asMnx1K5s;
+
+		// Token: 0x04000036 RID: 54
+		private static bool CPGmeecTL = false;
+
+		// Token: 0x04000037 RID: 55
+		private static byte[] Bh317U1vE;
+
 		// Token: 0x04000038 RID: 56
-		private static Assembly mLdMA9iPk;
+		private byte[] EG7tVH7R7;
 
 		// Token: 0x02000017 RID: 23
 		internal class vPkSh3s7U1vEqJ6ZwG
 		{
-			// Token: 0x060000A4 RID: 164 RVA: 0x00007218 File Offset: 0x00005418
+			// Token: 0x060000A4 RID: 164 RVA: 0x000073A0 File Offset: 0x000055A0
 			public vPkSh3s7U1vEqJ6ZwG(Stream \u0020)
 			{
 				this.TXSqn39pP3 = new BinaryReader(\u0020);
 			}
 
-			// Token: 0x060000A5 RID: 165 RVA: 0x0000722C File Offset: 0x0000542C
+			// Token: 0x060000A5 RID: 165 RVA: 0x000073B4 File Offset: 0x000055B4
 			internal Stream AsxqrFX3HQ()
 			{
 				return this.TXSqn39pP3.BaseStream;
 			}
 
-			// Token: 0x060000A6 RID: 166 RVA: 0x0000723C File Offset: 0x0000543C
+			// Token: 0x060000A6 RID: 166 RVA: 0x000073C4 File Offset: 0x000055C4
 			internal byte[] C9UqM3M0Ll(int \u0020)
 			{
 				return this.TXSqn39pP3.ReadBytes(\u0020);
 			}
 
-			// Token: 0x060000A7 RID: 167 RVA: 0x0000724C File Offset: 0x0000544C
+			// Token: 0x060000A7 RID: 167 RVA: 0x000073D4 File Offset: 0x000055D4
 			internal int N4Hq1iEYPX(byte[] \u0020, int \u0020, int \u0020)
 			{
 				return this.TXSqn39pP3.Read(\u0020, \u0020, \u0020);
 			}
 
-			// Token: 0x060000A8 RID: 168 RVA: 0x0000725C File Offset: 0x0000545C
+			// Token: 0x060000A8 RID: 168 RVA: 0x000073E4 File Offset: 0x000055E4
 			internal int c73q0LArlF()
 			{
 				return this.TXSqn39pP3.ReadInt32();
 			}
 
-			// Token: 0x060000A9 RID: 169 RVA: 0x0000726C File Offset: 0x0000546C
+			// Token: 0x060000A9 RID: 169 RVA: 0x000073F4 File Offset: 0x000055F4
 			internal void bFiqUko1xE()
 			{
 				this.TXSqn39pP3.Close();
@@ -1242,7 +1242,7 @@ namespace MaoFcf2Vq4taIANM6n
 		// Token: 0x02000019 RID: 25
 		internal class uneW5i3Iw5OsMx1K5s
 		{
-			// Token: 0x060000AE RID: 174 RVA: 0x0000727C File Offset: 0x0000547C
+			// Token: 0x060000AE RID: 174 RVA: 0x00007404 File Offset: 0x00005604
 			internal static string Hh1qKiqeMC(object \u0020, object \u0020)
 			{
 				byte[] bytes = Encoding.Unicode.GetBytes(\u0020);

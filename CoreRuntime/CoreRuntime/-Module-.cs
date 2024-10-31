@@ -5,7 +5,7 @@ using MaoFcf2Vq4taIANM6n;
 internal class <Module>
 {
 	// Token: 0x06000001 RID: 1 RVA: 0x00002050 File Offset: 0x00000250
-	internal static void m8DC572F9159BCD0()
+	internal static void m8DC7C1C8E7BCEEE()
 	{
 	}
 
@@ -13,6 +13,6 @@ internal class <Module>
 	static <Module>()
 	{
 		hIDAYxH6DWLHIthQgC.oDuBOTgYK();
-		<Module>.m8DC572F9159BCD0();
+		<Module>.m8DC7C1C8E7BCEEE();
 	}
 }

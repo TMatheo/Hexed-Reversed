@@ -5,38 +5,34 @@ using pFRqcJyyWJ2hUZv2rN;
 
 namespace Il2CppInterop.Runtime.InteropTypes.Fields
 {
-	// Token: 0x0200012B RID: 299
+	// Token: 0x02000129 RID: 297
 	public class Il2CppValueField<[IsUnmanaged] T> where T : struct, ValueType
 	{
-		// Token: 0x06000D09 RID: 3337 RVA: 0x0001458C File Offset: 0x0001278C
+		// Token: 0x06000CE7 RID: 3303 RVA: 0x00013920 File Offset: 0x00011B20
 		internal Il2CppValueField(Il2CppObjectBase obj, string fieldName)
 		{
 			hIDAYxH6DWLHIthQgC.oDuBOTgYK();
-			nHwRpygmi6xxZAssJn.MZ6my7dBdJ();
+			nHwRpygmi6xxZAssJn.EmlEpH4Phw();
 			base..ctor();
-			int num = 0;
-			if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_7b2fff018dbf4cfe8ef41e2d123dc629 == 0)
+			int num = 1;
+			if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_068b7dfa4ec449e7b5200030c1c277e5 != 0)
 			{
-				num = 2;
+				num = 1;
 			}
 			for (;;)
 			{
 				switch (num)
 				{
 				default:
-					this._fieldPtr = IL2CPP.GetIl2CppField(obj.ObjectClass, fieldName);
-					num = 1;
-					if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_d4e1c4caa68b4a76bc8f57ec8dfac2bc != 0)
-					{
-						num = 1;
-					}
-					break;
-				case 1:
 					return;
-				case 2:
+				case 1:
 					this._obj = obj;
+					num = 2;
+					break;
+				case 2:
+					this._fieldPtr = IL2CPP.GetIl2CppField(obj.ObjectClass, fieldName);
 					num = 0;
-					if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_bd64431fd05f4961aa9b79e5bd243164 == 0)
+					if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_adb8decd62b945dda713f7b22b6b95ca != 0)
 					{
 						num = 0;
 					}
@@ -46,8 +42,8 @@ namespace Il2CppInterop.Runtime.InteropTypes.Fields
 		}
 
 		// Token: 0x170004D9 RID: 1241
-		// (get) Token: 0x06000D0A RID: 3338 RVA: 0x00014650 File Offset: 0x00012850
-		// (set) Token: 0x06000D0B RID: 3339 RVA: 0x00014660 File Offset: 0x00012860
+		// (get) Token: 0x06000CE8 RID: 3304 RVA: 0x000139D0 File Offset: 0x00011BD0
+		// (set) Token: 0x06000CE9 RID: 3305 RVA: 0x000139E0 File Offset: 0x00011BE0
 		public T Value
 		{
 			get
@@ -60,62 +56,62 @@ namespace Il2CppInterop.Runtime.InteropTypes.Fields
 			}
 		}
 
-		// Token: 0x06000D0C RID: 3340 RVA: 0x00014670 File Offset: 0x00012870
+		// Token: 0x06000CEA RID: 3306 RVA: 0x000139F0 File Offset: 0x00011BF0
 		public unsafe T Get()
 		{
 			return *this.GetPointerToData();
 		}
 
-		// Token: 0x06000D0D RID: 3341 RVA: 0x00014684 File Offset: 0x00012884
+		// Token: 0x06000CEB RID: 3307 RVA: 0x00013A04 File Offset: 0x00011C04
 		public unsafe void Set(T value)
 		{
 			*this.GetPointerToData() = value;
 		}
 
-		// Token: 0x06000D0E RID: 3342 RVA: 0x0001469C File Offset: 0x0001289C
+		// Token: 0x06000CEC RID: 3308 RVA: 0x00013A1C File Offset: 0x00011C1C
 		public static implicit operator T(Il2CppValueField<T> _this)
 		{
 			return _this.Get();
 		}
 
-		// Token: 0x06000D0F RID: 3343 RVA: 0x000146AC File Offset: 0x000128AC
+		// Token: 0x06000CED RID: 3309 RVA: 0x00013A2C File Offset: 0x00011C2C
 		public static implicit operator Il2CppValueField<T>(T _)
 		{
 			throw null;
 		}
 
-		// Token: 0x06000D10 RID: 3344 RVA: 0x000146B8 File Offset: 0x000128B8
+		// Token: 0x06000CEE RID: 3310 RVA: 0x00013A38 File Offset: 0x00011C38
 		private unsafe T* GetPointerToData()
 		{
 			return IL2CPP.Il2CppObjectBaseToPtrNotNull(this._obj) / (IntPtr)sizeof(T) + IL2CPP.il2cpp_field_get_offset(this._fieldPtr);
 		}
 
-		// Token: 0x06000D11 RID: 3345 RVA: 0x000146DC File Offset: 0x000128DC
+		// Token: 0x06000CEF RID: 3311 RVA: 0x00013A5C File Offset: 0x00011C5C
 		// Note: this type is marked as 'beforefieldinit'.
 		static Il2CppValueField()
 		{
 			hIDAYxH6DWLHIthQgC.zSLipEDdx();
 		}
 
-		// Token: 0x06000D12 RID: 3346 RVA: 0x000146EC File Offset: 0x000128EC
-		internal static bool sOpcpH73ObrZrR4PEZ0()
+		// Token: 0x06000CF0 RID: 3312 RVA: 0x00013A6C File Offset: 0x00011C6C
+		internal static bool iAlfFwpPtwwc9LqsPby()
 		{
-			return Il2CppValueField<T>.vJ1YgR7nYfqk4g8xXGf == null;
+			return Il2CppValueField<T>.EnZLZdp7yicyLZAJYXu == null;
 		}
 
-		// Token: 0x06000D13 RID: 3347 RVA: 0x00014700 File Offset: 0x00012900
-		internal static object NamnSs71tA7cKOOyOdb()
+		// Token: 0x06000CF1 RID: 3313 RVA: 0x00013A80 File Offset: 0x00011C80
+		internal static object cRMtAEp44A26EUnvlbm()
 		{
-			return Il2CppValueField<T>.vJ1YgR7nYfqk4g8xXGf;
+			return Il2CppValueField<T>.EnZLZdp7yicyLZAJYXu;
 		}
 
-		// Token: 0x04000983 RID: 2435
+		// Token: 0x04000978 RID: 2424
 		private readonly IntPtr _fieldPtr;
 
-		// Token: 0x04000984 RID: 2436
+		// Token: 0x04000979 RID: 2425
 		private readonly Il2CppObjectBase _obj;
 
-		// Token: 0x04000985 RID: 2437
-		private static object vJ1YgR7nYfqk4g8xXGf;
+		// Token: 0x0400097A RID: 2426
+		private static object EnZLZdp7yicyLZAJYXu;
 	}
 }

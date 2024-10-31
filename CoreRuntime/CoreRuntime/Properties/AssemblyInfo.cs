@@ -8,7 +8,7 @@ using System.Security.Permissions;
 
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyProduct("CoreRuntime")]
-[assembly: AssemblyInformationalVersion("1.0.0+65504b6a8bd0062badecb2afea2b6992c821cfb0")]
+[assembly: AssemblyInformationalVersion("1.0.0+7332bf783c125487c47bbb0e2f765be6d88bd58e")]
 [assembly: SuppressIldasm]
 [assembly: AssemblyTitle("CoreRuntime")]
 [assembly: AssemblyFileVersion("1.0.0.0")]

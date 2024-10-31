@@ -2,13 +2,13 @@
 
 namespace Il2CppInterop.Runtime.Runtime.VersionSpecific.AssemblyName
 {
-	// Token: 0x02000125 RID: 293
+	// Token: 0x02000123 RID: 291
 	public interface INativeAssemblyNameStructHandler : INativeStructHandler
 	{
-		// Token: 0x06000CCE RID: 3278
+		// Token: 0x06000CAB RID: 3243
 		INativeAssemblyNameStruct CreateNewStruct();
 
-		// Token: 0x06000CCF RID: 3279
+		// Token: 0x06000CAC RID: 3244
 		unsafe INativeAssemblyNameStruct Wrap(Il2CppAssemblyName* assemblyNamePointer);
 	}
 }

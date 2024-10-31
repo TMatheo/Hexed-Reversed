@@ -10,416 +10,418 @@ using pFRqcJyyWJ2hUZv2rN;
 
 namespace Il2CppInterop.Runtime.Injection
 {
-	// Token: 0x02000135 RID: 309
+	// Token: 0x02000132 RID: 306
 	public static class TrampolineHelpers
 	{
-		// Token: 0x06000D78 RID: 3448 RVA: 0x00016580 File Offset: 0x00014780
+		// Token: 0x06000D51 RID: 3409 RVA: 0x000158C8 File Offset: 0x00013AC8
 		private static Type GetFixedSizeStructType(int size)
 		{
-			int num = 9;
+			int num = 8;
+			int num2 = num;
 			Type result2;
 			for (;;)
 			{
-				int num2 = num;
 				Type value;
-				for (;;)
-				{
-					switch (num2)
-					{
-					case 0:
-						goto IL_1DB;
-					case 1:
-					{
-						Type result;
-						return result;
-					}
-					case 2:
-						break;
-					case 3:
-						goto IL_21E;
-					case 4:
-					{
-						Type result = TrampolineHelpers._fixedStructCache[size] = value;
-						num2 = 1;
-						if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_a36e967c0f044e9ebf523536bdec8e28 == 0)
-						{
-							num2 = 1;
-							continue;
-						}
-						continue;
-					}
-					case 5:
-						goto IL_6F;
-					case 6:
-						goto IL_19C;
-					case 7:
-						goto IL_1DB;
-					case 8:
-						return result2;
-					case 9:
-						if (TrampolineHelpers._fixedStructCache.TryGetValue(size, out result2))
-						{
-							num2 = 8;
-							if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_64afbb57bf68458f80a150c34cb4e04c == 0)
-							{
-								num2 = 6;
-								continue;
-							}
-							continue;
-						}
-						else if (TrampolineHelpers._fixedStructAssembly != null)
-						{
-							num2 = 7;
-							if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_a2b24b0de55344c2b8aaf8116dbc4d16 == 0)
-							{
-								num2 = 4;
-								continue;
-							}
-							continue;
-						}
-						break;
-					default:
-						goto IL_1DB;
-					}
-					TrampolineHelpers._fixedStructAssembly = TrampolineHelpers.Vb4mKlRDlUEehnaTDjY(new AssemblyName(hIDAYxH6DWLHIthQgC.gSCeTtiku(-2007369155 ^ -1088941377 ^ <Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_b4ab786fa8604298818cd412db8f702f)), AssemblyBuilderAccess.Run, PhcPCd9qZOZYbGJa4AI.UK199Z5kws);
-					num2 = 0;
-					if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_eea945ea6be345c0b18511ac11610b35 == 0)
-					{
-						num2 = 0;
-						continue;
-					}
-					continue;
-					IL_19C:
-					TrampolineHelpers._fixedStructModuleBuilder = TrampolineHelpers.h4A10ERZWICWJPstdTh(TrampolineHelpers._fixedStructAssembly, hIDAYxH6DWLHIthQgC.gSCeTtiku(75745436 >> 5 ^ 929429190 ^ <Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_b4ab786fa8604298818cd412db8f702f), B17Oqp9iWWgj6vslXHW.JbY9IMBSA4);
-					num2 = 5;
-					continue;
-					IL_1DB:
-					if (TrampolineHelpers._fixedStructModuleBuilder == null)
-					{
-						goto IL_19C;
-					}
-					num2 = 3;
-				}
-				IL_6F:
-				object fixedStructModuleBuilder = TrampolineHelpers._fixedStructModuleBuilder;
-				DefaultInterpolatedStringHandler defaultInterpolatedStringHandler = new DefaultInterpolatedStringHandler(30, 1);
-				QG4ZQ9APVeRA5A968ba.i2IAUFsOOC(ref defaultInterpolatedStringHandler, hIDAYxH6DWLHIthQgC.gSCeTtiku(-97333341 ^ 600180503 ^ -1088265128 ^ <Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_ba3f6bd5a09c47868765e25f534dbf2a), QG4ZQ9APVeRA5A968ba.WfgAdlCqZw);
-				defaultInterpolatedStringHandler.AppendFormatted<int>(size);
-				QG4ZQ9APVeRA5A968ba.i2IAUFsOOC(ref defaultInterpolatedStringHandler, TrampolineHelpers.gFj3DCRouDgQv3ml4Rf(-479592382 ^ -2051232532 ^ <Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_ba3f6bd5a09c47868765e25f534dbf2a), QG4ZQ9APVeRA5A968ba.WfgAdlCqZw);
-				value = aDGbeTAzy0PmbSxqfnH.i2IAUFsOOC(TrampolineHelpers.HrHbTyRfgMQmnxiaYUa(fixedStructModuleBuilder, JERLY8AwDDHFUcct031.i2IAUFsOOC(ref defaultInterpolatedStringHandler, JERLY8AwDDHFUcct031.BtbAeLEPuL), TypeAttributes.ExplicitLayout, TrampolineHelpers.HfNqagRb2q49nfxG0uj(typeof(ValueType).TypeHandle, byRw0gA2NyqHkl03ii9.lfRAy1v3an), size, t9JHgnImh61fOYQW7Ad.AHFIviU080), aDGbeTAzy0PmbSxqfnH.TmyUH6hw2Y);
-				num = 4;
-				continue;
-				IL_21E:
-				goto IL_6F;
-			}
-			return result2;
-		}
-
-		// Token: 0x06000D79 RID: 3449 RVA: 0x000167EC File Offset: 0x000149EC
-		public unsafe static Type NativeType(this Type managedType)
-		{
-			int num = 13;
-			uint num3;
-			for (;;)
-			{
-				int num2 = num;
-				for (;;)
-				{
-					Type type;
-					switch (num2)
-					{
-					case 1:
-						goto IL_C0;
-					case 2:
-						if (!TrampolineHelpers.VhESrpRwOR452uFvfaL(type, TrampolineHelpers.HfNqagRb2q49nfxG0uj(typeof(bool).TypeHandle, byRw0gA2NyqHkl03ii9.lfRAy1v3an), dPsigOUwJdO4bwskNJ5.hvvUeCiIEf))
-						{
-							num2 = 5;
-							continue;
-						}
-						goto IL_63;
-					case 3:
-						goto IL_1C1;
-					case 4:
-						goto IL_2AB;
-					case 5:
-						if (TrampolineHelpers.VhESrpRwOR452uFvfaL(type, TrampolineHelpers.HfNqagRb2q49nfxG0uj(typeof(string).TypeHandle, byRw0gA2NyqHkl03ii9.lfRAy1v3an), dPsigOUwJdO4bwskNJ5.hvvUeCiIEf))
-						{
-							num2 = 3;
-							continue;
-						}
-						goto IL_C0;
-					case 6:
-						if (!TrampolineHelpers.T62qqURQaFedGOmYLRw(jFQhjLIKKa8P97oX7HC.Dh0I5eBEfS))
-						{
-							num2 = 11;
-							continue;
-						}
-						goto IL_138;
-					case 7:
-						if (TrampolineHelpers.VhESrpRwOR452uFvfaL(managedType, TrampolineHelpers.HfNqagRb2q49nfxG0uj(typeof(bool).TypeHandle, byRw0gA2NyqHkl03ii9.lfRAy1v3an), dPsigOUwJdO4bwskNJ5.hvvUeCiIEf))
-						{
-							goto IL_185;
-						}
-						num2 = 0;
-						if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_b4e45528af4644e9b080e05d5ff6ef54 == 0)
-						{
-							num2 = 0;
-							continue;
-						}
-						continue;
-					case 8:
-						goto IL_185;
-					case 9:
-						goto IL_125;
-					case 10:
-						goto IL_264;
-					case 11:
-						num3 = 0U;
-						num2 = 6;
-						if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_570d4e075bf443fcbaca8db32e007291 == 0)
-						{
-							num2 = 9;
-							continue;
-						}
-						continue;
-					case 12:
-						type = TrampolineHelpers.MOJaawRdGLvsjBdJWP9(managedType, U8h2YU9SxVTdCTH73DU.h0m9gM44pd);
-						num2 = 0;
-						if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_22a2950bfabc46ffa61eec0d3eacc4c9 != 0)
-						{
-							num2 = 2;
-							continue;
-						}
-						continue;
-					case 13:
-						if (TrampolineHelpers.Nx0RHVRPgRdReDXTFwg(managedType, HUtclRqOvktk8jFJw0c.zf1qXu2bX0))
-						{
-							num2 = 12;
-							continue;
-						}
-						if (!TrampolineHelpers.Gw7UdGRshIrHfiHDe9g(managedType, byRw0gA2NyqHkl03ii9.i2IAUFsOOC(typeof(ValueType).TypeHandle, byRw0gA2NyqHkl03ii9.lfRAy1v3an), IvRaRdITOToIFO9INUq.BY0IFsMlhd))
-						{
-							goto IL_138;
-						}
-						num2 = 2;
-						if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_3ffead0113044f06b294bee6bd5e7a44 == 0)
-						{
-							num2 = 6;
-							continue;
-						}
-						continue;
-					case 14:
-						goto IL_63;
-					case 15:
-						goto IL_1E5;
-					}
-					goto Block_1;
-					IL_C0:
-					if (TrampolineHelpers.Gw7UdGRshIrHfiHDe9g(type, byRw0gA2NyqHkl03ii9.i2IAUFsOOC(typeof(Il2CppObjectBase).TypeHandle, byRw0gA2NyqHkl03ii9.lfRAy1v3an), IvRaRdITOToIFO9INUq.BY0IFsMlhd))
-					{
-						num2 = 4;
-						continue;
-					}
-					return managedType;
-					IL_138:
-					if (TrampolineHelpers.VhESrpRwOR452uFvfaL(managedType, TrampolineHelpers.HfNqagRb2q49nfxG0uj(typeof(string).TypeHandle, byRw0gA2NyqHkl03ii9.lfRAy1v3an), dPsigOUwJdO4bwskNJ5.hvvUeCiIEf))
-					{
-						goto IL_1E5;
-					}
-					num2 = 8;
-					if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_bdb78f8e72c9458b854f92ed163c1f40 != 0)
-					{
-						num2 = 10;
-					}
-				}
-				IL_264:
-				if (TrampolineHelpers.Gw7UdGRshIrHfiHDe9g(managedType, byRw0gA2NyqHkl03ii9.i2IAUFsOOC(typeof(Il2CppObjectBase).TypeHandle, byRw0gA2NyqHkl03ii9.lfRAy1v3an), IvRaRdITOToIFO9INUq.BY0IFsMlhd))
-				{
-					goto IL_1E5;
-				}
-				num = 7;
-			}
-			Block_1:
-			goto IL_176;
-			IL_63:
-			return TrampolineHelpers.QbflgbReSSVWff5xg9H(TrampolineHelpers.HfNqagRb2q49nfxG0uj(typeof(byte).TypeHandle, byRw0gA2NyqHkl03ii9.lfRAy1v3an), TDIMMMIBZjUjinX0eAh.ajWIj2M2Bq);
-			IL_125:
-			return TrampolineHelpers.ouipfXRyxPXiriPG54C(IL2CPP.il2cpp_class_value_size(TrampolineHelpers.x6X06AR23fh6GNu5eA3(managedType), ref num3));
-			IL_176:
-			return managedType;
-			IL_185:
-			return TrampolineHelpers.HfNqagRb2q49nfxG0uj(typeof(byte).TypeHandle, byRw0gA2NyqHkl03ii9.lfRAy1v3an);
-			IL_1C1:
-			goto IL_2AB;
-			IL_1E5:
-			return TrampolineHelpers.HfNqagRb2q49nfxG0uj(typeof(IntPtr).TypeHandle, byRw0gA2NyqHkl03ii9.lfRAy1v3an);
-			IL_2AB:
-			return TrampolineHelpers.HfNqagRb2q49nfxG0uj(typeof(IntPtr*).TypeHandle, byRw0gA2NyqHkl03ii9.lfRAy1v3an);
-		}
-
-		// Token: 0x06000D7A RID: 3450 RVA: 0x00016AF4 File Offset: 0x00014CF4
-		// Note: this type is marked as 'beforefieldinit'.
-		static TrampolineHelpers()
-		{
-			int num = 3;
-			int num2 = num;
-			for (;;)
-			{
 				switch (num2)
 				{
+				case 0:
+					goto IL_9C;
 				case 1:
-					return;
-				case 2:
-					TrampolineHelpers.n3hQKjRg39VSjZ4mN4G();
-					num2 = 0;
-					if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_277c9fa6c1da46a98cc2f13643296b8f == 0)
-					{
-						num2 = 0;
-						continue;
-					}
+				{
+					Type result = TrampolineHelpers._fixedStructCache[size] = value;
+					num2 = 4;
 					continue;
+				}
+				case 2:
+					goto IL_196;
 				case 3:
-					TrampolineHelpers.DG7GewRShbg057G6hYv();
-					num2 = 0;
-					if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_d03e4e4716154375bf56bf596fbd5780 == 0)
+					TrampolineHelpers._fixedStructModuleBuilder = TrampolineHelpers.BSG6NyVXJCajPtdXeHr(TrampolineHelpers._fixedStructAssembly, TrampolineHelpers.ARtC2xVLHhvaGUEN2LY(-1733373103 ^ -293609545 ^ <Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_960a54aec0f640cd975b2d62f3e0a596), NEllk4AeauycfOpdUn5.OCQAKEXBx8);
+					num2 = 2;
+					if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_92b5e8e4146b4a178d711afdb1274991 != 0)
 					{
 						num2 = 2;
 						continue;
 					}
 					continue;
 				case 4:
-					TrampolineHelpers._fixedStructCache = new Dictionary<int, Type>();
-					num2 = 0;
-					if (<Module>{cde795fe-54c1-4a5d-b3ca-315966f8b11e}.m_fa95a52cde3a48319640c03a5a4742a2.m_f0601de1a406461b9e99711ec5418371 == 0)
+				{
+					Type result;
+					return result;
+				}
+				case 5:
+					return result2;
+				case 6:
+					break;
+				case 7:
+					if (TrampolineHelpers._fixedStructAssembly == null)
+					{
+						num2 = 0;
+						if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_355d73c700924bf28058452e63cd9cf1 != 0)
+						{
+							num2 = 0;
+							continue;
+						}
+						continue;
+					}
+					break;
+				case 8:
+					if (TrampolineHelpers._fixedStructCache.TryGetValue(size, out result2))
+					{
+						return result2;
+					}
+					num2 = 7;
+					if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_ce8abd079f9447b3bade260ffc64f0b8 == 0)
+					{
+						num2 = 7;
+						continue;
+					}
+					continue;
+				default:
+					goto IL_9C;
+				}
+				if (TrampolineHelpers._fixedStructModuleBuilder != null)
+				{
+					goto IL_196;
+				}
+				num2 = 0;
+				if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_4f96e4bec76a4c34a19bcff463d6dc03 == 0)
+				{
+					num2 = 3;
+					continue;
+				}
+				continue;
+				IL_9C:
+				TrampolineHelpers._fixedStructAssembly = TrampolineHelpers.ISGY08VA4VVrMsnEIBR(new AssemblyName(hIDAYxH6DWLHIthQgC.gSCeTtiku(-94957632 ^ -1958993102 ^ <Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_6776fc69415b4d309be658e7e8ac3a28)), AssemblyBuilderAccess.Run, UETNIlAjAFIFP95Jdbk.LGoAQFtfia);
+				num2 = 1;
+				if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_11d7514559f14fcba52669ac71e3cb39 != 0)
+				{
+					num2 = 6;
+					continue;
+				}
+				continue;
+				IL_196:
+				object fixedStructModuleBuilder = TrampolineHelpers._fixedStructModuleBuilder;
+				DefaultInterpolatedStringHandler defaultInterpolatedStringHandler = new DefaultInterpolatedStringHandler(30, 1);
+				gNvtmAqVGiPoaikm7Qe.muOq5LWqgj(ref defaultInterpolatedStringHandler, hIDAYxH6DWLHIthQgC.gSCeTtiku(1498942091 ^ 1327519562 ^ <Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_3e36778f33984767b2e7264fa31cee60), gNvtmAqVGiPoaikm7Qe.caZq0g9xkW);
+				defaultInterpolatedStringHandler.AppendFormatted<int>(size);
+				gNvtmAqVGiPoaikm7Qe.muOq5LWqgj(ref defaultInterpolatedStringHandler, hIDAYxH6DWLHIthQgC.gSCeTtiku(-854988610 >> 3 ^ -304378938 ^ <Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_ac2c10c141e144acbcef06aa86a10430), gNvtmAqVGiPoaikm7Qe.caZq0g9xkW);
+				value = aBR5LPqTqhDZgK9xjFE.muOq5LWqgj(TrampolineHelpers.RWrMlHVkAyLxNgnkgvP(fixedStructModuleBuilder, AB0cwrqss60xewxtTc1.muOq5LWqgj(ref defaultInterpolatedStringHandler, AB0cwrqss60xewxtTc1.IlIqSuRBy7), TypeAttributes.ExplicitLayout, TrampolineHelpers.iW4C7yVcfNfQtlBH7S7(typeof(ValueType).TypeHandle, KrP4bwqDeBbRGf2nlBC.cd8qmkqhJV), size, xRhs31cM31GSEjwtvZ6.zF8cW4QDSJ), aBR5LPqTqhDZgK9xjFE.MpyqgFlfYx);
+				num2 = 1;
+				if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_c04403f838344b38b3a8911774a446ea == 0)
+				{
+					num2 = 1;
+				}
+			}
+			return result2;
+		}
+
+		// Token: 0x06000D52 RID: 3410 RVA: 0x00015B28 File Offset: 0x00013D28
+		public unsafe static Type NativeType(this Type managedType)
+		{
+			int num = 10;
+			int num2 = num;
+			uint num3;
+			for (;;)
+			{
+				Type type;
+				switch (num2)
+				{
+				case 0:
+					goto IL_263;
+				case 1:
+					goto IL_F8;
+				case 2:
+					break;
+				case 3:
+					goto IL_194;
+				case 4:
+					if (TrampolineHelpers.m4Nt7HVOtV1L2cMbrJD(type, KrP4bwqDeBbRGf2nlBC.muOq5LWqgj(typeof(Il2CppObjectBase).TypeHandle, KrP4bwqDeBbRGf2nlBC.cd8qmkqhJV), a8rqaTcIBiq0vm5osDV.QmMcdBq7m4))
+					{
+						goto IL_107;
+					}
+					num2 = 1;
+					if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_4356a7af7f8147b79f2ed4ab0c268438 == 0)
 					{
 						num2 = 1;
 						continue;
 					}
 					continue;
+				case 5:
+					IL_216:
+					if (TrampolineHelpers.m4Nt7HVOtV1L2cMbrJD(managedType, TrampolineHelpers.iW4C7yVcfNfQtlBH7S7(typeof(Il2CppObjectBase).TypeHandle, KrP4bwqDeBbRGf2nlBC.cd8qmkqhJV), a8rqaTcIBiq0vm5osDV.QmMcdBq7m4))
+					{
+						num2 = 7;
+						if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_3f609fad0bcc47d79d3add6a492d3616 == 0)
+						{
+							num2 = 11;
+							continue;
+						}
+						continue;
+					}
+					else
+					{
+						if (JCwQlA5sGlTyuRZuORY.muOq5LWqgj(managedType, TrampolineHelpers.iW4C7yVcfNfQtlBH7S7(typeof(bool).TypeHandle, KrP4bwqDeBbRGf2nlBC.cd8qmkqhJV), JCwQlA5sGlTyuRZuORY.fqC5SwdxA5))
+						{
+							num2 = 6;
+							continue;
+						}
+						return managedType;
+					}
+					break;
+				case 6:
+					goto IL_27C;
+				case 7:
+					goto IL_A5;
+				case 8:
+					goto IL_107;
+				case 9:
+					if (!a8rqaTcIBiq0vm5osDV.muOq5LWqgj(managedType, TrampolineHelpers.iW4C7yVcfNfQtlBH7S7(typeof(ValueType).TypeHandle, KrP4bwqDeBbRGf2nlBC.cd8qmkqhJV), a8rqaTcIBiq0vm5osDV.QmMcdBq7m4))
+					{
+						goto IL_B8;
+					}
+					num2 = 0;
+					if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_b502855b254c47cfafcd30fd84ad7c96 == 0)
+					{
+						num2 = 0;
+						continue;
+					}
+					continue;
+				case 10:
+					if (!BD4fpgAfbgEWuCwmKMc.muOq5LWqgj(managedType, BD4fpgAfbgEWuCwmKMc.ktpA11NTFq))
+					{
+						num2 = 9;
+						continue;
+					}
+					break;
+				case 11:
+					goto IL_5F;
+				case 12:
+					if (TrampolineHelpers.FeT7DSVHYTmT91aorWq(type, KrP4bwqDeBbRGf2nlBC.muOq5LWqgj(typeof(bool).TypeHandle, KrP4bwqDeBbRGf2nlBC.cd8qmkqhJV), JCwQlA5sGlTyuRZuORY.fqC5SwdxA5))
+					{
+						num2 = 3;
+						if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_e5b00aa4c99144c78d3bd63e270496cb != 0)
+						{
+							num2 = 13;
+							continue;
+						}
+						continue;
+					}
+					else
+					{
+						if (TrampolineHelpers.FeT7DSVHYTmT91aorWq(type, TrampolineHelpers.iW4C7yVcfNfQtlBH7S7(typeof(string).TypeHandle, KrP4bwqDeBbRGf2nlBC.cd8qmkqhJV), JCwQlA5sGlTyuRZuORY.fqC5SwdxA5))
+						{
+							goto IL_107;
+						}
+						num2 = 4;
+						if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_4f0a774880f74bccb3d4511e5f526375 != 0)
+						{
+							num2 = 3;
+							continue;
+						}
+						continue;
+					}
+					break;
+				case 13:
+					goto IL_1BD;
+				case 14:
+					num3 = 0U;
+					num2 = 7;
+					continue;
+				default:
+					goto IL_263;
 				}
-				TrampolineHelpers.YwqXK6RlFMcqA1KDPOV();
-				num2 = 4;
+				type = TrampolineHelpers.n9PA5EV2D5ifmGRERat(managedType, Vc0yi5L7073fonVVdAs.IPoLP4Ir53);
+				num2 = 12;
+				continue;
+				IL_263:
+				if (!TrampolineHelpers.ukOD99Vt9Endfi1ImVD(tGaoqfciNIJEWVcpCnQ.rMNcwqM5R0))
+				{
+					num2 = 14;
+					continue;
+				}
+				IL_B8:
+				if (!JCwQlA5sGlTyuRZuORY.muOq5LWqgj(managedType, KrP4bwqDeBbRGf2nlBC.muOq5LWqgj(typeof(string).TypeHandle, KrP4bwqDeBbRGf2nlBC.cd8qmkqhJV), JCwQlA5sGlTyuRZuORY.fqC5SwdxA5))
+				{
+					goto IL_216;
+				}
+				num2 = 3;
+			}
+			IL_5F:
+			return TrampolineHelpers.iW4C7yVcfNfQtlBH7S7(typeof(IntPtr).TypeHandle, KrP4bwqDeBbRGf2nlBC.cd8qmkqhJV);
+			IL_A5:
+			return TrampolineHelpers.EfYEeKVxGL7qsc0F4tY(IL2CPP.il2cpp_class_value_size(TrampolineHelpers.vRAsrhVvuWulnrcuML4(managedType), ref num3));
+			IL_F8:
+			return managedType;
+			IL_107:
+			return KrP4bwqDeBbRGf2nlBC.muOq5LWqgj(typeof(IntPtr*).TypeHandle, KrP4bwqDeBbRGf2nlBC.cd8qmkqhJV);
+			IL_194:
+			goto IL_5F;
+			IL_1BD:
+			return TrampolineHelpers.fEZBbBVhO81xJYBfpCG(TrampolineHelpers.iW4C7yVcfNfQtlBH7S7(typeof(byte).TypeHandle, KrP4bwqDeBbRGf2nlBC.cd8qmkqhJV), mBhXypcCQskhobRR7h8.Ktxc9umHur);
+			IL_27C:
+			return TrampolineHelpers.iW4C7yVcfNfQtlBH7S7(typeof(byte).TypeHandle, KrP4bwqDeBbRGf2nlBC.cd8qmkqhJV);
+		}
+
+		// Token: 0x06000D53 RID: 3411 RVA: 0x00015E04 File Offset: 0x00014004
+		// Note: this type is marked as 'beforefieldinit'.
+		static TrampolineHelpers()
+		{
+			int num = 1;
+			int num2 = num;
+			for (;;)
+			{
+				switch (num2)
+				{
+				default:
+					TrampolineHelpers.Pey9csV8X2LUvfrZRAi();
+					num2 = 2;
+					if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_bac7568f2bc04130b6b980225b2cc409 != 0)
+					{
+						num2 = 2;
+					}
+					break;
+				case 1:
+					TrampolineHelpers.k5lFuYVYdqD7HaGWJHy();
+					num2 = 0;
+					if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_8378a46aa7ed47018832a42729b1bc3b == 0)
+					{
+						num2 = 0;
+					}
+					break;
+				case 2:
+					TrampolineHelpers.GXLNOYVntwECnprxuBJ();
+					num2 = 3;
+					if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_7492c06848354e9185cf647bb6904451 == 0)
+					{
+						num2 = 3;
+					}
+					break;
+				case 3:
+					TrampolineHelpers._fixedStructCache = new Dictionary<int, Type>();
+					num2 = 4;
+					if (<Module>{7960342e-06bd-4980-8bb2-20d91fd727fe}.m_d0153a99ea94469083b73704bf320112.m_6a95c50bbb48420f8f11bb090d6d3bd5 != 0)
+					{
+						num2 = 1;
+					}
+					break;
+				case 4:
+					return;
+				}
 			}
 		}
 
-		// Token: 0x06000D7B RID: 3451 RVA: 0x00016BB8 File Offset: 0x00014DB8
-		internal static object Vb4mKlRDlUEehnaTDjY(object A_0, AssemblyBuilderAccess A_1, object A_2)
+		// Token: 0x06000D54 RID: 3412 RVA: 0x00015EE0 File Offset: 0x000140E0
+		internal static object ISGY08VA4VVrMsnEIBR(object A_0, AssemblyBuilderAccess A_1, object A_2)
 		{
-			return PhcPCd9qZOZYbGJa4AI.i2IAUFsOOC(A_0, A_1, A_2);
+			return UETNIlAjAFIFP95Jdbk.muOq5LWqgj(A_0, A_1, A_2);
 		}
 
-		// Token: 0x06000D7C RID: 3452 RVA: 0x00016BD4 File Offset: 0x00014DD4
-		internal static object h4A10ERZWICWJPstdTh(object A_0, object A_1, object A_2)
-		{
-			return B17Oqp9iWWgj6vslXHW.i2IAUFsOOC(A_0, A_1, A_2);
-		}
-
-		// Token: 0x06000D7D RID: 3453 RVA: 0x00016BF0 File Offset: 0x00014DF0
-		internal static object gFj3DCRouDgQv3ml4Rf(int \u0020)
+		// Token: 0x06000D55 RID: 3413 RVA: 0x00015EFC File Offset: 0x000140FC
+		internal static object ARtC2xVLHhvaGUEN2LY(int \u0020)
 		{
 			return hIDAYxH6DWLHIthQgC.gSCeTtiku(\u0020);
 		}
 
-		// Token: 0x06000D7E RID: 3454 RVA: 0x00016C04 File Offset: 0x00014E04
-		internal static Type HfNqagRb2q49nfxG0uj(RuntimeTypeHandle A_0, object A_1)
+		// Token: 0x06000D56 RID: 3414 RVA: 0x00015F10 File Offset: 0x00014110
+		internal static object BSG6NyVXJCajPtdXeHr(object A_0, object A_1, object A_2)
 		{
-			return byRw0gA2NyqHkl03ii9.i2IAUFsOOC(A_0, A_1);
+			return NEllk4AeauycfOpdUn5.muOq5LWqgj(A_0, A_1, A_2);
 		}
 
-		// Token: 0x06000D7F RID: 3455 RVA: 0x00016C1C File Offset: 0x00014E1C
-		internal static object HrHbTyRfgMQmnxiaYUa(object A_0, object A_1, TypeAttributes A_2, Type A_3, int A_4, object A_5)
+		// Token: 0x06000D57 RID: 3415 RVA: 0x00015F2C File Offset: 0x0001412C
+		internal static Type iW4C7yVcfNfQtlBH7S7(RuntimeTypeHandle A_0, object A_1)
 		{
-			return t9JHgnImh61fOYQW7Ad.i2IAUFsOOC(A_0, A_1, A_2, A_3, A_4, A_5);
+			return KrP4bwqDeBbRGf2nlBC.muOq5LWqgj(A_0, A_1);
 		}
 
-		// Token: 0x06000D80 RID: 3456 RVA: 0x00016C44 File Offset: 0x00014E44
-		internal static bool yX7ToiRW537Dy8xJyZb()
+		// Token: 0x06000D58 RID: 3416 RVA: 0x00015F44 File Offset: 0x00014144
+		internal static object RWrMlHVkAyLxNgnkgvP(object A_0, object A_1, TypeAttributes A_2, Type A_3, int A_4, object A_5)
 		{
-			return TrampolineHelpers.eaIU6BRJ3jfdsPWfFj9 == null;
+			return xRhs31cM31GSEjwtvZ6.muOq5LWqgj(A_0, A_1, A_2, A_3, A_4, A_5);
 		}
 
-		// Token: 0x06000D81 RID: 3457 RVA: 0x00016C58 File Offset: 0x00014E58
-		internal static TrampolineHelpers WWWKnDRrvOoCtpsLFKY()
+		// Token: 0x06000D59 RID: 3417 RVA: 0x00015F6C File Offset: 0x0001416C
+		internal static bool ajodi0Vq9wmpiB6261j()
 		{
-			return TrampolineHelpers.eaIU6BRJ3jfdsPWfFj9;
+			return TrampolineHelpers.KOY90bVlihasay0ry9E == null;
 		}
 
-		// Token: 0x06000D82 RID: 3458 RVA: 0x00016C68 File Offset: 0x00014E68
-		internal static bool Nx0RHVRPgRdReDXTFwg(object A_0, object A_1)
+		// Token: 0x06000D5A RID: 3418 RVA: 0x00015F80 File Offset: 0x00014180
+		internal static TrampolineHelpers tp1OLxV5sCalk6OStoP()
 		{
-			return HUtclRqOvktk8jFJw0c.i2IAUFsOOC(A_0, A_1);
+			return TrampolineHelpers.KOY90bVlihasay0ry9E;
 		}
 
-		// Token: 0x06000D83 RID: 3459 RVA: 0x00016C80 File Offset: 0x00014E80
-		internal static Type MOJaawRdGLvsjBdJWP9(object A_0, object A_1)
+		// Token: 0x06000D5B RID: 3419 RVA: 0x00015F90 File Offset: 0x00014190
+		internal static Type n9PA5EV2D5ifmGRERat(object A_0, object A_1)
 		{
-			return U8h2YU9SxVTdCTH73DU.i2IAUFsOOC(A_0, A_1);
+			return Vc0yi5L7073fonVVdAs.muOq5LWqgj(A_0, A_1);
 		}
 
-		// Token: 0x06000D84 RID: 3460 RVA: 0x00016C98 File Offset: 0x00014E98
-		internal static bool VhESrpRwOR452uFvfaL(Type A_0, Type A_1, object A_2)
+		// Token: 0x06000D5C RID: 3420 RVA: 0x00015FA8 File Offset: 0x000141A8
+		internal static bool FeT7DSVHYTmT91aorWq(Type A_0, Type A_1, object A_2)
 		{
-			return dPsigOUwJdO4bwskNJ5.i2IAUFsOOC(A_0, A_1, A_2);
+			return JCwQlA5sGlTyuRZuORY.muOq5LWqgj(A_0, A_1, A_2);
 		}
 
-		// Token: 0x06000D85 RID: 3461 RVA: 0x00016CB4 File Offset: 0x00014EB4
-		internal static Type QbflgbReSSVWff5xg9H(object A_0, object A_1)
+		// Token: 0x06000D5D RID: 3421 RVA: 0x00015FC4 File Offset: 0x000141C4
+		internal static Type fEZBbBVhO81xJYBfpCG(object A_0, object A_1)
 		{
-			return TDIMMMIBZjUjinX0eAh.i2IAUFsOOC(A_0, A_1);
+			return mBhXypcCQskhobRR7h8.muOq5LWqgj(A_0, A_1);
 		}
 
-		// Token: 0x06000D86 RID: 3462 RVA: 0x00016CCC File Offset: 0x00014ECC
-		internal static bool Gw7UdGRshIrHfiHDe9g(object A_0, Type A_1, object A_2)
+		// Token: 0x06000D5E RID: 3422 RVA: 0x00015FDC File Offset: 0x000141DC
+		internal static bool m4Nt7HVOtV1L2cMbrJD(object A_0, Type A_1, object A_2)
 		{
-			return IvRaRdITOToIFO9INUq.i2IAUFsOOC(A_0, A_1, A_2);
+			return a8rqaTcIBiq0vm5osDV.muOq5LWqgj(A_0, A_1, A_2);
 		}
 
-		// Token: 0x06000D87 RID: 3463 RVA: 0x00016CE8 File Offset: 0x00014EE8
-		internal static bool T62qqURQaFedGOmYLRw(object A_0)
+		// Token: 0x06000D5F RID: 3423 RVA: 0x00015FF8 File Offset: 0x000141F8
+		internal static bool ukOD99Vt9Endfi1ImVD(object A_0)
 		{
-			return jFQhjLIKKa8P97oX7HC.i2IAUFsOOC(A_0);
+			return tGaoqfciNIJEWVcpCnQ.muOq5LWqgj(A_0);
 		}
 
-		// Token: 0x06000D88 RID: 3464 RVA: 0x00016CFC File Offset: 0x00014EFC
-		internal static IntPtr x6X06AR23fh6GNu5eA3(Type type)
+		// Token: 0x06000D60 RID: 3424 RVA: 0x0001600C File Offset: 0x0001420C
+		internal static IntPtr vRAsrhVvuWulnrcuML4(Type type)
 		{
 			return Il2CppClassPointerStore.GetNativeClassPointer(type);
 		}
 
-		// Token: 0x06000D89 RID: 3465 RVA: 0x00016D10 File Offset: 0x00014F10
-		internal static Type ouipfXRyxPXiriPG54C(int size)
+		// Token: 0x06000D61 RID: 3425 RVA: 0x00016020 File Offset: 0x00014220
+		internal static Type EfYEeKVxGL7qsc0F4tY(int size)
 		{
 			return TrampolineHelpers.GetFixedSizeStructType(size);
 		}
 
-		// Token: 0x06000D8A RID: 3466 RVA: 0x00016D24 File Offset: 0x00014F24
-		internal static void DG7GewRShbg057G6hYv()
+		// Token: 0x06000D62 RID: 3426 RVA: 0x00016034 File Offset: 0x00014234
+		internal static void k5lFuYVYdqD7HaGWJHy()
 		{
 			hIDAYxH6DWLHIthQgC.zSLipEDdx();
 		}
 
-		// Token: 0x06000D8B RID: 3467 RVA: 0x00016D34 File Offset: 0x00014F34
-		internal static void n3hQKjRg39VSjZ4mN4G()
+		// Token: 0x06000D63 RID: 3427 RVA: 0x00016044 File Offset: 0x00014244
+		internal static void Pey9csV8X2LUvfrZRAi()
 		{
 			hIDAYxH6DWLHIthQgC.oDuBOTgYK();
 		}
 
-		// Token: 0x06000D8C RID: 3468 RVA: 0x00016D44 File Offset: 0x00014F44
-		internal static void YwqXK6RlFMcqA1KDPOV()
+		// Token: 0x06000D64 RID: 3428 RVA: 0x00016054 File Offset: 0x00014254
+		internal static void GXLNOYVntwECnprxuBJ()
 		{
-			nHwRpygmi6xxZAssJn.MZ6my7dBdJ();
+			nHwRpygmi6xxZAssJn.EmlEpH4Phw();
 		}
 
-		// Token: 0x0400099C RID: 2460
+		// Token: 0x0400098F RID: 2447
 		private static AssemblyBuilder _fixedStructAssembly;
 
-		// Token: 0x0400099D RID: 2461
+		// Token: 0x04000990 RID: 2448
 		private static ModuleBuilder _fixedStructModuleBuilder;
 
-		// Token: 0x0400099E RID: 2462
+		// Token: 0x04000991 RID: 2449
 		private static readonly Dictionary<int, Type> _fixedStructCache;
 
-		// Token: 0x0400099F RID: 2463
-		internal static TrampolineHelpers eaIU6BRJ3jfdsPWfFj9;
+		// Token: 0x04000992 RID: 2450
+		private static TrampolineHelpers KOY90bVlihasay0ry9E;
 	}
 }

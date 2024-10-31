@@ -2,10 +2,10 @@
 
 namespace Il2CppInterop.Runtime.Runtime
 {
-	// Token: 0x02000037 RID: 55
+	// Token: 0x02000035 RID: 53
 	public interface INativeStructHandler
 	{
-		// Token: 0x0600024C RID: 588
+		// Token: 0x0600022E RID: 558
 		int Size();
 	}
 }

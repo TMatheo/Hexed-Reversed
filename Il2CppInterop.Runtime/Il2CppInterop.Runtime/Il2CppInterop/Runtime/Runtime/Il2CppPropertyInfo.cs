@@ -2,7 +2,7 @@
 
 namespace Il2CppInterop.Runtime.Runtime
 {
-	// Token: 0x02000022 RID: 34
+	// Token: 0x02000020 RID: 32
 	public struct Il2CppPropertyInfo
 	{
 	}

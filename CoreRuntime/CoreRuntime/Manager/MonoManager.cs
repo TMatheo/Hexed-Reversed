@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Reflection;
 using System.Runtime.CompilerServices;
 using CoreRuntime.Interfaces;
@@ -11,10 +12,10 @@ namespace CoreRuntime.Manager
 	// Token: 0x0200000C RID: 12
 	public class MonoManager
 	{
-		// Token: 0x0600003B RID: 59 RVA: 0x00003DC8 File Offset: 0x00001FC8
+		// Token: 0x0600003B RID: 59 RVA: 0x00003D8C File Offset: 0x00001F8C
 		internal static void CheckBaseHooks()
 		{
-			int num = 11;
+			int num = 1;
 			for (;;)
 			{
 				int num2 = num;
@@ -22,142 +23,134 @@ namespace CoreRuntime.Manager
 				{
 					switch (num2)
 					{
+					case 0:
+						goto IL_96;
 					case 1:
-						goto IL_E4;
-					case 2:
-						Logger.LogWarning(hIDAYxH6DWLHIthQgC.gSCeTtiku(899193066 ^ 1833790969 ^ 15479112 ^ <Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_23fddb7baea1434bb794ffb26571c6db));
-						num2 = 9;
-						continue;
-					case 3:
-						Logger.LogWarning(hIDAYxH6DWLHIthQgC.gSCeTtiku(-1264955662 ^ -1501923003 ^ <Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_0d12433093534f2c94a3623f38521c46));
-						num2 = 1;
-						if (<Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_abcb54034558476aaf1951a09e1b79df != 0)
-						{
-							num2 = 1;
-							continue;
-						}
-						continue;
-					case 5:
-						goto IL_79;
-					case 6:
-						goto IL_BB;
-					case 7:
-						Logger.LogWarning(hIDAYxH6DWLHIthQgC.gSCeTtiku(-997777185 ^ -1106952038 ^ <Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_172533a79ba7495d81d7b55862d3ed70));
-						num2 = 8;
-						continue;
-					case 8:
-						goto IL_122;
-					case 9:
-						goto IL_50;
-					case 10:
-						goto IL_BB;
-					case 11:
 						if (MonoManager.originalUpdate != null)
 						{
-							num2 = 10;
+							goto IL_C0;
+						}
+						num2 = 0;
+						if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_f6045cb8f6a845a2bd760bd08e5edb09 != 0)
+						{
+							num2 = 0;
 							continue;
 						}
-						goto IL_79;
+						continue;
+					case 2:
+						return;
+					case 3:
+						Logger.LogWarning(hIDAYxH6DWLHIthQgC.gSCeTtiku(-424048639 ^ -1701803000 ^ <Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_a3ef764822b249b0bdf61221ef3b4538));
+						num2 = 12;
+						continue;
+					case 4:
+						goto IL_131;
+					case 5:
+						break;
+					case 6:
+						goto IL_1D6;
+					case 7:
+						goto IL_C0;
+					case 8:
+						goto IL_101;
+					case 9:
+						goto IL_131;
+					case 10:
+						goto IL_D8;
+					case 11:
+						Logger.LogWarning(hIDAYxH6DWLHIthQgC.gSCeTtiku(-1243926661 + 2002416826 ^ 1666505965 ^ <Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_389e5b4ff8ba426c905f46214455c4b7));
+						num2 = 10;
+						if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_f60e06269478475f974669ce1a130c73 == 0)
+						{
+							num2 = 9;
+							continue;
+						}
+						continue;
 					case 12:
-						goto IL_F8;
+						goto IL_154;
+					default:
+						goto IL_96;
 					}
-					return;
-					IL_50:
-					if (MonoManager.originalOnApplicationQuit == null)
+					IL_51:
+					Logger.LogWarning(hIDAYxH6DWLHIthQgC.gSCeTtiku(-807808146 - -1908325673 ^ 953100200 ^ <Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_9a741f44c50c48bd9a4c027118ac2b16));
+					num2 = 1;
+					if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_302aed8b9a4f4b8894d39c085f0150b4 == 0)
 					{
-						goto IL_F8;
+						num2 = 2;
+						continue;
 					}
-					num2 = 0;
-					if (<Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_075c1a007c1f4defb3641fe607b4018f != 0)
+					continue;
+					IL_96:
+					Logger.LogWarning(hIDAYxH6DWLHIthQgC.gSCeTtiku(-1894012931 ^ -1153809851 ^ <Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_30eab0122c1d426fb07a2bca334dae30));
+					num2 = 7;
+					continue;
+					IL_D8:
+					if (MonoManager.originalFixedUpdate == null)
+					{
+						goto IL_101;
+					}
+					num2 = 9;
+					if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_9c49ea5ee52241ee91951f45ec39a118 != 0)
 					{
 						num2 = 0;
 						continue;
 					}
 					continue;
-					IL_BB:
+					IL_C0:
 					if (MonoManager.originalLateUpdate == null)
 					{
-						num2 = 3;
-						if (<Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_9a072d45b7c649c39a88ec471b6efdd0 == 0)
-						{
-							num2 = 1;
-							continue;
-						}
-						continue;
+						break;
 					}
-					IL_E4:
-					if (MonoManager.originalFixedUpdate == null)
-					{
-						num2 = 7;
-						continue;
-					}
-					goto IL_122;
-					IL_F8:
-					Logger.LogWarning(hIDAYxH6DWLHIthQgC.gSCeTtiku(817209202 ^ 1803120873 ^ <Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_9f6e9c23a00442da9e4a42b6d69a56ca));
+					goto IL_D8;
+					IL_101:
+					Logger.LogWarning(hIDAYxH6DWLHIthQgC.gSCeTtiku(-541142807 - -1750320491 ^ 1032036156 ^ <Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_5ce5ba802c7944ee8d65ed5a643f7605));
 					num2 = 4;
 					continue;
-					IL_122:
-					if (MonoManager.originalOnGUI != null)
+					IL_131:
+					if (MonoManager.originalOnGUI == null)
 					{
-						goto IL_50;
+						num2 = 3;
+						continue;
 					}
-					num2 = 2;
+					IL_154:
+					if (MonoManager.originalOnApplicationQuit == null)
+					{
+						goto IL_51;
+					}
+					num2 = 6;
 				}
-				IL_79:
-				Logger.LogWarning(hIDAYxH6DWLHIthQgC.gSCeTtiku(~-1269817019 ^ 1712855122 ^ <Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_9aed36fa797e461e98c578cb5ad6472b));
-				num = 6;
+				num = 11;
 			}
+			return;
+			IL_1D6:;
 		}
 
-		// Token: 0x0600003C RID: 60 RVA: 0x00003FDC File Offset: 0x000021DC
+		// Token: 0x0600003C RID: 60 RVA: 0x00003FA8 File Offset: 0x000021A8
 		public static void PatchUpdate(MethodInfo method)
 		{
-			int num = 7;
+			int num = 6;
 			int num2 = num;
 			for (;;)
 			{
 				switch (num2)
 				{
-				case 0:
-					goto IL_6C;
 				case 1:
-					if (SmEfxakRSirVGEfGwMV.Vkgsu7Vsh(method, SmEfxakRSirVGEfGwMV.RdGk4lnAPV))
-					{
-						num2 = 5;
-						continue;
-					}
-					break;
+					goto IL_B8;
 				case 2:
 					return;
 				case 3:
-					break;
-				case 4:
-					return;
-				case 5:
-					goto IL_6C;
-				case 6:
-					return;
-				case 7:
-					if (MonoManager.originalUpdate != null)
+					if (Qa3Ox831KTuNFDK4ogH.k0sBmDS26(method, Qa3Ox831KTuNFDK4ogH.qqn3QYtlof).Length != 0)
 					{
-						num2 = 6;
-						continue;
+						goto IL_B8;
 					}
-					if (j6DRtekpQbb7WaLEdSb.Vkgsu7Vsh(hTjuG7kL7FEnPsTZEIN.Vkgsu7Vsh(method, hTjuG7kL7FEnPsTZEIN.VPrkrttxWb), leXdUdkQnIXIpKm4I85.Vkgsu7Vsh(typeof(void).TypeHandle, leXdUdkQnIXIpKm4I85.WhGkIJZ1F5), j6DRtekpQbb7WaLEdSb.Yj3kk4a0r5))
+					num2 = 4;
+					if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_cb53c5012b8c473a8f1d4a4b097db321 == 0)
 					{
-						goto IL_6C;
-					}
-					num2 = 1;
-					if (<Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_c41248e324ff4126a99c2492f21b311a == 0)
-					{
-						num2 = 0;
+						num2 = 4;
 						continue;
 					}
 					continue;
-				default:
-					goto IL_6C;
-				}
-				if (MCDlyIkNWsN2UoU5bhV.Vkgsu7Vsh(method, MCDlyIkNWsN2UoU5bhV.pipkDflj0V).Length == 0)
+				case 4:
 				{
 					MonoManager.Update detour;
 					if ((detour = MonoManager.<>O.<0>__patchedUpdate) == null)
@@ -165,23 +158,55 @@ namespace CoreRuntime.Manager
 						detour = (MonoManager.<>O.<0>__patchedUpdate = new MonoManager.Update(MonoManager.patchedUpdate));
 					}
 					MonoManager.originalUpdate = HookManager.Detour<MonoManager.Update>(method, detour);
-					num2 = 4;
+					num2 = 7;
+					if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_a251c722ffd64d969f265fb60691858a != 0)
+					{
+						num2 = 2;
+						continue;
+					}
 					continue;
 				}
-				num2 = 0;
-				if (<Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_4cf3c3fa031b46e5bf2b83f67aac5018 == 0)
+				case 5:
+					return;
+				case 6:
+					if (MonoManager.originalUpdate != null)
+					{
+						num2 = 5;
+						continue;
+					}
+					if (reQRSLscoT5VJVd0ei.k0sBmDS26(kjVBWd3cZi75uiOOjOH.k0sBmDS26(method, kjVBWd3cZi75uiOOjOH.Y6P3jBTWt9), EnlOxL3KU2n5cwR6bLM.k0sBmDS26(typeof(void).TypeHandle, EnlOxL3KU2n5cwR6bLM.EMH3NTwRFd), reQRSLscoT5VJVd0ei.y6czZ96l3))
+					{
+						num2 = 0;
+						if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_4ee3fdefe97746e2a979b2f5d088f1b2 == 0)
+						{
+							num2 = 1;
+							continue;
+						}
+						continue;
+					}
+					break;
+				case 7:
+					return;
+				case 8:
+					goto IL_B8;
+				}
+				if (!xZ9LPo3Pc2ro7A0Asos.k0sBmDS26(method, xZ9LPo3Pc2ro7A0Asos.L1U3AujAcM))
 				{
-					num2 = 0;
+					num2 = 2;
+					if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_781114abd2034347956064bb551f8f7d == 0)
+					{
+						num2 = 3;
+						continue;
+					}
 					continue;
 				}
-				continue;
-				IL_6C:
-				Logger.LogWarning(hIDAYxH6DWLHIthQgC.gSCeTtiku(-1997877993 ^ -902150121 ^ <Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_862f0cb2a8b74fceb562be040fec13c5));
+				IL_B8:
+				Logger.LogWarning(hIDAYxH6DWLHIthQgC.gSCeTtiku(472176686 - 625101809 ^ -884897501 ^ <Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_ac5f2597813e4d7a94eff6f2688ca1d4));
 				num2 = 2;
 			}
 		}
 
-		// Token: 0x0600003D RID: 61 RVA: 0x0000413C File Offset: 0x0000233C
+		// Token: 0x0600003D RID: 61 RVA: 0x00004178 File Offset: 0x00002378
 		private static void patchedUpdate(IntPtr instance)
 		{
 			MonoManager.originalUpdate(instance);
@@ -194,10 +219,10 @@ namespace CoreRuntime.Manager
 				catch (Exception value)
 				{
 					DefaultInterpolatedStringHandler defaultInterpolatedStringHandler = new DefaultInterpolatedStringHandler(20, 2);
-					PHliwfftrtxnGUGv86.Vkgsu7Vsh(ref defaultInterpolatedStringHandler, hexedCheat.Identifier, PHliwfftrtxnGUGv86.PPaXybFhf);
-					OllYaFLKfaVbHwoY0T.Vkgsu7Vsh(ref defaultInterpolatedStringHandler, hIDAYxH6DWLHIthQgC.gSCeTtiku(1860055284 ^ 1978570387 ^ <Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_a25bb9e7fa324a7b8a59c54768fe60bf), OllYaFLKfaVbHwoY0T.jdbri0BdE);
+					rc9mmsOYA6cpiVOdw5.k0sBmDS26(ref defaultInterpolatedStringHandler, hexedCheat.Identifier, rc9mmsOYA6cpiVOdw5.UUPXdwKSJ);
+					EqOyIWPBk4O8GIbets.k0sBmDS26(ref defaultInterpolatedStringHandler, hIDAYxH6DWLHIthQgC.gSCeTtiku(1266938048 - 83500566 ^ 169298552 ^ <Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_b27af62cf66b438484a169015c1171b1), EqOyIWPBk4O8GIbets.OYCAQYjuo);
 					defaultInterpolatedStringHandler.AppendFormatted<Exception>(value);
-					Logger.LogError(HUqyQtK9vUO9bfISNY.Vkgsu7Vsh(ref defaultInterpolatedStringHandler, HUqyQtK9vUO9bfISNY.IYKFLW0NA));
+					Logger.LogError(Sbphjm5LFg5j2OSqxD.k0sBmDS26(ref defaultInterpolatedStringHandler, Sbphjm5LFg5j2OSqxD.tgcgXxaGu));
 				}
 			}
 			for (int i = CoroutineManager.QueuedEnums.Count - 1; i >= 0; i--)
@@ -213,99 +238,87 @@ namespace CoreRuntime.Manager
 				{
 					CoroutineManager.QueuedEnums.RemoveAt(i);
 					DefaultInterpolatedStringHandler defaultInterpolatedStringHandler = new DefaultInterpolatedStringHandler(24, 1);
-					OllYaFLKfaVbHwoY0T.Vkgsu7Vsh(ref defaultInterpolatedStringHandler, hIDAYxH6DWLHIthQgC.gSCeTtiku(1299626116 << 1 ^ -1207766101 ^ <Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_9659e700394c4bbbb6e5a258b827bed3), OllYaFLKfaVbHwoY0T.jdbri0BdE);
+					EqOyIWPBk4O8GIbets.k0sBmDS26(ref defaultInterpolatedStringHandler, hIDAYxH6DWLHIthQgC.gSCeTtiku(-922572248 ^ -1057480822 ^ <Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_23b0c345fbea449596466ee9cdf54e9d), EqOyIWPBk4O8GIbets.OYCAQYjuo);
 					defaultInterpolatedStringHandler.AppendFormatted<Exception>(value2);
-					Logger.LogError(HUqyQtK9vUO9bfISNY.Vkgsu7Vsh(ref defaultInterpolatedStringHandler, HUqyQtK9vUO9bfISNY.IYKFLW0NA));
+					Logger.LogError(Sbphjm5LFg5j2OSqxD.k0sBmDS26(ref defaultInterpolatedStringHandler, Sbphjm5LFg5j2OSqxD.tgcgXxaGu));
 				}
 			}
 		}
 
-		// Token: 0x0600003E RID: 62 RVA: 0x000042D8 File Offset: 0x000024D8
+		// Token: 0x0600003E RID: 62 RVA: 0x00004318 File Offset: 0x00002518
 		public static void PatchLateUpdate(MethodInfo method)
 		{
 			int num = 6;
-			int num2 = num;
 			for (;;)
 			{
-				switch (num2)
+				int num2 = num;
+				for (;;)
 				{
-				case 1:
-					goto IL_BA;
-				case 2:
-					goto IL_114;
-				case 3:
-					goto IL_BA;
-				case 4:
-					goto IL_BA;
-				case 5:
-					if (j6DRtekpQbb7WaLEdSb.Vkgsu7Vsh(hTjuG7kL7FEnPsTZEIN.Vkgsu7Vsh(method, hTjuG7kL7FEnPsTZEIN.VPrkrttxWb), leXdUdkQnIXIpKm4I85.Vkgsu7Vsh(typeof(void).TypeHandle, leXdUdkQnIXIpKm4I85.WhGkIJZ1F5), j6DRtekpQbb7WaLEdSb.Yj3kk4a0r5))
+					switch (num2)
 					{
-						num2 = 4;
+					case 0:
+						goto IL_54;
+					case 1:
+						return;
+					case 2:
+						break;
+					case 3:
+						goto IL_EC;
+					case 4:
+						break;
+					case 5:
+						return;
+					case 6:
+						if (MonoManager.originalLateUpdate != null)
+						{
+							num2 = 5;
+							continue;
+						}
+						if (reQRSLscoT5VJVd0ei.k0sBmDS26(kjVBWd3cZi75uiOOjOH.k0sBmDS26(method, kjVBWd3cZi75uiOOjOH.Y6P3jBTWt9), EnlOxL3KU2n5cwR6bLM.k0sBmDS26(typeof(void).TypeHandle, EnlOxL3KU2n5cwR6bLM.EMH3NTwRFd), reQRSLscoT5VJVd0ei.y6czZ96l3))
+						{
+							num2 = 8;
+							continue;
+						}
+						goto IL_EC;
+					case 7:
+						return;
+					case 8:
+						break;
+					default:
+						goto IL_54;
+					}
+					Logger.LogWarning(hIDAYxH6DWLHIthQgC.gSCeTtiku(-293933323 - -1705011605 ^ 1449713481 ^ <Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_76c36d3bdf714327a5d858d17a351127));
+					num2 = 0;
+					if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_77ab9dd0755e4f7f93de9274b2ff9615 == 0)
+					{
+						num2 = 1;
 						continue;
 					}
-					goto IL_F9;
-				case 6:
-					if (MonoManager.originalLateUpdate != null)
-					{
-						return;
-					}
-					num2 = 5;
-					if (<Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_4cf3c3fa031b46e5bf2b83f67aac5018 != 0)
+					continue;
+					IL_EC:
+					if (xZ9LPo3Pc2ro7A0Asos.k0sBmDS26(method, xZ9LPo3Pc2ro7A0Asos.L1U3AujAcM))
 					{
 						num2 = 2;
 						continue;
 					}
-					continue;
-				case 7:
-					goto IL_F9;
-				case 8:
-					return;
-				case 9:
-					return;
-				}
-				break;
-				IL_BA:
-				Logger.LogWarning(hIDAYxH6DWLHIthQgC.gSCeTtiku(631918530 ^ 1907026746 ^ <Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_434d3901588e427a807b42f125cc2ce3));
-				num2 = 0;
-				if (<Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_23fddb7baea1434bb794ffb26571c6db == 0)
-				{
-					num2 = 0;
-					continue;
-				}
-				continue;
-				IL_F9:
-				if (SmEfxakRSirVGEfGwMV.Vkgsu7Vsh(method, SmEfxakRSirVGEfGwMV.RdGk4lnAPV))
-				{
-					num2 = 3;
-					continue;
-				}
-				IL_114:
-				if (MCDlyIkNWsN2UoU5bhV.Vkgsu7Vsh(method, MCDlyIkNWsN2UoU5bhV.pipkDflj0V).Length != 0)
-				{
-					num2 = 1;
-					if (<Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_6226b80b5fc842f9857771e1a90c2050 != 0)
+					IL_54:
+					if (Qa3Ox831KTuNFDK4ogH.k0sBmDS26(method, Qa3Ox831KTuNFDK4ogH.qqn3QYtlof).Length != 0)
 					{
-						num2 = 1;
+						break;
 					}
-				}
-				else
-				{
 					MonoManager.LateUpdate detour;
 					if ((detour = MonoManager.<>O.<1>__patchedLateUpdate) == null)
 					{
 						detour = (MonoManager.<>O.<1>__patchedLateUpdate = new MonoManager.LateUpdate(MonoManager.patchedLateUpdate));
 					}
 					MonoManager.originalLateUpdate = HookManager.Detour<MonoManager.LateUpdate>(method, detour);
-					num2 = 9;
-					if (<Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_3ee7942d157b4c98a6cfe7cc07264776 == 0)
-					{
-						num2 = 2;
-					}
+					num2 = 7;
 				}
+				num = 4;
 			}
 		}
 
-		// Token: 0x0600003F RID: 63 RVA: 0x0000449C File Offset: 0x0000269C
+		// Token: 0x0600003F RID: 63 RVA: 0x00004494 File Offset: 0x00002694
 		private static void patchedLateUpdate(IntPtr instance)
 		{
 			MonoManager.originalLateUpdate(instance);
@@ -318,88 +331,81 @@ namespace CoreRuntime.Manager
 				catch (Exception value)
 				{
 					DefaultInterpolatedStringHandler defaultInterpolatedStringHandler = new DefaultInterpolatedStringHandler(24, 2);
-					PHliwfftrtxnGUGv86.Vkgsu7Vsh(ref defaultInterpolatedStringHandler, hexedCheat.Identifier, PHliwfftrtxnGUGv86.PPaXybFhf);
-					OllYaFLKfaVbHwoY0T.Vkgsu7Vsh(ref defaultInterpolatedStringHandler, hIDAYxH6DWLHIthQgC.gSCeTtiku(-1550927492 ^ -1922175024 ^ <Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_29a622e4e384424e811102658c7b2ac7), OllYaFLKfaVbHwoY0T.jdbri0BdE);
+					rc9mmsOYA6cpiVOdw5.k0sBmDS26(ref defaultInterpolatedStringHandler, hexedCheat.Identifier, rc9mmsOYA6cpiVOdw5.UUPXdwKSJ);
+					EqOyIWPBk4O8GIbets.k0sBmDS26(ref defaultInterpolatedStringHandler, hIDAYxH6DWLHIthQgC.gSCeTtiku(2122127052 << 1 ^ -2133644391 ^ <Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_a3ef764822b249b0bdf61221ef3b4538), EqOyIWPBk4O8GIbets.OYCAQYjuo);
 					defaultInterpolatedStringHandler.AppendFormatted<Exception>(value);
-					Logger.LogError(HUqyQtK9vUO9bfISNY.Vkgsu7Vsh(ref defaultInterpolatedStringHandler, HUqyQtK9vUO9bfISNY.IYKFLW0NA));
+					Logger.LogError(Sbphjm5LFg5j2OSqxD.k0sBmDS26(ref defaultInterpolatedStringHandler, Sbphjm5LFg5j2OSqxD.tgcgXxaGu));
 				}
 			}
 		}
 
-		// Token: 0x06000040 RID: 64 RVA: 0x0000457C File Offset: 0x0000277C
+		// Token: 0x06000040 RID: 64 RVA: 0x00004578 File Offset: 0x00002778
 		public static void PatchFixedUpdate(MethodInfo method)
 		{
-			int num = 2;
+			int num = 4;
 			int num2 = num;
 			for (;;)
 			{
 				switch (num2)
 				{
-				case 0:
-					goto IL_DD;
 				case 1:
-					return;
+					goto IL_40;
 				case 2:
-					if (MonoManager.originalFixedUpdate != null)
-					{
-						num2 = 1;
-						if (<Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_8336580d1f0445238d6836f5e92b70db == 0)
-						{
-							num2 = 0;
-							continue;
-						}
-						continue;
-					}
-					else
-					{
-						if (j6DRtekpQbb7WaLEdSb.Vkgsu7Vsh(hTjuG7kL7FEnPsTZEIN.Vkgsu7Vsh(method, hTjuG7kL7FEnPsTZEIN.VPrkrttxWb), leXdUdkQnIXIpKm4I85.Vkgsu7Vsh(typeof(void).TypeHandle, leXdUdkQnIXIpKm4I85.WhGkIJZ1F5), j6DRtekpQbb7WaLEdSb.Yj3kk4a0r5))
-						{
-							num2 = 7;
-							continue;
-						}
-						goto IL_DD;
-					}
-					break;
+					goto IL_AE;
 				case 3:
 					return;
 				case 4:
-					break;
-				case 5:
-				{
-					MonoManager.FixedUpdate detour;
-					if ((detour = MonoManager.<>O.<2>__patchedFixedUpdate) == null)
+					if (MonoManager.originalFixedUpdate != null)
 					{
-						detour = (MonoManager.<>O.<2>__patchedFixedUpdate = new MonoManager.FixedUpdate(MonoManager.patchedFixedUpdate));
+						num2 = 3;
+						continue;
 					}
-					MonoManager.originalFixedUpdate = HookManager.Detour<MonoManager.FixedUpdate>(method, detour);
-					num2 = 3;
-					if (<Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_14220072943b47f99fd6e94ff4c63aa5 != 0)
+					if (!reQRSLscoT5VJVd0ei.k0sBmDS26(kjVBWd3cZi75uiOOjOH.k0sBmDS26(method, kjVBWd3cZi75uiOOjOH.Y6P3jBTWt9), EnlOxL3KU2n5cwR6bLM.k0sBmDS26(typeof(void).TypeHandle, EnlOxL3KU2n5cwR6bLM.EMH3NTwRFd), reQRSLscoT5VJVd0ei.y6czZ96l3))
 					{
-						num2 = 2;
+						goto IL_5C;
+					}
+					num2 = 6;
+					if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_d1cb4aaf4fc045f5839300511ab1de3f == 0)
+					{
+						num2 = 1;
 						continue;
 					}
 					continue;
-				}
-				case 6:
+				case 5:
 					return;
+				case 6:
+					goto IL_AE;
 				case 7:
-					break;
+					goto IL_5C;
 				case 8:
-					if (MCDlyIkNWsN2UoU5bhV.Vkgsu7Vsh(method, MCDlyIkNWsN2UoU5bhV.pipkDflj0V).Length == 0)
-					{
-						num2 = 5;
-						continue;
-					}
-					break;
-				default:
-					goto IL_DD;
+					goto IL_AE;
 				}
+				break;
 				IL_40:
-				Logger.LogWarning(hIDAYxH6DWLHIthQgC.gSCeTtiku(-1046343599 ^ -909454055 ^ <Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_65a08a5c2ec14c03a6ad53769cd71a85));
-				num2 = 6;
+				if (Qa3Ox831KTuNFDK4ogH.k0sBmDS26(method, Qa3Ox831KTuNFDK4ogH.qqn3QYtlof).Length != 0)
+				{
+					num2 = 2;
+					continue;
+				}
+				MonoManager.FixedUpdate detour;
+				if ((detour = MonoManager.<>O.<2>__patchedFixedUpdate) == null)
+				{
+					detour = (MonoManager.<>O.<2>__patchedFixedUpdate = new MonoManager.FixedUpdate(MonoManager.patchedFixedUpdate));
+				}
+				MonoManager.originalFixedUpdate = HookManager.Detour<MonoManager.FixedUpdate>(method, detour);
+				num2 = 5;
 				continue;
-				IL_DD:
-				if (SmEfxakRSirVGEfGwMV.Vkgsu7Vsh(method, SmEfxakRSirVGEfGwMV.RdGk4lnAPV))
+				IL_AE:
+				Logger.LogWarning(hIDAYxH6DWLHIthQgC.gSCeTtiku(-1008514440 ^ -1980035384 ^ <Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_cb53c5012b8c473a8f1d4a4b097db321));
+				num2 = 0;
+				if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_c931a3b513c14488a1a5550313dbc790 == 0)
+				{
+					num2 = 0;
+					continue;
+				}
+				continue;
+				IL_5C:
+				if (!xZ9LPo3Pc2ro7A0Asos.k0sBmDS26(method, xZ9LPo3Pc2ro7A0Asos.L1U3AujAcM))
 				{
 					goto IL_40;
 				}
@@ -407,58 +413,173 @@ namespace CoreRuntime.Manager
 			}
 		}
 
-		// Token: 0x06000041 RID: 65 RVA: 0x0000471C File Offset: 0x0000291C
+		// Token: 0x06000041 RID: 65 RVA: 0x00004714 File Offset: 0x00002914
 		private static void patchedFixedUpdate(IntPtr instance)
 		{
-			MonoManager.originalFixedUpdate(instance);
-			foreach (HexedCheat hexedCheat in CheatManager.LoadedCheats)
+			int num = 2;
+			int num2 = num;
+			for (;;)
 			{
-				try
+				List<HexedCheat>.Enumerator enumerator;
+				switch (num2)
 				{
-					hexedCheat.OnFixedUpdate();
+				default:
+					return;
+				case 1:
+					break;
+				case 2:
+					MonoManager.originalFixedUpdate(instance);
+					num2 = 1;
+					if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_852c5d0a75534123b3259cafbdb3787c == 0)
+					{
+						num2 = 0;
+						continue;
+					}
+					continue;
+				case 3:
+					try
+					{
+						for (;;)
+						{
+							if (enumerator.MoveNext())
+							{
+								goto IL_9A;
+							}
+							int num3 = 0;
+							if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_4b547a8566d741389e4a86d1605827c4 != 0)
+							{
+								num3 = 0;
+							}
+							IL_80:
+							switch (num3)
+							{
+							case 1:
+								continue;
+							case 2:
+								try
+								{
+									HexedCheat hexedCheat;
+									hexedCheat.OnFixedUpdate();
+									int num4 = 0;
+									if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_7a07a290fe614bc6999deecab3de9eab != 0)
+									{
+										num4 = 0;
+									}
+									switch (num4)
+									{
+									}
+								}
+								catch (Exception value)
+								{
+									int num5 = 4;
+									for (;;)
+									{
+										DefaultInterpolatedStringHandler defaultInterpolatedStringHandler;
+										switch (num5)
+										{
+										case 1:
+											Logger.LogError(Sbphjm5LFg5j2OSqxD.k0sBmDS26(ref defaultInterpolatedStringHandler, Sbphjm5LFg5j2OSqxD.tgcgXxaGu));
+											num5 = 0;
+											if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_8a76a7fae4924808ab15b6551d08b6db == 0)
+											{
+												num5 = 2;
+												continue;
+											}
+											continue;
+										case 2:
+											goto IL_205;
+										case 3:
+											defaultInterpolatedStringHandler.AppendFormatted<Exception>(value);
+											num5 = 0;
+											if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_ae75df162a95440b90ee0ac540e5801c != 0)
+											{
+												num5 = 1;
+												continue;
+											}
+											continue;
+										case 4:
+											defaultInterpolatedStringHandler = new DefaultInterpolatedStringHandler(25, 2);
+											num5 = 0;
+											if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_eba429a8ad6649be8436afed34a2bb21 == 0)
+											{
+												num5 = 0;
+												continue;
+											}
+											continue;
+										case 5:
+											EqOyIWPBk4O8GIbets.k0sBmDS26(ref defaultInterpolatedStringHandler, hIDAYxH6DWLHIthQgC.gSCeTtiku(589643317 ^ 1302221410 ^ <Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_b7b9a8492a38400d91bae0026bb0248f), EqOyIWPBk4O8GIbets.OYCAQYjuo);
+											num5 = 2;
+											if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_afc1c0a1256744ca83837550f557c751 == 0)
+											{
+												num5 = 3;
+												continue;
+											}
+											continue;
+										}
+										HexedCheat hexedCheat;
+										rc9mmsOYA6cpiVOdw5.k0sBmDS26(ref defaultInterpolatedStringHandler, hexedCheat.Identifier, rc9mmsOYA6cpiVOdw5.UUPXdwKSJ);
+										num5 = 5;
+									}
+									IL_205:;
+								}
+								continue;
+							case 3:
+							{
+								IL_9A:
+								HexedCheat hexedCheat = enumerator.Current;
+								int num6 = 2;
+								num3 = num6;
+								goto IL_80;
+							}
+							}
+							break;
+						}
+						return;
+					}
+					finally
+					{
+						((IDisposable)enumerator).Dispose();
+						int num7 = 0;
+						if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_b17c90c6112a4263b26500827a58a466 != 0)
+						{
+							num7 = 0;
+						}
+						switch (num7)
+						{
+						}
+					}
+					break;
 				}
-				catch (Exception value)
-				{
-					DefaultInterpolatedStringHandler defaultInterpolatedStringHandler = new DefaultInterpolatedStringHandler(25, 2);
-					PHliwfftrtxnGUGv86.Vkgsu7Vsh(ref defaultInterpolatedStringHandler, hexedCheat.Identifier, PHliwfftrtxnGUGv86.PPaXybFhf);
-					OllYaFLKfaVbHwoY0T.Vkgsu7Vsh(ref defaultInterpolatedStringHandler, hIDAYxH6DWLHIthQgC.gSCeTtiku(503552573 ^ 1331799174 ^ <Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_8336580d1f0445238d6836f5e92b70db), OllYaFLKfaVbHwoY0T.jdbri0BdE);
-					defaultInterpolatedStringHandler.AppendFormatted<Exception>(value);
-					Logger.LogError(HUqyQtK9vUO9bfISNY.Vkgsu7Vsh(ref defaultInterpolatedStringHandler, HUqyQtK9vUO9bfISNY.IYKFLW0NA));
-				}
+				enumerator = CheatManager.LoadedCheats.GetEnumerator();
+				num2 = 3;
 			}
 		}
 
-		// Token: 0x06000042 RID: 66 RVA: 0x000047FC File Offset: 0x000029FC
+		// Token: 0x06000042 RID: 66 RVA: 0x00004A24 File Offset: 0x00002C24
 		public static void PatchOnGUI(MethodInfo method)
 		{
-			int num = 3;
+			int num = 7;
 			int num2 = num;
 			for (;;)
 			{
 				switch (num2)
 				{
+				case 0:
+					goto IL_E7;
 				case 1:
-					goto IL_DD;
+					goto IL_E7;
 				case 2:
-					if (!j6DRtekpQbb7WaLEdSb.Vkgsu7Vsh(hTjuG7kL7FEnPsTZEIN.Vkgsu7Vsh(method, hTjuG7kL7FEnPsTZEIN.VPrkrttxWb), leXdUdkQnIXIpKm4I85.Vkgsu7Vsh(typeof(void).TypeHandle, leXdUdkQnIXIpKm4I85.WhGkIJZ1F5), j6DRtekpQbb7WaLEdSb.Yj3kk4a0r5))
-					{
-						goto IL_C3;
-					}
-					num2 = 8;
-					if (<Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_8336580d1f0445238d6836f5e92b70db == 0)
-					{
-						num2 = 7;
-						continue;
-					}
-					continue;
+					break;
 				case 3:
-					if (MonoManager.originalOnGUI == null)
+					if (Qa3Ox831KTuNFDK4ogH.k0sBmDS26(method, Qa3Ox831KTuNFDK4ogH.qqn3QYtlof).Length == 0)
 					{
-						num2 = 2;
+						num2 = 5;
 						continue;
 					}
-					return;
+					goto IL_E7;
 				case 4:
+					return;
+				case 5:
 				{
 					MonoManager.OnGUI detour;
 					if ((detour = MonoManager.<>O.<3>__patchedOnGUI) == null)
@@ -466,52 +587,50 @@ namespace CoreRuntime.Manager
 						detour = (MonoManager.<>O.<3>__patchedOnGUI = new MonoManager.OnGUI(MonoManager.patchedOnGUI));
 					}
 					MonoManager.originalOnGUI = HookManager.Detour<MonoManager.OnGUI>(method, detour);
-					num2 = 0;
-					if (<Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_c562bff83da649f1af22aec8f521fe1d != 0)
-					{
-						num2 = 0;
-						continue;
-					}
+					num2 = 4;
 					continue;
 				}
-				case 5:
-					return;
 				case 6:
-					goto IL_C3;
-				case 7:
-					goto IL_10D;
-				case 8:
-					goto IL_10D;
-				case 9:
-					goto IL_10D;
-				case 10:
 					return;
-				}
-				break;
-				IL_C3:
-				if (SmEfxakRSirVGEfGwMV.Vkgsu7Vsh(method, SmEfxakRSirVGEfGwMV.RdGk4lnAPV))
-				{
-					num2 = 7;
-					continue;
-				}
-				IL_DD:
-				if (MCDlyIkNWsN2UoU5bhV.Vkgsu7Vsh(method, MCDlyIkNWsN2UoU5bhV.pipkDflj0V).Length == 0)
-				{
-					num2 = 0;
-					if (<Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_4cbcb2d46d6c4286be8cf3e1dde6ad8c != 0)
+				case 7:
+					if (MonoManager.originalOnGUI != null)
 					{
 						num2 = 4;
+						if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_4ef4db7550394672961cc88f5d0e800a != 0)
+						{
+							num2 = 6;
+							continue;
+						}
 						continue;
 					}
+					else if (reQRSLscoT5VJVd0ei.k0sBmDS26(kjVBWd3cZi75uiOOjOH.k0sBmDS26(method, kjVBWd3cZi75uiOOjOH.Y6P3jBTWt9), EnlOxL3KU2n5cwR6bLM.k0sBmDS26(typeof(void).TypeHandle, EnlOxL3KU2n5cwR6bLM.EMH3NTwRFd), reQRSLscoT5VJVd0ei.y6czZ96l3))
+					{
+						num2 = 1;
+						if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_77caaf9658ab4228a2d653f72c318338 != 0)
+						{
+							num2 = 1;
+							continue;
+						}
+						continue;
+					}
+					break;
+				case 8:
+					return;
+				default:
+					goto IL_E7;
+				}
+				if (!xZ9LPo3Pc2ro7A0Asos.k0sBmDS26(method, xZ9LPo3Pc2ro7A0Asos.L1U3AujAcM))
+				{
+					num2 = 3;
 					continue;
 				}
-				IL_10D:
-				Logger.LogWarning(hIDAYxH6DWLHIthQgC.gSCeTtiku(817209202 ^ 1754028539 ^ <Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_23fddb7baea1434bb794ffb26571c6db));
-				num2 = 5;
+				IL_E7:
+				Logger.LogWarning(hIDAYxH6DWLHIthQgC.gSCeTtiku(-807808146 - -1908325673 ^ 211575427 ^ <Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_d1cb4aaf4fc045f5839300511ab1de3f));
+				num2 = 8;
 			}
 		}
 
-		// Token: 0x06000043 RID: 67 RVA: 0x000049D4 File Offset: 0x00002BD4
+		// Token: 0x06000043 RID: 67 RVA: 0x00004BB4 File Offset: 0x00002DB4
 		private static void patchedOnGUI(IntPtr instance)
 		{
 			MonoManager.originalOnGUI(instance);
@@ -524,98 +643,102 @@ namespace CoreRuntime.Manager
 				catch (Exception value)
 				{
 					DefaultInterpolatedStringHandler defaultInterpolatedStringHandler = new DefaultInterpolatedStringHandler(19, 2);
-					PHliwfftrtxnGUGv86.Vkgsu7Vsh(ref defaultInterpolatedStringHandler, hexedCheat.Identifier, PHliwfftrtxnGUGv86.PPaXybFhf);
-					OllYaFLKfaVbHwoY0T.Vkgsu7Vsh(ref defaultInterpolatedStringHandler, hIDAYxH6DWLHIthQgC.gSCeTtiku(817209202 ^ 1695370734 ^ <Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_d86c12eaffe948379f2fdd025e8e5bb5), OllYaFLKfaVbHwoY0T.jdbri0BdE);
+					rc9mmsOYA6cpiVOdw5.k0sBmDS26(ref defaultInterpolatedStringHandler, hexedCheat.Identifier, rc9mmsOYA6cpiVOdw5.UUPXdwKSJ);
+					EqOyIWPBk4O8GIbets.k0sBmDS26(ref defaultInterpolatedStringHandler, hIDAYxH6DWLHIthQgC.gSCeTtiku(-1312829189 ^ -48149991 ^ <Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_b27af62cf66b438484a169015c1171b1), EqOyIWPBk4O8GIbets.OYCAQYjuo);
 					defaultInterpolatedStringHandler.AppendFormatted<Exception>(value);
-					Logger.LogError(HUqyQtK9vUO9bfISNY.Vkgsu7Vsh(ref defaultInterpolatedStringHandler, HUqyQtK9vUO9bfISNY.IYKFLW0NA));
+					Logger.LogError(Sbphjm5LFg5j2OSqxD.k0sBmDS26(ref defaultInterpolatedStringHandler, Sbphjm5LFg5j2OSqxD.tgcgXxaGu));
 				}
 			}
 		}
 
-		// Token: 0x06000044 RID: 68 RVA: 0x00004AB4 File Offset: 0x00002CB4
+		// Token: 0x06000044 RID: 68 RVA: 0x00004C94 File Offset: 0x00002E94
 		public static void PatchOnApplicationQuit(MethodInfo method)
 		{
-			int num = 3;
+			int num = 1;
+			int num2 = num;
 			for (;;)
 			{
-				int num2 = num;
-				for (;;)
+				switch (num2)
 				{
-					switch (num2)
+				case 0:
+					goto IL_BF;
+				case 1:
+					if (MonoManager.originalOnApplicationQuit != null)
 					{
-					case 1:
-						goto IL_EE;
-					case 2:
-						if (!j6DRtekpQbb7WaLEdSb.Vkgsu7Vsh(hTjuG7kL7FEnPsTZEIN.Vkgsu7Vsh(method, hTjuG7kL7FEnPsTZEIN.VPrkrttxWb), leXdUdkQnIXIpKm4I85.Vkgsu7Vsh(typeof(void).TypeHandle, leXdUdkQnIXIpKm4I85.WhGkIJZ1F5), j6DRtekpQbb7WaLEdSb.Yj3kk4a0r5))
-						{
-							goto IL_49;
-						}
+						return;
+					}
+					num2 = 0;
+					if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_4c9ef9cde5ab45ae8b265068615b5e5b != 0)
+					{
 						num2 = 0;
-						if (<Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_6226b80b5fc842f9857771e1a90c2050 == 0)
-						{
-							num2 = 1;
-							continue;
-						}
-						continue;
-					case 3:
-						goto IL_BB;
-					case 4:
-						goto IL_15A;
-					case 5:
-						goto IL_D3;
-					case 6:
-						return;
-					case 7:
-						goto IL_49;
-					case 8:
-					{
-						MonoManager.OnApplicationQuit detour;
-						if ((detour = MonoManager.<>O.<4>__patchedOnApplicationQuit) == null)
-						{
-							detour = (MonoManager.<>O.<4>__patchedOnApplicationQuit = new MonoManager.OnApplicationQuit(MonoManager.patchedOnApplicationQuit));
-						}
-						MonoManager.originalOnApplicationQuit = HookManager.Detour<MonoManager.OnApplicationQuit>(method, detour);
-						num2 = 10;
 						continue;
 					}
-					case 9:
-						goto IL_AC;
-					case 10:
-						return;
-					}
-					goto Block_1;
-					IL_49:
-					if (SmEfxakRSirVGEfGwMV.Vkgsu7Vsh(method, SmEfxakRSirVGEfGwMV.RdGk4lnAPV))
-					{
-						num2 = 9;
-						continue;
-					}
-					IL_D3:
-					if (MCDlyIkNWsN2UoU5bhV.Vkgsu7Vsh(method, MCDlyIkNWsN2UoU5bhV.pipkDflj0V).Length != 0)
-					{
-						goto IL_15A;
-					}
-					num2 = 8;
-				}
-				IL_BB:
-				if (MonoManager.originalOnApplicationQuit == null)
+					continue;
+				case 2:
+					break;
+				case 3:
+					break;
+				case 4:
+					return;
+				case 5:
+					return;
+				case 6:
 				{
-					num = 2;
+					if (Qa3Ox831KTuNFDK4ogH.k0sBmDS26(method, Qa3Ox831KTuNFDK4ogH.qqn3QYtlof).Length != 0)
+					{
+						num2 = 3;
+						continue;
+					}
+					MonoManager.OnApplicationQuit detour;
+					if ((detour = MonoManager.<>O.<4>__patchedOnApplicationQuit) == null)
+					{
+						detour = (MonoManager.<>O.<4>__patchedOnApplicationQuit = new MonoManager.OnApplicationQuit(MonoManager.patchedOnApplicationQuit));
+					}
+					MonoManager.originalOnApplicationQuit = HookManager.Detour<MonoManager.OnApplicationQuit>(method, detour);
+					num2 = 2;
+					if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_e1faf0249a9e4741bd6472e4b44f3b13 == 0)
+					{
+						num2 = 4;
+						continue;
+					}
 					continue;
 				}
-				break;
-				IL_15A:
-				Logger.LogWarning(hIDAYxH6DWLHIthQgC.gSCeTtiku(1908777253 ^ 542817349 ^ <Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_fb52a29d24de4440b04edf3fddca29f7));
-				num = 6;
+				case 7:
+					goto IL_E3;
+				case 8:
+					return;
+				default:
+					goto IL_BF;
+				}
+				IL_40:
+				Logger.LogWarning(hIDAYxH6DWLHIthQgC.gSCeTtiku(-922572248 ^ -1878396520 ^ <Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_ae75df162a95440b90ee0ac540e5801c));
+				num2 = 5;
 				continue;
-				IL_AC:
-				IL_EE:
-				goto IL_15A;
+				IL_BF:
+				if (reQRSLscoT5VJVd0ei.k0sBmDS26(kjVBWd3cZi75uiOOjOH.k0sBmDS26(method, kjVBWd3cZi75uiOOjOH.Y6P3jBTWt9), EnlOxL3KU2n5cwR6bLM.k0sBmDS26(typeof(void).TypeHandle, EnlOxL3KU2n5cwR6bLM.EMH3NTwRFd), reQRSLscoT5VJVd0ei.y6czZ96l3))
+				{
+					num2 = 1;
+					if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_138d859d3f2047df875a5a6877d4c694 == 0)
+					{
+						num2 = 2;
+						continue;
+					}
+					continue;
+				}
+				IL_E3:
+				if (xZ9LPo3Pc2ro7A0Asos.k0sBmDS26(method, xZ9LPo3Pc2ro7A0Asos.L1U3AujAcM))
+				{
+					goto IL_40;
+				}
+				num2 = 6;
+				if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_ac73a5c478cc4d1098bd3c7751d201a6 == 0)
+				{
+					num2 = 6;
+				}
 			}
-			Block_1:;
 		}
 
-		// Token: 0x06000045 RID: 69 RVA: 0x00004C84 File Offset: 0x00002E84
+		// Token: 0x06000045 RID: 69 RVA: 0x00004E44 File Offset: 0x00003044
 		private static void patchedOnApplicationQuit(IntPtr instance)
 		{
 			MonoManager.originalOnApplicationQuit(instance);
@@ -628,23 +751,23 @@ namespace CoreRuntime.Manager
 				catch (Exception value)
 				{
 					DefaultInterpolatedStringHandler defaultInterpolatedStringHandler = new DefaultInterpolatedStringHandler(31, 2);
-					PHliwfftrtxnGUGv86.Vkgsu7Vsh(ref defaultInterpolatedStringHandler, hexedCheat.Identifier, PHliwfftrtxnGUGv86.PPaXybFhf);
-					OllYaFLKfaVbHwoY0T.Vkgsu7Vsh(ref defaultInterpolatedStringHandler, hIDAYxH6DWLHIthQgC.gSCeTtiku(1329859125 ^ 233675800 ^ <Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_24528a7679a644c78b49b0457f8d9d44), OllYaFLKfaVbHwoY0T.jdbri0BdE);
+					rc9mmsOYA6cpiVOdw5.k0sBmDS26(ref defaultInterpolatedStringHandler, hexedCheat.Identifier, rc9mmsOYA6cpiVOdw5.UUPXdwKSJ);
+					EqOyIWPBk4O8GIbets.k0sBmDS26(ref defaultInterpolatedStringHandler, hIDAYxH6DWLHIthQgC.gSCeTtiku(1166244614 >> 4 ^ 228753508 ^ <Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_23b0c345fbea449596466ee9cdf54e9d), EqOyIWPBk4O8GIbets.OYCAQYjuo);
 					defaultInterpolatedStringHandler.AppendFormatted<Exception>(value);
-					Logger.LogError(HUqyQtK9vUO9bfISNY.Vkgsu7Vsh(ref defaultInterpolatedStringHandler, HUqyQtK9vUO9bfISNY.IYKFLW0NA));
+					Logger.LogError(Sbphjm5LFg5j2OSqxD.k0sBmDS26(ref defaultInterpolatedStringHandler, Sbphjm5LFg5j2OSqxD.tgcgXxaGu));
 				}
 			}
-			veEg0WkfO4fCl5tmQQF.Vkgsu7Vsh(VitR1pcm0SIa2t7r5D.Vkgsu7Vsh(VitR1pcm0SIa2t7r5D.EHUAVMHB4), veEg0WkfO4fCl5tmQQF.D1IkX1xYq3);
+			uLW4A43Smp39SW5ia1u.k0sBmDS26(zhW75a0S0ZETvIxOC9.k0sBmDS26(zhW75a0S0ZETvIxOC9.JQ5yyLI01), uLW4A43Smp39SW5ia1u.vVT3EBemQx);
 		}
 
-		// Token: 0x06000046 RID: 70 RVA: 0x00004D78 File Offset: 0x00002F78
+		// Token: 0x06000046 RID: 70 RVA: 0x00004F3C File Offset: 0x0000313C
 		public MonoManager()
 		{
 			hIDAYxH6DWLHIthQgC.oDuBOTgYK();
-			nHwRpygmi6xxZAssJn.UoDdI5CpWg();
+			nHwRpygmi6xxZAssJn.dxI7NE9hn1();
 			base..ctor();
 			int num = 0;
-			if (<Module>{ac036323-8bbe-4bc3-98ee-09be8d56c592}.m_f08175ccb47d47d4b92ca8027a0600b8.m_1d9ccb4b9f6e4991b29f4e03e19f9f1c != 0)
+			if (<Module>{39544666-5886-4660-82c2-b5d6ee1bb8df}.m_b71752828a4840c087bf361f4e965877.m_2214534233c84f54af8fa632b028a9d4 == 0)
 			{
 				num = 0;
 			}
@@ -655,16 +778,16 @@ namespace CoreRuntime.Manager
 			}
 		}
 
-		// Token: 0x06000047 RID: 71 RVA: 0x00004DD8 File Offset: 0x00002FD8
-		internal static bool iSNen82OsXEBv7FHbQn()
+		// Token: 0x06000047 RID: 71 RVA: 0x00004F9C File Offset: 0x0000319C
+		internal static bool DNncqTkRxLCfM0t39YN()
 		{
-			return MonoManager.vU3Cqm2vYhOaRBNn8wW == null;
+			return MonoManager.pOXQNQk9ugmwoRlIqMR == null;
 		}
 
-		// Token: 0x06000048 RID: 72 RVA: 0x00004DE4 File Offset: 0x00002FE4
-		internal static MonoManager q033lI2m0NMLPKhys5C()
+		// Token: 0x06000048 RID: 72 RVA: 0x00004FA8 File Offset: 0x000031A8
+		internal static MonoManager GWQA2mkLBRNE0tCU4YE()
 		{
-			return MonoManager.vU3Cqm2vYhOaRBNn8wW;
+			return MonoManager.pOXQNQk9ugmwoRlIqMR;
 		}
 
 		// Token: 0x04000016 RID: 22
@@ -683,7 +806,7 @@ namespace CoreRuntime.Manager
 		private static MonoManager.OnApplicationQuit originalOnApplicationQuit;
 
 		// Token: 0x0400001B RID: 27
-		internal static MonoManager vU3Cqm2vYhOaRBNn8wW;
+		internal static MonoManager pOXQNQk9ugmwoRlIqMR;
 
 		// Token: 0x0200000D RID: 13
 		// (Invoke) Token: 0x0600004A RID: 74
