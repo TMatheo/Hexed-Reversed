@@ -7,3 +7,5 @@ let's start with the client...
 this is where the loading of the client start
 
 <img width="" height="" src="https://github.com/TMatheo/Hexed-Reversed/blob/main/img/Hexed.Loader.Load.png">
+
+Credit : Salute - Unixian (For making an eassy setup for hexed) <3
